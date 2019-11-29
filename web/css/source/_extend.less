@@ -366,7 +366,7 @@
 }
 
 .owl-carousel .owl-item img {
-  height: 500px;
+  height: 625px;
   object-fit: cover;
 }
 
@@ -393,7 +393,12 @@
   grid-column-end: 3;
 }
 
-.title {
+.mb-5 {
+  margin-bottom: 50px !important;
+}
+
+.title,
+.block-products-list .block-title {
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
@@ -401,7 +406,8 @@
   margin-bottom: 0;
 }
 
-.title h2 {
+.title h2,
+.block-products-list .block-title {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -415,7 +421,8 @@
   color: #004376;
 }
 
-.title h2:nth-child(2) {
+.title h2:nth-child(2),
+.block-products-list .block-title {
   font-family: "Montserrat";
   font-size: 25px;
   font-weight: normal;
@@ -688,7 +695,15 @@ button.more {
   .page-layout-1column
     .block.widget
     .products-grid
-    .product-item:nth-child(3n + 1) {
+    .product-item:nth-child(3n + 1),
+  .page-layout-1column
+    .block.widget
+    .products-grid
+    .product-item:nth-child(4n + 1),
+  .page-layout-1column
+    .block.widget
+    .products-grid
+    .product-item:nth-child(5n + 1) {
     margin-left: 6%;
   }
 
