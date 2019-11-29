@@ -1,101 +1,28 @@
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .chekboxTandCRegis{
-    margin-bottom: 20px;
-  }
-  
-  .input-text-name
-  {
-    width: 100% !important;
-    padding: 12px 20px !important;
-    margin: 8px 0 !important;
-    box-sizing: border-box !important;
-    border: none !important;
-    border-bottom: 2px solid #87929d !important;
-  }
+/*
+ * CSS in LESS ^_^v
+ */
 
-  .register-center {
-    width: 94% !important;
-    padding: 0 10px;
-  }  
-
-  #lastname-error {
-    position: unset;
-  }
-
-  .margin-buttom-name-register
-  {
-    margin-bottom: 20px;
-  }
-
-  .btn-register {
-    background: #004376 !important;
-    border: 1px solid #004376 !important;
-  }
-
-  .btn-reg-div
-  {
-    width: 100%;
-  }
+@font-face {
+  font-family: "PingFangSC";
+  src: url("../fonts/PingFangSC-Semibold.woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/******************** Style for login & register *********************/
 
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .chekboxTandCRegis{
-    text-align: right;
-    margin-bottom: 20px;
-  }
-  
-  .input-text-name
-  {
-    width: 48% !important;
-    padding: 12px 20px !important;
-    margin: 8px 0 !important;
-    box-sizing: border-box !important;
-    border: none !important;
-    border-bottom: 2px solid #87929d !important;
-  }
-
-  .register-center {
-    width: 60% !important;
-    transform: translate(37%, 1%);
-  }
-
-  #lastname-error {
-    position: absolute;
-    top: 35px;
-    left: 387px;
-  }
-
-  .margin-buttom-name-register
-  {
-    margin-bottom: 60px;
-  }
-
-  .btn-register {
-    width: 115px !important;
-    height: 35px !important;
-    background: #004376 !important;
-    border: 1px solid #004376 !important;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
-
-.field-name-firstname, .field-name-lastname {
+/* Global style */
+.field-name-firstname,
+.field-name-lastname {
   position: relative;
 }
 
@@ -119,13 +46,11 @@
   color: #505050;
 }
 
-.delete-margin-butto-register
-{
+.delete-margin-butto-register {
   margin: 0 0 0px !important;
 }
 
-.dropdown-register
-{
+.dropdown-register {
   width: 100% !important;
   padding: 12px 20px !important;
   margin: 0 !important;
@@ -135,19 +60,20 @@
   height: auto !important;
 }
 
-.custom-dropdown 
-{
+.custom-dropdown {
   position: relative !important;
   display: inline-block !important;
   vertical-align: middle !important;
   margin: 0px !important;
 }
 
-::-webkit-input-placeholder { /* Edge */
+::-webkit-input-placeholder {
+  /* Edge */
   color: red;
 }
 
-:-ms-input-placeholder { /* Internet Explorer */
+:-ms-input-placeholder {
+  /* Internet Explorer */
   color: red;
 }
 
@@ -155,13 +81,11 @@
   color: red;
 }
 
-.delete-margin
-{
+.delete-margin {
   margin: 0 !important;
 }
 
-.fullname-register
-{
+.fullname-register {
   margin-top: 0px !important;
   width: 122px !important;
   height: 30px !important;
@@ -178,7 +102,6 @@
 .margin-title-register {
   margin: 0 0 20px !important;
 }
-
 
 .customer-account-create .page-main > .page-title-wrapper {
   visibility: hidden !important;
@@ -212,43 +135,6 @@
   color: #505050 !important;
   margin-top: 0 !important;
   margin-bottom: 0px !important;
-}
-
-// start login
-@media only screen and (max-width: 600px) {
-  .center {
-    width: 100% !important;
-    margin: 0 !important;
-    position: relative !important;
-    top: 100px !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-  }
-
-  .btn-login {
-    width: 100% !important;
-    height: 35px !important;
-    background: #004376 !important;
-    border: 1px solid #004376 !important;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .center {
-    width: 60% !important;
-    margin: 0 !important;
-    position: relative !important;
-    top: 100px !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-  }
-
-  .btn-login {
-    width: 115px !important;
-    height: 35px !important;
-    background: #004376 !important;
-    border: 1px solid #004376 !important;
-  }
 }
 
 .customer-account-login .page-main > .page-title-wrapper .page-title {
@@ -332,28 +218,126 @@
   margin-bottom: 50px !important;
 }
 
-//end login
+/* Extra small devices (phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+  .chekboxTandCRegis {
+    margin-bottom: 20px;
+  }
 
-/*
- * CSS in Less :)
- */
+  .input-text-name {
+    width: 100% !important;
+    padding: 12px 20px !important;
+    margin: 8px 0 !important;
+    box-sizing: border-box !important;
+    border: none !important;
+    border-bottom: 2px solid #87929d !important;
+  }
 
-// Module Moonlay/CustomHome
-@font-face {
-  font-family: "PingFangSC";
-  src: url("../fonts/PingFangSC-Semibold.woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
+  .register-center {
+    width: 94% !important;
+    padding: 0 10px;
+  }
+
+  #lastname-error {
+    position: unset;
+  }
+
+  .margin-buttom-name-register {
+    margin-bottom: 20px;
+  }
+
+  .btn-register {
+    background: #004376 !important;
+    border: 1px solid #004376 !important;
+  }
+
+  .btn-reg-div {
+    width: 100%;
+  }
+
+  .center {
+    width: 100% !important;
+    margin: 0 !important;
+    position: relative !important;
+    top: 100px !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  .btn-login {
+    width: 100% !important;
+    height: 35px !important;
+    background: #004376 !important;
+    border: 1px solid #004376 !important;
+  }
 }
 
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.otf");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .chekboxTandCRegis {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+
+  .input-text-name {
+    width: 48% !important;
+    padding: 12px 20px !important;
+    margin: 8px 0 !important;
+    box-sizing: border-box !important;
+    border: none !important;
+    border-bottom: 2px solid #87929d !important;
+  }
+
+  .register-center {
+    width: 60% !important;
+    transform: translate(37%, 1%);
+  }
+
+  #lastname-error {
+    position: absolute;
+    top: 35px;
+    left: 387px;
+  }
+
+  .margin-buttom-name-register {
+    margin-bottom: 60px;
+  }
+
+  .btn-register {
+    width: 115px !important;
+    height: 35px !important;
+    background: #004376 !important;
+    border: 1px solid #004376 !important;
+  }
+
+  .center {
+    width: 60% !important;
+    margin: 0 !important;
+    position: relative !important;
+    top: 100px !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  .btn-login {
+    width: 115px !important;
+    height: 35px !important;
+    background: #004376 !important;
+    border: 1px solid #004376 !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+/******************** Style for Moonlay/CustomHome Module *********************/
+
+/* Global style */
 
 .text-container {
   line-height: 0.5 !important;
@@ -368,13 +352,13 @@
   line-height: normal;
   letter-spacing: normal;
   color: #505050;
-  background-color: #c1c1c1;
+  background-color: #f0f0f0;
   padding: 5px 0;
 }
 
 #banner-slider-carousel {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .owl-theme .owl-nav {
@@ -451,20 +435,6 @@
 
 .banner:hover {
   background: unset;
-}
-
-@media (max-width: 767px) {
-  .banner {
-    height: 100%;
-    min-height: 190px;
-  }
-}
-
-@media (min-width: 768px) {
-  .banner {
-    min-height: 100%;
-    height: 518px;
-  }
 }
 
 .banner > img {
@@ -551,19 +521,6 @@
   margin-bottom: 50px;
 }
 
-@media (min-width: 768px) {
-  .about {
-    display: flex;
-    align-items: center;
-  }
-}
-
-@media (min-width: 1200px) {
-  .about {
-    padding: 50px 150px;
-  }
-}
-
 .about-logo {
   margin-right: 100px;
 }
@@ -588,19 +545,62 @@ button.more {
   width: 100%;
 }
 
-@media (max-width: 767px) {
+/* Extra small devices (phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+  .banner {
+    height: 100%;
+    min-height: 190px;
+  }
+
   .video iframe {
     height: 350px;
   }
 }
 
-@media (min-width: 768px) {
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .text-container {
+    line-height: 0.5 !important;
+    position: fixed;
+    width: 56%;
+    z-index: 2000;
+    top: 79px;
+    right: 0;
+  }
+
+  .running-text {
+    background-color: transparent;
+  }
+
+  .banner {
+    min-height: 100%;
+    height: 518px;
+  }
+
+  .about {
+    display: flex;
+    align-items: center;
+  }
+
   .video iframe {
     height: 500px;
   }
 }
 
-// Theme Moonlay/bateeq
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .about {
+    padding: 50px 150px;
+  }
+}
+
+/******************** Style for Moonlay/bateeq Theme *********************/
+
+/* Global style */
 .page-header {
   margin-bottom: 0;
 }
@@ -633,6 +633,7 @@ button.more {
   color: #313131;
 }
 
+/* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 767px) {
   .logo {
     margin-top: 12px;
@@ -643,18 +644,37 @@ button.more {
   }
 }
 
+/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .page-header {
+    margin-bottom: 0;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background: #fff;
+  }
+
   .page-header .header.panel {
+    width: 100%;
     padding-bottom: 20px;
     padding-top: 20px;
   }
 
+  .header.panel > .header.links {
+    width: 20%;
+  }
+
+  .minicart-wrapper {
+    width: 2%;
+  }
+
   .logo {
+    width: 10%;
     margin: 0px auto 0 0;
   }
 
   .block-search {
-    width: 30%;
+    width: 60%;
   }
 
   .minicart-wrapper {
@@ -673,8 +693,12 @@ button.more {
   }
 
   .nav-sections {
+    // display: none;
     margin-bottom: 0;
-    display: none;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 72px;
   }
 
   .customer-welcome .action.switch {
@@ -703,7 +727,12 @@ button.more {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
   .page-layout-1column .block.widget .products-grid .product-item {
     margin-left: 6%;
   }
