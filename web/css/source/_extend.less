@@ -2,7 +2,7 @@
  * CSS in LESS ^_^v
  */
 
- @font-face {
+@font-face {
   font-family: "PingFangSC";
   src: url("../fonts/PingFangSC-Semibold.woff2");
   font-weight: 600;
@@ -18,9 +18,147 @@
   font-display: swap;
 }
 
+/******************** Style for forgot password *********************/
+body.customer-account-createpassword div.page-title-wrapper {
+  display: none;
+}
+
+.title-change-pass .jpn {
+  font-family: PingFangSC !important;
+  font-size: 30px ;
+  font-weight: 600 !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 2.33 !important;
+  letter-spacing: normal !important;
+  text-align: center !important;
+  color: #004376 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  height: 40px !important;
+}
+
+.title-change-pass .eng {
+  font-family: Montserrat !important;
+  font-size: 25px ;
+  font-weight: normal !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 2.8 !important;
+  letter-spacing: normal !important;
+  text-align: center !important;
+  color: #505050 !important;
+  margin-top: 0 !important;
+}
+
+.btn-change-password {
+  width: 100% !important;
+  height: 35px !important;
+  background: #004376 !important;
+  border: 1px solid #004376 !important;
+}
+
+/* Global style */
+body.customer-account-forgotpassword div.page-title-wrapper {
+  display: none;
+}
+
+.main-forgot-pss{
+  margin-bottom: 50px !important;
+}
+
+.btn-frgt
+{
+  float: right !important;
+}
+
+.title-frgt-pass .jpn {
+  font-family: PingFangSC !important;
+  font-size: 30px ;
+  font-weight: 600 !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 2.33 !important;
+  letter-spacing: normal !important;
+  text-align: center !important;
+  color: #004376 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  height: 40px !important;
+}
+
+.title-frgt-pass .eng {
+  font-family: Montserrat !important;
+  font-size: 25px ;
+  font-weight: normal !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 2.8 !important;
+  letter-spacing: normal !important;
+  text-align: center !important;
+  color: #505050 !important;
+  margin-top: 0 !important;
+  margin-bottom: 50px !important;
+}
+
+/* Extra small devices (phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+  .btn-frgt
+  {
+    width: 100%;
+  }
+
+  .title-frgt-pass .jpn {
+    font-size: 20px;
+  }
+  
+  .title-frgt-pass .eng {
+    font-size: 15px;
+  }
+
+  .title-change-pass .jpn {
+    font-size: 20px;
+  }
+  
+  .title-change-pass .eng {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .main-forgot-pss{
+    width: 50%;
+    transform: translate(50%, 1%);
+  }
+}
+
 /******************** Style for login & register *********************/
 
 /* Global style */
+
+.div-name-kana-frist {
+  width: 48%;
+  float: left;
+}
+
+.div-name-kana-last {
+  width: 48%;
+  float: right;
+}
+
+.input-text-name-jpn {
+  width: 100% !important;
+  padding: 12px 20px !important;
+  margin: 8px 0 !important;
+  box-sizing: border-box !important;
+  border: none !important;
+  border-bottom: 2px solid #87929d !important;
+}
+
+.regis-margin-buttom-kana {
+  margin-bottom: 20px !important;
+}
+
 .field-name-firstname,
 .field-name-lastname {
   position: relative;
@@ -96,7 +234,7 @@
   font-style: normal !important;
   line-height: normal !important;
   letter-spacing: normal !important;
-  color: #004376 !important;
+  color: #000000 !important;
 }
 
 .margin-title-register {
@@ -117,7 +255,7 @@
   line-height: 2.33 !important;
   letter-spacing: normal !important;
   text-align: center !important;
-  color: #004376 !important;
+  color: #000000 !important;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   height: 40px !important;
@@ -186,7 +324,7 @@
   line-height: normal !important;
   letter-spacing: normal !important;
   text-align: right !important;
-  color: #004376 !important;
+  color: #000000 !important;
 }
 
 .title-login .jpn {
@@ -198,7 +336,7 @@
   line-height: 2.33 !important;
   letter-spacing: normal !important;
   text-align: center !important;
-  color: #004376 !important;
+  color: #000000 !important;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   height: 40px !important;
@@ -220,6 +358,16 @@
 
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 767px) {
+  .div-name-kana-frist {
+    width: 100%;
+    float: left;
+  }
+
+  .div-name-kana-last {
+    width: 100%;
+    float: right;
+  }
+
   .chekboxTandCRegis {
     margin-bottom: 20px;
   }
@@ -247,8 +395,8 @@
   }
 
   .btn-register {
-    background: #004376 !important;
-    border: 1px solid #004376 !important;
+    background: #000000 !important;
+    border: 1px solid #000000 !important;
   }
 
   .btn-reg-div {
@@ -257,7 +405,7 @@
 
   .center {
     width: 100% !important;
-    margin: 0 !important;
+    margin: 0;
     position: relative !important;
     top: 100px !important;
     left: 50% !important;
@@ -267,13 +415,23 @@
   .btn-login {
     width: 100% !important;
     height: 35px !important;
-    background: #004376 !important;
-    border: 1px solid #004376 !important;
+    background: #000000 !important;
+    border: 1px solid #000000 !important;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .form.password.reset,
+  .form.send.confirmation,
+  .form.password.forget,
+  .form.create.account,
+  .form.search.advanced,
+  .form.form-orders-search,
+  .login-container,
+  #form-validate {
+    margin-top: 150px !important;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -310,24 +468,23 @@
   .btn-register {
     width: 115px !important;
     height: 35px !important;
-    background: #004376 !important;
-    border: 1px solid #004376 !important;
+    background: #000000 !important;
+    border: 1px solid #000000 !important;
   }
 
   .center {
     width: 60% !important;
-    margin: 0 !important;
     position: relative !important;
     top: 100px !important;
     left: 50% !important;
-    transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -30%) !important;
   }
 
   .btn-login {
     width: 115px !important;
     height: 35px !important;
-    background: #004376 !important;
-    border: 1px solid #004376 !important;
+    background: #000000 !important;
+    border: 1px solid #000000 !important;
   }
 }
 
@@ -418,7 +575,7 @@
   font-weight: 600;
   //line-height: 2.33;
   line-height: 1.33;
-  color: #004376;
+  color: #000000;
 }
 
 .title h2:nth-child(2),
@@ -568,7 +725,7 @@ button.more {
 @media only screen and (min-width: 768px) {
   .text-container {
     line-height: 0.5 !important;
-    position: fixed;
+    position: absolute;
     width: 56%;
     z-index: 2000;
     top: 79px;
@@ -653,9 +810,15 @@ button.more {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .sticky {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+  }
+
   .page-header {
     margin-bottom: 0;
-    position: fixed;
+    position: static;
     z-index: 1000;
     width: 100%;
     background: #fff;
@@ -708,9 +871,8 @@ button.more {
   }
 
   .nav-sections {
-    // display: none;
     margin-bottom: 0;
-    position: fixed;
+    position: static;
     z-index: 1000;
     width: 100%;
     top: 72px;

@@ -63,7 +63,7 @@
 
         <input type="hidden" name="success_url" value="<?= $block->escapeUrl($block->getSuccessUrl()) ?>">
         <input type="hidden" name="error_url" value="<?= $block->escapeUrl($block->getErrorUrl()) ?>">
-        <?= $block->getLayout()->createBlock(\Magento\Customer\Block\Widget\Name::class)->setObject($block->getFormData())->setForceUseCustomerAttributes(true)->toHtml() ?>
+        <?= $block->getLayout()->createBlock(\Moonlay\CustomRegister\Block\Widget\Name::class)->setObject($block->getFormData())->setForceUseCustomerAttributes(true)->toHtml() ?>
         
         <a class="fullname-register">Name (Kana)</a>
         <?= $block->getChildHtml('form_additional_info') ?>
@@ -80,7 +80,7 @@
 
         <a class="fullname-register">Gender</a>
 
-        <?php $_gender = $block->getLayout()->createBlock(\Magento\Customer\Block\Widget\Gender::class) ?>
+        <?php $_gender = $block->getLayout()->createBlock(\Moonlay\CustomRegister\Block\Widget\Gender::class) ?>
         <?php if ($_gender->isEnabled()) : ?>
         <?= $_gender->setGender($block->getFormData()->getGender())->toHtml() ?>
         <?php endif ?>       

@@ -1,0 +1,74 @@
+.breadcrumbs .items {
+    font-size: 15px !important;
+    font-weight: normal !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+    color: #505050;
+}
+
+.breadcrumbs a:visited {
+    color: #505050;
+    text-decoration: none;
+}
+
+.breadcrumbs a:active {
+    color: #505050;
+    text-decoration: none;
+}
+
+.breadcrumbs strong {
+    color: #000000 !important;
+    font-weight: 600 !important;
+}
+
+.breadcrumbs .item:not(:last-child):after {
+    font-size: 15px;
+    line-height: 23px;
+}
+
+h1.page-title {
+    color: #000000;
+    font-size: 35px  !important;
+    font-weight: 600  !important;
+    font-stretch: normal  !important;
+    font-style: normal  !important;
+    line-height: 2  !important;
+    letter-spacing: normal  !important;
+}
+
+.swatch-select {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
+    background: url(images/arrow-ud.png) no-repeat right white !important;
+    border: 2px double white;
+    display: inline-block;
+    position: relative;
+}
+
+.swatch-select select {
+    background: transparent;
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    appearance: none;
+    width: 100px;
+    font-size: 11px;
+    border: 0;
+    height: 17px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.product.media {
+    width: 56% !important;
+}
+
+.product-info-main {
+    border-radius: 5px;
+    border: solid 0.5px #979797;
+    padding: 20px;
+}
