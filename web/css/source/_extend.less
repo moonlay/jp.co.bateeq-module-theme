@@ -1,0 +1,1040 @@
+/*
+ * CSS in LESS ^_^v
+ */
+
+@font-face {
+  font-family: "PingFangSC";
+  src: url("../fonts/PingFangSC-Semibold.woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/******************** Style for forgot password *********************/
+body.customer-account-createpassword div.page-title-wrapper {
+  display: none;
+}
+
+.title-change-pass .jpn {
+  font-family: PingFangSC !important;
+  font-size: 30px;
+  font-weight: 600 !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 2.33 !important;
+  letter-spacing: normal !important;
+  text-align: center !important;
+  color: #004376 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  height: 40px !important;
+}
+
+.title-change-pass .eng {
+  font-family: Montserrat !important;
+  font-size: 25px;
+  font-weight: normal !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 2.8 !important;
+  letter-spacing: normal !important;
+  text-align: center !important;
+  color: #505050 !important;
+  margin-top: 0 !important;
+}
+
+.btn-change-password {
+  width: 200px !important;
+  height: 35px !important;
+  background: #004376 !important;
+  border: 1px solid #004376 !important;
+  float: none !important;
+}
+
+/* Global style */
+body.customer-account-forgotpassword div.page-title-wrapper {
+  display: none;
+}
+
+.main-forgot-pss {
+  margin-bottom: 50px !important;
+}
+
+.btn-frgt {
+  width: 100%;
+}
+
+.title-frgt-pass .jpn {
+  font-family: PingFangSC !important;
+  font-size: 30px;
+  font-weight: 600 !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 2.33 !important;
+  letter-spacing: normal !important;
+  text-align: center !important;
+  color: #004376 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  height: 40px !important;
+}
+
+.title-frgt-pass .eng {
+  font-family: Montserrat !important;
+  font-size: 25px;
+  font-weight: normal !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 2.8 !important;
+  letter-spacing: normal !important;
+  text-align: center !important;
+  color: #505050 !important;
+  margin-top: 0 !important;
+  margin-bottom: 50px !important;
+}
+
+/* Extra small devices (phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+  .btn-frgt {
+    width: 100%;
+  }
+
+  .title-frgt-pass .jpn {
+    font-size: 20px;
+  }
+
+  .title-frgt-pass .eng {
+    font-size: 15px;
+  }
+
+  .title-change-pass .jpn {
+    font-size: 20px;
+  }
+
+  .title-change-pass .eng {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .main-forgot-pss {
+    width: 50%;
+    transform: translate(50%, 1%);
+  }
+}
+
+/******************** Style for login & register *********************/
+
+/* Global style */
+
+.btn-reg-div {
+  width: 100%;
+}
+
+.div-name-kana-frist
+{
+  width: 48%;
+  float: left;
+}
+
+.div-name-kana-last {
+  width: 48%;
+  float: right;
+}
+
+.input-text-name-jpn {
+  width: 100% !important;
+  padding: 12px 20px !important;
+  margin: 8px 0 !important;
+  box-sizing: border-box !important;
+  border: none !important;
+  border-bottom: 2px solid #87929d !important;
+}
+
+.regis-margin-buttom-kana {
+  margin-bottom: 20px !important;
+}
+
+.field-name-firstname,
+.field-name-lastname {
+  position: relative;
+}
+
+#firstname-error {
+  position: absolute;
+  width: 48%;
+  top: 35px;
+}
+
+.You-can-use-a-phone {
+  width: 349px;
+  height: 19px;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #505050;
+}
+
+.delete-margin-butto-register {
+  margin: 0 0 0px !important;
+}
+
+.dropdown-register {
+  width: 100% !important;
+  padding: 12px 20px !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  border: none !important;
+  border-bottom: 2px solid #87929d !important;
+  height: auto !important;
+}
+
+.custom-dropdown {
+  position: relative !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  margin: 0px !important;
+}
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: red;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer */
+  color: red;
+}
+
+::placeholder {
+  color: red;
+}
+
+.delete-margin {
+  margin: 0 !important;
+}
+
+.fullname-register {
+  margin-top: 0px !important;
+  width: 122px !important;
+  height: 30px !important;
+  font-family: "Montserrat" !important;
+  font-size: 25px !important;
+  font-weight: 600 !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: normal !important;
+  letter-spacing: normal !important;
+  color: #000000 !important;
+}
+
+.margin-title-register {
+  margin: 0 0 20px !important;
+}
+
+.customer-account-create .page-main > .page-title-wrapper {
+  visibility: hidden !important;
+  display: none !important;
+}
+
+.title-register .jpn-reg {
+  font-family: PingFangSC !important;
+  font-size: 30px !important;
+  font-weight: 600 !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 2.33 !important;
+  letter-spacing: normal !important;
+  text-align: center !important;
+  color: #000000 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  height: 40px !important;
+}
+
+.title-register .eng-reg {
+  font-family: Montserrat !important;
+  font-size: 25px !important;
+  font-weight: normal !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 2.8 !important;
+  letter-spacing: normal !important;
+  text-align: center !important;
+  color: #505050 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0px !important;
+}
+
+.customer-account-login .page-main > .page-title-wrapper .page-title {
+  visibility: hidden !important;
+}
+
+.login-container {
+  position: relative;
+}
+
+.login-container .fieldset > .field > .control {
+  width: 100%;
+}
+
+.input-text-login {
+  width: 100% !important;
+  padding: 12px 20px !important;
+  margin: 8px 0 !important;
+  box-sizing: border-box !important;
+  border: none !important;
+  border-bottom: 2px solid #87929d !important;
+}
+
+.margin-frgt-andbtn-login {
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.disble-display {
+  display: none !important;
+}
+
+.actions-toolbar-login {
+  position: relative;
+}
+
+.login-container .fieldset:after {
+  display: none;
+}
+
+.Forgot-Password {
+  width: 143px !important;
+  height: 19px !important;
+  font-family: Montserrat !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: normal !important;
+  letter-spacing: normal !important;
+  text-align: right !important;
+  color: #000000 !important;
+}
+
+.title-login .jpn {
+  font-family: PingFangSC !important;
+  font-size: 30px !important;
+  font-weight: 600 !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 2.33 !important;
+  letter-spacing: normal !important;
+  text-align: center !important;
+  color: #000000 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  height: 40px !important;
+}
+
+.title-login .eng {
+  font-family: Montserrat !important;
+  font-size: 25px !important;
+  font-weight: normal !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 2.8 !important;
+  letter-spacing: normal !important;
+  text-align: center !important;
+  color: #505050 !important;
+  margin-top: 0 !important;
+  margin-bottom: 50px !important;
+}
+
+/* Extra small devices (phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+  .div-name-kana-frist {
+    width: 100%;
+    float: left;
+  }
+
+  .div-name-kana-last {
+    width: 100%;
+    float: right;
+  }
+
+  .chekboxTandCRegis {
+    margin-bottom: 20px;
+  }
+
+  .input-text-name {
+    width: 100% !important;
+    padding: 12px 20px !important;
+    margin: 8px 0 !important;
+    box-sizing: border-box !important;
+    border: none !important;
+    border-bottom: 2px solid #87929d !important;
+  }
+
+  .register-center {
+    width: 94% !important;
+    padding: 0 10px;
+  }
+
+  #lastname-error {
+    position: unset;
+  }
+
+  .margin-buttom-name-register {
+    margin-bottom: 20px;
+  }
+
+  .btn-register {
+    background: #000000 !important;
+    border: 1px solid #000000 !important;
+  }
+
+  .center {
+    width: 100% !important;
+    margin: 0;
+    position: relative !important;
+    top: 100px !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  .btn-login {
+    width: 100% !important;
+    height: 35px !important;
+    background: #000000 !important;
+    border: 1px solid #000000 !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .form.password.reset,
+  .form.send.confirmation,
+  .form.password.forget,
+  .form.create.account,
+  .form.search.advanced,
+  .form.form-orders-search,
+  .login-container,
+  #form-validate {
+    margin-top: 150px !important;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .chekboxTandCRegis {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .input-text-name {
+    width: 48% !important;
+    padding: 12px 20px !important;
+    margin: 8px 0 !important;
+    box-sizing: border-box !important;
+    border: none !important;
+    border-bottom: 2px solid #87929d !important;
+  }
+
+  .register-center {
+    width: 60% !important;
+    transform: translate(37%, 1%);
+  }
+
+  #lastname-error {
+    position: absolute;
+    top: 35px;
+    left: 387px;
+  }
+
+  .margin-buttom-name-register {
+    margin-bottom: 60px;
+  }
+
+  .btn-register {
+    width: 115px !important;
+    height: 35px !important;
+    background: #000000 !important;
+    border: 1px solid #000000 !important;
+    float: none !important;
+  }
+
+  .center {
+    width: 60% !important;
+    position: relative !important;
+    top: 100px !important;
+    left: 50% !important;
+    transform: translate(-50%, -30%) !important;
+  }
+
+  .btn-login {
+    width: 115px !important;
+    height: 35px !important;
+    background: #000000 !important;
+    border: 1px solid #000000 !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+/******************** Style for Moonlay/CustomHome Module *********************/
+
+/* Global style */
+
+.text-container {
+  line-height: 0.5 !important;
+  position: absolute;
+  z-index: 2 !important;
+  right: 0;
+}
+
+.running-text {
+  font-family: "PingFangSC";
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #505050;
+  background-color: #f0f0f0;
+  padding: 5px 0;
+}
+
+#banner-slider-carousel {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.owl-theme .owl-nav {
+  margin-top: 0;
+}
+
+.owl-carousel .owl-item img {
+  height: 625px;
+  object-fit: cover;
+}
+
+#mageplaza-bannerslider-block-before-content-1 {
+  display: none;
+}
+
+.container-collection {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: 65px auto;
+  grid-column-gap: 35px;
+  grid-row-gap: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.container-about {
+  margin-bottom: 50px;
+}
+
+.colspan-2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.mb-5 {
+  margin-bottom: 50px !important;
+}
+
+.title,
+.block-products-list .block-title {
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.title h2,
+.block-products-list .block-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.title h2:nth-child(1) {
+  font-family: "PingFangSC";
+  font-size: 30px;
+  font-weight: 600;
+  //line-height: 2.33;
+  line-height: 1.33;
+  color: #000000;
+}
+
+.title h2:nth-child(2),
+.block-products-list .block-title {
+  font-family: "Montserrat";
+  font-size: 25px;
+  font-weight: normal;
+  //line-height: 2.8;
+  line-height: 1;
+  color: #505050;
+}
+
+.banner {
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+}
+
+.banner:hover {
+  background: unset;
+}
+
+.banner > img {
+  position: relative;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+.banner > .collection {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.collection {
+  cursor: pointer;
+  text-align: center;
+}
+
+.collection a,
+.about p,
+.about button {
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.about p {
+  font-family: "PingFangSC";
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.about button {
+  font-family: "PingFangSC";
+  font-size: 20px;
+  font-weight: normal;
+  line-height: normal;
+
+  background-color: Transparent;
+  border: solid 0.5px #ffffff;
+  width: 220px;
+  height: 40px;
+  border-radius: 0;
+  box-shadow: unset;
+  padding: 0 15px;
+  vertical-align: text-bottom;
+}
+
+.collection a:nth-child(1) {
+  font-family: "PingFangSC";
+  //font-size: 35px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.collection a:nth-child(3) {
+  font-family: "Montserrat";
+  //font-size: 25px;
+  font-size: 21px;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+.collection a:hover {
+  text-decoration: none;
+}
+
+.about {
+  min-height: 350px;
+  padding: 50px 50px;
+  background-image: url("http://127.0.0.1/pub/static/version1574307734/frontend/Moonlay/bateeq/en_US/Moonlay_CustomHome/images/banner.jpg"),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.about-logo {
+  margin-right: 100px;
+}
+
+.about-text {
+  max-width: 900px;
+  font-family: "PingFangSC";
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+button.more {
+  display: none;
+}
+
+.video iframe {
+  width: 100%;
+}
+
+/* Extra small devices (phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+  .banner {
+    height: 100%;
+    min-height: 190px;
+  }
+
+  .video iframe {
+    height: 350px;
+  }
+}
+
+/* iPad portrait and landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .text-container {
+    top: 96px !important;
+  }
+}
+
+/* iPad portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .text-container {
+    width: 80% !important;
+  }
+}
+
+/* iPad Pro portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .text-container {
+    width: 80% !important;
+  }
+}
+
+/* iPad Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .text-container {
+    width: 48% !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .text-container {
+    width: 56%;
+    top: 79px;
+  }
+
+  .running-text {
+    background-color: transparent;
+  }
+
+  .banner {
+    min-height: 100%;
+    height: 518px;
+  }
+
+  .about {
+    display: flex;
+    align-items: center;
+  }
+
+  .video iframe {
+    height: 500px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .text-container {
+    width: 73%;
+  }
+
+  .about {
+    padding: 50px 150px;
+  }
+}
+
+/******************** Style for Moonlay/bateeq Theme *********************/
+
+/* Global style */
+.action.primary,
+.action.primary:hover {
+  background: #ff7d09;
+  border: 1px solid #ff7d09;
+  border-radius: 5px !important;
+}
+
+.page-header {
+  margin-bottom: 0;
+}
+
+.page-header .panel.wrapper {
+  background-color: transparent;
+}
+
+.block.newsletter .action.subscribe {
+  border-radius: 0 5px 5px 0 !important;
+  background-color: #ffffff !important;
+  border: 1px solid #ffffff !important;
+  color: #000000 !important;
+}
+
+.block.newsletter input {
+  border-radius: 5px 0 0 5px;
+  background: #000000;
+}
+
+.block-search input {
+  border: none;
+  border-bottom: 1px solid #c2c2c2;
+  padding: 0 0;
+}
+
+.block-search input:focus {
+  box-shadow: none !important;
+}
+
+.block-search .label:before {
+  margin: 12px 10px 0 0;
+}
+
+.header.panel > .header.links,
+.header.panel > .header.links > li > a,
+.header.panel > .header.links > li > a:visited {
+  color: #505050;
+}
+
+.header.panel > .header.links > li > a:hover {
+  color: #313131;
+}
+
+.page-footer,
+.footer.content {
+  background-color: #000000;
+}
+
+/* Extra small devices (phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+  .logo {
+    margin-top: 12px;
+  }
+
+  .minicart-wrapper {
+    margin-top: 12px;
+  }
+
+  .footer.content .links > li {
+    background: #000000 !important;
+  }
+
+  .footer.content .links strong,
+  .footer.content .links a,
+  .footer.content .links a:visited {
+    color: #ffffff !important;
+  }
+
+  .copyright {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .navigation .level0.parent:hover > .submenu,
+  .navigation .level0 .submenu .submenu {
+    border-radius: 5px;
+    box-shadow: 0 2px 7px 0 rgba(193, 193, 193, 0.5);
+  }
+
+  .products-grid .product-item-info:hover,
+  .products-grid .product-item-info.active {
+    box-shadow: none !important;
+    border: solid 5px #c1a358 !important;
+  }
+
+  .block.widget .products-grid .product-item .product-item-inner,
+  .page-layout-1column
+    .block.widget
+    .products-grid
+    .product-item
+    .product-item-inner,
+  .page-layout-3columns
+    .block.widget
+    .products-grid
+    .product-item
+    .product-item-inner {
+    box-shadow: none !important;
+    margin: 9px -4px 0 -5px !important;
+  }
+
+  .products-grid .product-item-inner {
+    border: solid 5px #c1a358;
+    border-top: none !important;
+  }
+
+  .wishlist-index-index .product-item-inner {
+    margin: 9px -4px 0 -5px;
+  }
+
+  .sticky {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+  }
+
+  .page-header {
+    margin-bottom: 0;
+    position: static;
+    width: 100%;
+    background: #fff;
+  }
+
+  .page-header .header.panel {
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .header.panel > .header.links {
+    width: 30%;
+  }
+
+  .minicart-wrapper {
+    width: 7%;
+  }
+
+  .logo {
+    width: 15%;
+    margin: 0px auto 0 0;
+  }
+
+  .block-search {
+    width: 40%;
+  }
+
+  .minicart-wrapper {
+    margin-top: 2px;
+  }
+
+  .header.panel > .header.links {
+    margin-top: 7px;
+  }
+
+  .page-layout-1column
+    .block.widget
+    .products-grid
+    .product-item:nth-child(3n + 1),
+  .page-layout-1column
+    .block.widget
+    .products-grid
+    .product-item:nth-child(4n + 1),
+  .page-layout-1column
+    .block.widget
+    .products-grid
+    .product-item:nth-child(5n + 1) {
+    margin-left: 6%;
+  }
+
+  .nav-sections {
+    margin-bottom: 0;
+    position: static;
+    width: 100%;
+    top: 72px;
+    z-index: 1 !important;
+  }
+
+  .customer-welcome .action.switch {
+    color: #505050;
+  }
+
+  .customer-welcome .header.links {
+    min-width: 200px;
+  }
+
+  .footer.content .links a:hover {
+    text-decoration: none;
+    color: #ff7d09 !important;
+  }
+
+  .footer.content .links a,
+  .footer.content .links a:visited {
+    color: #ffffff;
+  }
+
+  .copyright {
+    background-color: #ffffff;
+  }
+
+  .copyright span {
+    color: #505050;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .page-layout-1column .block.widget .products-grid .product-item {
+    margin-left: 6%;
+  }
+
+  .header.panel > .header.links {
+    width: 20%;
+  }
+
+  .minicart-wrapper {
+    width: 5%;
+  }
+
+  .logo {
+    width: 10%;
+    margin: 0px auto 0 0;
+  }
+
+  .block-search {
+    width: 50%;
+  }
+}
