@@ -1,101 +1,492 @@
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .chekboxTandCRegis{
-    margin-bottom: 20px;
+/*
+ * CSS in LESS ^_^v
+ */
+
+@font-face {
+  font-family: "PingFangSC";
+  src: url("../fonts/PingFangSC-Semibold.woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body.customer-address-form div.page-title-wrapper {
+  display: none;
+}
+
+body.customer-address-form div.sidebar-additional {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+
+/******************** Style for Address Info *********************/
+
+
+.changes-defauld-link{
+  color: #000000 !important;
+  font-weight: 600;
+}
+
+.body-table-border{
+  border-bottom: 0.5px solid;
+}
+
+.title-table-border{
+  border-bottom: 0.5px solid;
+  border-top: 0.5px solid
+}
+
+.title-adress-margin{
+  margin-bottom: 20px;
+}
+
+.widt-table-name{
+  width: 24%;
+}
+
+.widt-table{
+  width: 11.25%;
+}
+
+.ellipsis{
+  white-space: nowrap; 
+  width: 100px ;
+  overflow: hidden ;
+  text-overflow: ellipsis ;
+}
+
+.title4-addres-info-table{
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.title3-addres-info-table{
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.title2-addres-info-table{
+  font-family: "Montserrat";
+  font-size: 22px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.title4-addres-info{
+  width: 100%;
+  float: left;
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.title3-addres-info{
+  width: 100%;
+  float: left;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.title2-addres-info{
+  width: 100%;
+  float: left;
+  font-family: "Montserrat";
+  font-size: 22px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+body.customer-address-index div.page-title-wrapper {
+  display: none;
+}
+
+body.customer-address-index div.sidebar-additional {
+  display: none;
+}
+
+/******************** Style for Account Info *********************/
+body.customer-account-index div.page-title-wrapper {
+  display: none;
+}
+
+body.customer-account-index div.block-dashboard-addresses {
+  display: none;
+}
+
+body.customer-account-index div.sidebar-additional {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .title-account-info{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .div-action{
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    padding: 0px 20px 40px 20px;
   }
   
-  .input-text-name
-  {
-    width: 100% !important;
-    padding: 12px 20px !important;
-    margin: 8px 0 !important;
-    box-sizing: border-box !important;
-    border: none !important;
-    border-bottom: 2px solid #87929d !important;
+  .div-grid-table{
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding: 20px 20px 40px 20px;
+    margin-bottom: unset !important;
+  }
+  
+  .div-book{
+    border-left: 1px solid;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    padding: 20px 20px 40px 20px;
+    margin-bottom: unset !important;
   }
 
-  .register-center {
-    width: 94% !important;
-    padding: 0 10px;
-  }  
-
-  #lastname-error {
-    position: unset;
+  .div-info-account{
+    border: 1px solid #979797;
+    padding: 20px;
   }
 
-  .margin-buttom-name-register
+  .title-account-info{
+    width: 20%;
+    float: left;
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 3;
+    letter-spacing: normal;
+    color: #000000;
+    margin-bottom: 0px;
+  }
+
+  .value-account-info{
+    width: 80%;
+    float: right;
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 3;
+    letter-spacing: normal;
+    color: #505050;
+  }
+}
+
+/******************** Style for forgot password & Account Edit *********************/
+.delete-margin-buttom-edt-cgnages{
+  margin-bottom: 0px !important;
+}
+
+body.customer-account-edit div.password-info {
+  display: none;
+}
+
+.checkbox-edt-account-label{
+  font-weight: bold !important;
+  color: #000000;
+}
+
+body.customer-account-edit div.sidebar-additional {
+  display: none;
+}
+
+.title-edit-account {
+  font-family: Montserrat !important;
+  font-size: 25px ;
+  font-weight: bold !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 2.8 !important;
+  letter-spacing: normal !important;
+  text-align: left !important;
+  color: #000000 !important;
+  margin-top: 0 !important;
+}
+
+.dic-btn-edit-account{
+  width: 100% !important;
+}
+
+.btn-edit-account {
+  background: #000000 !important;
+}
+
+.delete-margin-edit-account {
+  margin-top: 0 !important;
+}
+
+body.customer-account-edit div.page-title-wrapper {
+  display: none;
+}
+
+.fullname-edit-account {
+  margin-top: 0px !important;
+  width: 122px !important;
+  height: 30px !important;
+  font-family: "Montserrat" !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: normal !important;
+  letter-spacing: normal !important;
+  color: #000000 !important;
+}
+
+.title-chages-passandemail{
+  margin-top: 0px !important;
+  font-family: "Montserrat" !important;
+  font-size: 19px;
+  font-weight: 600 !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: normal !important;
+  letter-spacing: normal !important;
+  color: #000000 !important;
+}
+
+@media only screen and (min-width: 992px) {
+  .add-border-full-name-ect-account{
+    border: 20px solid #ffffff;
+    width: 55% !important;
+  }
+
+  .chekbox-edit-account{
+    width: 50%;
+    float: left;
+  }
+
+  .btn-edit-account {
+    background: #000000 !important;
+    width: 10% !important;
+    margin-left: 45% !important;
+    margin-right: 45% !important;
+  }
+
+  .margin-changes-pssamdemail
   {
+    margin-top: 40px;
+  }
+
+  .title-chages-passandemail{
+    font-size: 20px;
+  }
+
+  .back-edit-passsandemail
+  {
+    display: block;
+    background: #ffffff;
+    border: 20px solid #ffffff;
+  }
+
+  .width-changes-email-and-pass{
+    width: 35% !important;
+  }
+
+  .delete-margin-edit-account {
+    border: 1px solid #979797;
+  }
+
+  .dic-btn-edit-account{
     margin-bottom: 20px;
   }
+}
 
-  .btn-register {
-    background: #004376 !important;
-    border: 1px solid #004376 !important;
-  }
+/******************** Style for forgot password *********************/
+body.customer-account-createpassword div.page-title-wrapper {
+  display: none;
+}
 
-  .btn-reg-div
-  {
+.title-change-pass .jpn {
+  font-family: PingFangSC !important;
+  font-size: 30px;
+  font-weight: 600 !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 2.33 !important;
+  letter-spacing: normal !important;
+  text-align: center !important;
+  color: #000000 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  height: 40px !important;
+}
+
+.title-change-pass .eng {
+  font-family: Montserrat !important;
+  font-size: 25px;
+  font-weight: normal !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 2.8 !important;
+  letter-spacing: normal !important;
+  text-align: center !important;
+  color: #000000 !important;
+  margin-top: 0 !important;
+}
+
+.btn-change-password {
+  width: 200px !important;
+  height: 35px !important;
+  background: #000000 !important;
+  border: 1px solid #000000 !important;
+  float: none !important;
+}
+
+/* Global style */
+body.customer-account-forgotpassword div.page-title-wrapper {
+  display: none;
+}
+
+.main-forgot-pss {
+  margin-bottom: 50px !important;
+}
+
+.btn-frgt {
+  width: 100%;
+}
+
+.title-frgt-pass .jpn {
+  font-family: PingFangSC !important;
+  font-size: 30px;
+  font-weight: 600 !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 2.33 !important;
+  letter-spacing: normal !important;
+  text-align: center !important;
+  color: #004376 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  height: 40px !important;
+}
+
+.title-frgt-pass .eng {
+  font-family: Montserrat !important;
+  font-size: 25px;
+  font-weight: normal !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 2.8 !important;
+  letter-spacing: normal !important;
+  text-align: center !important;
+  color: #505050 !important;
+  margin-top: 0 !important;
+  margin-bottom: 50px !important;
+}
+
+/* Extra small devices (phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+  .btn-frgt {
     width: 100%;
   }
+
+  .title-frgt-pass .jpn {
+    font-size: 20px;
+  }
+
+  .title-frgt-pass .eng {
+    font-size: 15px;
+  }
+
+  .title-change-pass .jpn {
+    font-size: 20px;
+  }
+
+  .title-change-pass .eng {
+    font-size: 15px;
+  }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .chekboxTandCRegis{
-    text-align: right;
-    margin-bottom: 20px;
-  }
-  
-  .input-text-name
-  {
-    width: 48% !important;
-    padding: 12px 20px !important;
-    margin: 8px 0 !important;
-    box-sizing: border-box !important;
-    border: none !important;
-    border-bottom: 2px solid #87929d !important;
-  }
-
-  .register-center {
-    width: 60% !important;
-    transform: translate(37%, 1%);
-  }
-
-  #lastname-error {
-    position: absolute;
-    top: 35px;
-    left: 387px;
-  }
-
-  .margin-buttom-name-register
-  {
-    margin-bottom: 60px;
-  }
-
-  .btn-register {
-    width: 115px !important;
-    height: 35px !important;
-    background: #004376 !important;
-    border: 1px solid #004376 !important;
+  .main-forgot-pss {
+    width: 50%;
+    transform: translate(50%, 1%);
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/******************** Style for login & register *********************/
 
+/* Global style */
+
+.btn-reg-div {
+  width: 100%;
 }
 
-.field-name-firstname, .field-name-lastname {
+.div-name-kana-frist {
+  width: 48%;
+  float: left;
+}
+
+.div-name-kana-last {
+  width: 48%;
+  float: right;
+}
+
+.input-text-name-jpn {
+  width: 100% !important;
+  padding: 12px 20px !important;
+  margin: 8px 0 !important;
+  box-sizing: border-box !important;
+  border: none !important;
+  border-bottom: 2px solid #87929d !important;
+}
+
+.regis-margin-buttom-kana {
+  margin-bottom: 20px !important;
+}
+
+.field-name-firstname,
+.field-name-lastname {
   position: relative;
 }
 
@@ -119,13 +510,11 @@
   color: #505050;
 }
 
-.delete-margin-butto-register
-{
+.delete-margin-butto-register {
   margin: 0 0 0px !important;
 }
 
-.dropdown-register
-{
+.dropdown-register {
   width: 100% !important;
   padding: 12px 20px !important;
   margin: 0 !important;
@@ -135,19 +524,20 @@
   height: auto !important;
 }
 
-.custom-dropdown 
-{
+.custom-dropdown {
   position: relative !important;
   display: inline-block !important;
   vertical-align: middle !important;
   margin: 0px !important;
 }
 
-::-webkit-input-placeholder { /* Edge */
+::-webkit-input-placeholder {
+  /* Edge */
   color: red;
 }
 
-:-ms-input-placeholder { /* Internet Explorer */
+:-ms-input-placeholder {
+  /* Internet Explorer */
   color: red;
 }
 
@@ -155,13 +545,11 @@
   color: red;
 }
 
-.delete-margin
-{
+.delete-margin {
   margin: 0 !important;
 }
 
-.fullname-register
-{
+.fullname-register {
   margin-top: 0px !important;
   width: 122px !important;
   height: 30px !important;
@@ -172,13 +560,12 @@
   font-style: normal !important;
   line-height: normal !important;
   letter-spacing: normal !important;
-  color: #004376 !important;
+  color: #000000 !important;
 }
 
 .margin-title-register {
   margin: 0 0 20px !important;
 }
-
 
 .customer-account-create .page-main > .page-title-wrapper {
   visibility: hidden !important;
@@ -194,7 +581,7 @@
   line-height: 2.33 !important;
   letter-spacing: normal !important;
   text-align: center !important;
-  color: #004376 !important;
+  color: #000000 !important;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   height: 40px !important;
@@ -214,49 +601,13 @@
   margin-bottom: 0px !important;
 }
 
-// start login
-@media only screen and (max-width: 600px) {
-  .center {
-    width: 100% !important;
-    margin: 0 !important;
-    position: relative !important;
-    top: 100px !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-  }
-
-  .btn-login {
-    width: 100% !important;
-    height: 35px !important;
-    background: #004376 !important;
-    border: 1px solid #004376 !important;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .center {
-    width: 60% !important;
-    margin: 0 !important;
-    position: relative !important;
-    top: 100px !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-  }
-
-  .btn-login {
-    width: 115px !important;
-    height: 35px !important;
-    background: #004376 !important;
-    border: 1px solid #004376 !important;
-  }
-}
-
 .customer-account-login .page-main > .page-title-wrapper .page-title {
   visibility: hidden !important;
 }
 
 .login-container {
   position: relative;
+  margin-top: 100px;
 }
 
 .login-container .fieldset > .field > .control {
@@ -300,7 +651,7 @@
   line-height: normal !important;
   letter-spacing: normal !important;
   text-align: right !important;
-  color: #004376 !important;
+  color: #000000 !important;
 }
 
 .title-login .jpn {
@@ -312,7 +663,7 @@
   line-height: 2.33 !important;
   letter-spacing: normal !important;
   text-align: center !important;
-  color: #004376 !important;
+  color: #000000 !important;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   height: 40px !important;
@@ -332,31 +683,153 @@
   margin-bottom: 50px !important;
 }
 
-//end login
+/* Extra small devices (phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+  .div-name-kana-frist {
+    width: 100%;
+    float: left;
+  }
 
-/*
- * CSS in Less :)
- */
+  .div-name-kana-last {
+    width: 100%;
+    float: right;
+  }
 
-// Module Moonlay/CustomHome
-@font-face {
-  font-family: "PingFangSC";
-  src: url("../fonts/PingFangSC-Semibold.woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
+  .chekboxTandCRegis {
+    margin-bottom: 20px;
+  }
+
+  .input-text-name {
+    width: 100% !important;
+    padding: 12px 20px !important;
+    margin: 8px 0 !important;
+    box-sizing: border-box !important;
+    border: none !important;
+    border-bottom: 2px solid #87929d !important;
+  }
+
+  .register-center {
+    width: 94% !important;
+    padding: 0 10px;
+  }
+
+  #lastname-error {
+    position: unset;
+  }
+
+  .margin-buttom-name-register {
+    margin-bottom: 20px;
+  }
+
+  .btn-register {
+    background: #000000 !important;
+    border: 1px solid #000000 !important;
+  }
+
+  .center {
+    width: 100% !important;
+    margin: 0;
+    position: relative !important;
+    top: 100px !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  .btn-login {
+    width: 100% !important;
+    height: 35px !important;
+    background: #000000 !important;
+    border: 1px solid #000000 !important;
+  }
 }
 
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.otf");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .form.password.reset,
+  .form.send.confirmation,
+  .form.password.forget,
+  .form.create.account,
+  .form.search.advanced,
+  .form.form-orders-search,
+  .login-container,
+  #form-validate {
+    margin-top: 50px !important;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .chekboxTandCRegis {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .input-text-name {
+    width: 48% !important;
+    padding: 12px 20px !important;
+    margin: 8px 0 !important;
+    box-sizing: border-box !important;
+    border: none !important;
+    border-bottom: 2px solid #87929d !important;
+  }
+
+  .register-center {
+    width: 60% !important;
+    transform: translate(37%, 1%);
+  }
+
+  #lastname-error {
+    position: absolute;
+    top: 35px;
+    left: 387px;
+  }
+
+  .margin-buttom-name-register {
+    margin-bottom: 60px;
+  }
+
+  .btn-register {
+    width: 115px !important;
+    height: 35px !important;
+    background: #000000 !important;
+    border: 1px solid #000000 !important;
+    float: none !important;
+  }
+
+  .center {
+    width: 60% !important;
+    position: relative !important;
+    top: 100px !important;
+    left: 50% !important;
+    transform: translate(-50%, -30%) !important;
+  }
+
+  .btn-login {
+    width: 115px !important;
+    height: 35px !important;
+    background: #000000 !important;
+    border: 1px solid #000000 !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+/******************** Style for Moonlay/CustomHome Module *********************/
+
+/* Global style */
+
+.top-container {
+  position: relative;
 }
 
 .text-container {
-  line-height: 0.5 !important;
+  position: absolute;
+  z-index: 3 !important;
+  right: 0;
+  top: -2px;
+  height: 47px;
 }
 
 .running-text {
@@ -365,16 +838,16 @@
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 47px;
   letter-spacing: normal;
   color: #505050;
-  background-color: #c1c1c1;
-  padding: 5px 0;
+  background-color: #f0f0f0;
+  padding: 0;
 }
 
 #banner-slider-carousel {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .owl-theme .owl-nav {
@@ -382,7 +855,7 @@
 }
 
 .owl-carousel .owl-item img {
-  height: 500px;
+  height: 625px;
   object-fit: cover;
 }
 
@@ -409,7 +882,12 @@
   grid-column-end: 3;
 }
 
-.title {
+.mb-5 {
+  margin-bottom: 50px !important;
+}
+
+.title,
+.block-products-list .block-title {
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
@@ -417,7 +895,8 @@
   margin-bottom: 0;
 }
 
-.title h2 {
+.title h2,
+.block-products-list .block-title {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -428,10 +907,11 @@
   font-weight: 600;
   //line-height: 2.33;
   line-height: 1.33;
-  color: #004376;
+  color: #000000;
 }
 
-.title h2:nth-child(2) {
+.title h2:nth-child(2),
+.block-products-list .block-title {
   font-family: "Montserrat";
   font-size: 25px;
   font-weight: normal;
@@ -451,20 +931,6 @@
 
 .banner:hover {
   background: unset;
-}
-
-@media (max-width: 767px) {
-  .banner {
-    height: 100%;
-    min-height: 190px;
-  }
-}
-
-@media (min-width: 768px) {
-  .banner {
-    min-height: 100%;
-    height: 518px;
-  }
 }
 
 .banner > img {
@@ -551,19 +1017,6 @@
   margin-bottom: 50px;
 }
 
-@media (min-width: 768px) {
-  .about {
-    display: flex;
-    align-items: center;
-  }
-}
-
-@media (min-width: 1200px) {
-  .about {
-    padding: 50px 150px;
-  }
-}
-
 .about-logo {
   margin-right: 100px;
 }
@@ -588,25 +1041,168 @@ button.more {
   width: 100%;
 }
 
-@media (max-width: 767px) {
+.footer-socmed-container {
+  margin: 20px 0 !important;
+}
+
+.footer-socmed-container span {
+  margin-right: 5px !important;
+}
+
+.footer-socmed-container span a {
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.footer-lang-container {
+  margin-bottom: 20px !important;
+}
+
+.footer-lang-container button {
+  width: 95px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 0.5px #ffffff;
+  box-shadow: none !important;
+  margin-right: 10px !important;
+}
+
+button.jp {
+  background: transparent;
+  color: #fff;
+}
+
+button.en {
+  font-weight: 600;
+}
+
+.footer-logo-container {
+  text-align: center !important;
+}
+
+.block.newsletter {
+  margin-top: 20px !important;
+}
+
+/* Extra small devices (phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+  .text-container {
+    width: 100% !important;
+  }
+
+  .banner {
+    height: 100%;
+    min-height: 190px;
+  }
+
   .video iframe {
     height: 350px;
   }
 }
 
-@media (min-width: 768px) {
+/* iPad portrait and landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* iPad portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* iPad Pro portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* iPad Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .text-container {
+    width: 73%;
+  }
+
+  .running-text {
+    background-color: transparent;
+  }
+
+  .banner {
+    min-height: 100%;
+    height: 518px;
+  }
+
+  .about {
+    display: flex;
+    align-items: center;
+  }
+
   .video iframe {
     height: 500px;
   }
+
+  .footer-logo-container {
+    float: right;
+    width: 350px;
+  }
+
+  .block.newsletter {
+    clear: both;
+    width: 350px;
+  }
 }
 
-// Theme Moonlay/bateeq
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .text-container {
+    width: 80%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .text-container {
+    width: 82%;
+  }
+
+  .about {
+    padding: 50px 150px;
+  }
+}
+
+/******************** Style for Moonlay/bateeq Theme *********************/
+
+/* Global style */
+.action.primary,
+.action.primary:hover {
+  background: #ff7d09;
+  border: 1px solid #ff7d09;
+  border-radius: 5px !important;
+}
+
 .page-header {
   margin-bottom: 0;
 }
 
 .page-header .panel.wrapper {
   background-color: transparent;
+}
+
+.block.newsletter .action.subscribe {
+  border-radius: 0 5px 5px 0 !important;
+  background-color: #ffffff !important;
+  border: 1px solid #ffffff !important;
+  color: #000000 !important;
+}
+
+.block.newsletter input {
+  border-radius: 5px 0 0 5px;
+  background: #000000;
 }
 
 .block-search input {
@@ -633,6 +1229,61 @@ button.more {
   color: #313131;
 }
 
+.minicart-items .product-item-details .price-including-tax,
+.minicart-items .product-item-details .price-excluding-tax,
+.block-minicart .subtotal,
+.block-minicart .items-total,
+.block-minicart .subtitle.empty,
+.minicart-items .product-item-pricing .label,
+.minicart-items .product-item-name a {
+  color: #000000;
+}
+
+.minicart-wrapper .action.showcart {
+  float: right;
+}
+
+.amount price-container {
+  color: #d0021b !important;
+}
+
+.minicart-items .update-cart-item {
+  border-radius: 5px;
+  border: solid 0.5px #ff7d09;
+  background: transparent;
+  color: #ff7d09;
+}
+
+.minicart-items .product-item-name a:hover,
+.block-minicart .block-content > .actions > .secondary a:hover {
+  text-decoration: none !important;
+}
+
+.block-minicart .block-content > .actions > .secondary {
+  text-align: center;
+  /* width: 185px; */
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  border: solid 0.5px #ff7d09;
+}
+
+.block-minicart .block-content > .actions > .secondary a {
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #ff7d09 !important;
+}
+
+.page-footer,
+.footer.content {
+  background-color: #000000;
+}
+
+/* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 767px) {
   .logo {
     margin-top: 12px;
@@ -641,20 +1292,144 @@ button.more {
   .minicart-wrapper {
     margin-top: 12px;
   }
+
+  .block-collapsible-nav {
+    top: -1px !important;
+  }
+
+  .account .page-main,
+  .cms-privacy-policy .page-main {
+    padding-top: 60px !important;
+  }
+
+  .footer.content .links > li {
+    background: #000000 !important;
+  }
+
+  .footer.content .links strong,
+  .footer.content .links a,
+  .footer.content .links a:visited {
+    color: #ffffff !important;
+  }
+
+  .copyright {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
 }
 
+/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .navigation .level0.parent:hover > .submenu,
+  .navigation .level0 .submenu .submenu {
+    border-radius: 5px;
+    box-shadow: 0 2px 7px 0 rgba(193, 193, 193, 0.5);
+  }
+
+  .cart-summary {
+    margin-top: 51px;
+  }
+
+  .opc-block-summary {
+    margin-top: 18px;
+  }
+
+  .cart-summary,
+  .opc-block-summary {
+    border-radius: 5px;
+    border: solid 0.5px #979797;
+    background-color: #ffffff;
+  }
+
+  .cart-summary .checkout-methods-items .action.primary.checkout {
+    border-radius: 5px;
+    background-color: #000000;
+    border: none;
+  }
+
+  a.multicheckout {
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+  }
+
+  .cart.table-wrapper .cart > .item:last-child {
+    border-bottom: none !important;
+  }
+
+  .cart.table-wrapper {
+    border-radius: 5px;
+    border: solid 0.5px #979797;
+    padding: 25px;
+  }
+
+  .products-grid .product-item-info:hover,
+  .products-grid .product-item-info.active {
+    box-shadow: none !important;
+    border: solid 5px #c1a358 !important;
+  }
+
+  .block.widget .products-grid .product-item .product-item-inner,
+  .page-layout-1column
+    .block.widget
+    .products-grid
+    .product-item
+    .product-item-inner,
+  .page-layout-3columns
+    .block.widget
+    .products-grid
+    .product-item
+    .product-item-inner {
+    box-shadow: none !important;
+    margin: 9px -4px 0 -5px !important;
+  }
+
+  .products-grid .product-item-inner {
+    border: solid 5px #c1a358;
+    border-top: none !important;
+  }
+
+  .wishlist-index-index .product-item-inner {
+    margin: 9px -4px 0 -5px;
+  }
+
+  .sticky {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+  }
+
+  .page-header {
+    margin-bottom: 0;
+    background: #fff;
+  }
+
   .page-header .header.panel {
+    width: 100%;
     padding-bottom: 20px;
     padding-top: 20px;
   }
 
+  .header.panel > .header.links {
+    /* width: 30%; */
+  }
+
+  .minicart-wrapper {
+    width: 7%;
+  }
+
   .logo {
+    width: 15%;
     margin: 0px auto 0 0;
   }
 
   .block-search {
-    width: 30%;
+    width: 40%;
   }
 
   .minicart-wrapper {
@@ -668,13 +1443,21 @@ button.more {
   .page-layout-1column
     .block.widget
     .products-grid
-    .product-item:nth-child(3n + 1) {
+    .product-item:nth-child(3n + 1),
+  .page-layout-1column
+    .block.widget
+    .products-grid
+    .product-item:nth-child(4n + 1),
+  .page-layout-1column
+    .block.widget
+    .products-grid
+    .product-item:nth-child(5n + 1) {
     margin-left: 6%;
   }
 
   .nav-sections {
     margin-bottom: 0;
-    display: none;
+    z-index: 2 !important;
   }
 
   .customer-welcome .action.switch {
@@ -685,8 +1468,9 @@ button.more {
     min-width: 200px;
   }
 
-  .page-footer {
-    background-color: #505050;
+  .footer.content .links a:hover {
+    text-decoration: none;
+    color: #ff7d09 !important;
   }
 
   .footer.content .links a,
@@ -703,8 +1487,30 @@ button.more {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
   .page-layout-1column .block.widget .products-grid .product-item {
     margin-left: 6%;
+  }
+
+  .header.panel > .header.links {
+    /* width: 20%; */
+  }
+
+  .minicart-wrapper {
+    width: 5%;
+  }
+
+  .logo {
+    width: 10%;
+    margin: 0px auto 0 0;
+  }
+
+  .block-search {
+    width: 50%;
   }
 }
