@@ -70,5 +70,92 @@ h1.page-title {
 .product-info-main {
     border-radius: 5px;
     border: solid 0.5px #979797;
-    padding: 20px;
+    padding: 10px;
+}
+
+.product-item-info {
+    border-radius: 5px;
+    border: solid 0.5px #979797;
+    padding: 5px;
+}
+
+.fotorama__nav__frame.fotorama__nav__frame--thumb {
+    opacity: 0.5;
+}
+
+.fotorama__nav__frame.fotorama__nav__frame--thumb.fotorama__active {
+    opacity: 1 !important;
+}
+
+.action.primary {
+    border-radius: 5px;
+    background: #ff7d09;
+    border: 1px solid #ff7d09;
+}
+
+.action.primary:hover {
+    background: #ffbf88;
+    border: 1px solid #ff7d09;
+}
+
+.action.primary:focus, .action.primary:active {
+    background: #ffbf88;
+    border: 1px solid #ff7d09;
+}
+
+.product-social-links .action.towishlist:before {
+    color: #ec2324;
+}
+
+.swatch-attribute.size .swatch-option, .swatch-attribute.manufacturer .swatch-option {
+    background: white;
+    color: #000000;
+}
+
+.swatch-option {
+    border: 0.5px solid #000000;
+}
+
+input[type=number]::-webkit-outer-spin-button, 
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1;
+    -moz-appearance: inner-spin-button !important; 
+    -webkit-appearance: inner-spin-button !important;
+    appearance: inner-spin-button !important;
+}
+
+.box-tocart .input-text.qty {
+    width: 75px;
+}
+
+@media screen and (min-width: 1040px) {
+    #product-review-container ol {
+        display: inline-block;
+    }
+    
+    .review-title {
+        margin-bottom: 20px;
+    }
+    
+    .review-ratings {
+        float: unset;
+        margin-bottom: 20px;
+    }
+    
+    #product-review-container {
+        display: inline-flex;
+        width: 52%;
+        margin-right: 15px;
+        padding-right: 15px;
+        border-right: 1px solid black;
+    }
+    
+    .review-ratings~.review-content, .review-ratings~.review-details {
+        margin-left: 0px;
+    }
+    
+    .block.review-add {
+        display: inline-flex;
+        width: 40%;
+    }
 }
