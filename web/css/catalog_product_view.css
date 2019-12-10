@@ -130,6 +130,7 @@ input[type=number]::-webkit-inner-spin-button {
 .product-name {
     font-size: 22px;
     line-height: 22px;
+    margin-bottom: 15px;
 }
 
 .product-add-form {
@@ -145,6 +146,7 @@ input[type=number]::-webkit-inner-spin-button {
     .product-name {
         font-size: 35px;
         line-height: 35px;
+        margin-bottom: 15px;
     }
 }
 
