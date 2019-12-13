@@ -42,10 +42,6 @@ h1.page-title {
     letter-spacing: normal  !important;
 }
 
-.product.media {
-    width: 56% !important;
-}
-
 .product-info-main {
     border-radius: 5px;
     border: solid 0.5px #979797;
@@ -151,17 +147,15 @@ input[type=number]::-webkit-inner-spin-button {
         line-height: 35px !important;
     }
 
-    .product-name {
-        font-size: 35px;
-        line-height: 35px;
-    }
+#tab-label-description-title {
+    border-top-left-radius: 5px;
 }
 
-.price-label {
-    display: none !important;
+#tab-label-reviews-title {
+    border-top-right-radius: 5px;
 }
 
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 768px) {
     #product-review-container ol {
         display: inline-block;
     }
@@ -183,9 +177,9 @@ input[type=number]::-webkit-inner-spin-button {
         border-left: 1px solid black;
         display: inline-flex;
         width: 55%;
-        margin-right: 15px;
-        padding-right: 15px;
-        border-right: 1px solid black;
+        margin-left: 3%;
+        padding-left: 3%;
+        border-left: 1px solid black;
     }
     
     .review-ratings~.review-content, .review-ratings~.review-details {
