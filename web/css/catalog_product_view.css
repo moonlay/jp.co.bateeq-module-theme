@@ -49,7 +49,7 @@ h1.page-title {
 .product-info-main {
     border-radius: 5px;
     border: solid 0.5px #979797;
-    padding: 10px;
+    padding: 1%;
 }
 
 .product-item-info {
@@ -80,10 +80,6 @@ h1.page-title {
 .action.primary:focus, .action.primary:active {
     background: #ffbf88;
     border: 1px solid #ff7d09;
-}
-
-.product-social-links .action.towishlist:before {
-    color: #ec2324;
 }
 
 .swatch-attribute.size .swatch-option, .swatch-attribute.manufacturer .swatch-option {
@@ -130,13 +126,26 @@ input[type=number]::-webkit-inner-spin-button {
 .product-name {
     font-size: 22px;
     line-height: 22px;
+    margin-bottom: 15px;
 }
 
 .product-add-form {
     padding-top: 0px !important;
 }
 
-@media (min-width: 768px) {
+.price-label {
+    display: none !important;
+}
+
+#tab-label-description-title {
+    border-top-left-radius: 5px;
+}
+
+#tab-label-reviews-title {
+    border-top-right-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
     .product-info-price .price-box .price-container .price {
         font-size: 35px !important;
         line-height: 35px !important;
@@ -167,6 +176,11 @@ input[type=number]::-webkit-inner-spin-button {
     }
     
     #product-review-container {
+        float: right;
+        width: 55%;
+        margin-left: 3%;
+        padding-left: 3%;
+        border-left: 1px solid black;
         display: inline-flex;
         width: 55%;
         margin-right: 15px;
@@ -181,5 +195,38 @@ input[type=number]::-webkit-inner-spin-button {
     .block.review-add {
         display: inline-flex;
         width: 35%;
+        float: left;
+    }
+
+    .product-info-price .price-box .price-container .price {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .product-name {
+        font-size: 35px;
+        line-height: 35px;
+        margin-bottom: 15px;
+    }
+
+    #tab-label-description {
+        margin-left: 30px;
+    }
+
+    .product-info-main {
+        width: 50% !important;
+    }
+
+    .product.media {
+        width: 45% !important;
+    }
+
+    .fotorama__stage {
+        max-width: 550px;
+        max-height: 550px;
+    }
+
+    .fotorama__stage__shaft.fotorama__grab {
+        max-width: 550px;
     }
 }
