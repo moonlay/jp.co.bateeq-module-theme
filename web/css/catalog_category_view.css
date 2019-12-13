@@ -38,10 +38,6 @@
     border: 1px solid #ff7d09;
 }
 
-.product-item .action.towishlist:before {
-    color: #ec2324;
-}
-
 .breadcrumbs a:active {
     color: #505050;
     text-decoration: none;
@@ -110,4 +106,10 @@ h1.page-title {
 
 .product.details.product-item-details {
     padding: 3%;
+}
+
+@media (min-width: 640px) {
+    .products-grid .product-item-inner {
+        margin: 0px -4px 0px -5px;
+    }
 }
