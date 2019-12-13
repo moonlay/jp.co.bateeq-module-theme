@@ -42,6 +42,10 @@ h1.page-title {
     letter-spacing: normal  !important;
 }
 
+.product.media {
+    width: 56% !important;
+}
+
 .product-info-main {
     border-radius: 5px;
     border: solid 0.5px #979797;
@@ -142,6 +146,22 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 @media screen and (min-width: 768px) {
+    .product-info-price .price-box .price-container .price {
+        font-size: 35px !important;
+        line-height: 35px !important;
+    }
+
+    .product-name {
+        font-size: 35px;
+        line-height: 35px;
+    }
+}
+
+.price-label {
+    display: none !important;
+}
+
+@media screen and (min-width: 1040px) {
     #product-review-container ol {
         display: inline-block;
     }
@@ -161,6 +181,11 @@ input[type=number]::-webkit-inner-spin-button {
         margin-left: 3%;
         padding-left: 3%;
         border-left: 1px solid black;
+        display: inline-flex;
+        width: 55%;
+        margin-right: 15px;
+        padding-right: 15px;
+        border-right: 1px solid black;
     }
     
     .review-ratings~.review-content, .review-ratings~.review-details {
