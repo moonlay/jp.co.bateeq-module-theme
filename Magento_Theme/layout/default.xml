@@ -13,7 +13,7 @@
         <move element="top.search" destination="header.panel" after="minicart" />
         <move element="minicart" destination="header.panel" after="header.links" />
         <!-- <move element="catalog.compare.link" destination="top.links" /> -->
-        <move element="top.container" destination="page.wrapper" after="header.container" />
+        <!-- <move element="top.container" destination="page.wrapper" after="header.container" /> -->
         <move element="bateeq_logo" destination="footer" before="form.subscribe" />
         <referenceBlock name="catalog.compare.link" remove="true"/>
         <referenceBlock name="page.main.title" display="false"/>
