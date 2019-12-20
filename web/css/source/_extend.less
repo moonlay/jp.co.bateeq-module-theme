@@ -18,8 +18,21 @@
   font-display: swap;
 }
 
+/******************** Style for Sile Bar *********************/
+
+.disble-display-side-bar {
+  display: none !important;
+}
+
+.div-side-bar {
+  font-size: 15px;
+  color: #505050;
+  background-color: #ffffff !important;
+  font-family: "Montserrat";
+}
+
 /******************** Style for Wishlist *********************/
-body.wishlist-index-index a.product-item-link{
+body.wishlist-index-index a.product-item-link {
   color: #505050 !important;
 }
 
@@ -34,7 +47,7 @@ body.wishlist-index-index span.price-final_price span.price-wrapper {
   color: #000000;
 }
 
-body.wishlist-index-index button.primary{
+body.wishlist-index-index button.primary {
   font-family: "Montserrat";
   font-size: 12px !important;
   font-weight: normal;
@@ -44,7 +57,7 @@ body.wishlist-index-index button.primary{
   letter-spacing: normal;
 }
 
-.btn-remove-wishlist{
+.btn-remove-wishlist {
   font-family: "Montserrat";
   font-size: 12px;
   font-weight: normal;
@@ -59,7 +72,8 @@ body.wishlist-index-index div.qty {
   display: none !important;
 }
 
-.products-grid.wishlist .product-item-actions .action.edit, .products-grid.wishlist .product-item-actions .action.delete:before{
+.products-grid.wishlist .product-item-actions .action.edit,
+.products-grid.wishlist .product-item-actions .action.delete:before {
   display: none;
 }
 
@@ -71,7 +85,7 @@ body.wishlist-index-index div.comment-box {
   display: none;
 }
 
-.title-item-list{
+.title-item-list {
   font-family: "Montserrat";
   font-size: 12px;
   font-weight: normal;
@@ -90,49 +104,78 @@ body.wishlist-index-index div.sidebar-additional {
 }
 
 @media only screen and (max-width: 767px) {
-  body.wishlist-index-index div.box-tocart{
+  body.wishlist-index-index div.box-tocart {
     margin: 0px;
   }
 
-  body.wishlist-index-index fieldset.fieldset{
+  body.wishlist-index-index fieldset.fieldset {
     margin-bottom: 0px !important;
   }
 
+  .ellipsis-wish-list {
+    white-space: nowrap;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .title-item-list {
+    height: 17px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
   body.wishlist-index-index div.box-tocart {
     width: 45% !important;
   }
-  
+
   body.wishlist-index-index button.btn-remove {
     margin: 0px !important;
     width: 100%;
   }
-  
+
   body.wishlist-index-index div.product-item-actions {
     float: right;
     margin: 0px !important;
   }
-  
-  body.wishlist-index-index div.product-item-inner div:nth-child(3){
+
+  body.wishlist-index-index div.product-item-inner div:nth-child(3) {
     width: 48% !important;
   }
-  
+
   body.wishlist-index-index div.box-tocart {
     width: 50%;
     float: left;
     margin-bottom: 0px;
   }
 
-  .list-border{
+  .list-border {
     border: 0.5px solid #979797;
     padding: 20px;
     border-radius: 5px;
   }
+
+  .title-item-list {
+    height: none;
+  }
 }
 
 /******************** Style for Address Edit *********************/
+.title-3-address-edit {
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+.legen-title-edit-address {
+  font-family: "Montserrat";
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
+
+.div-contact-infomartion {
+  padding: 0px 20px;
+}
+
 body.customer-address-form div.telephone input.input-text {
   width: 100% !important;
   padding: 12px 20px !important;
@@ -140,10 +183,13 @@ body.customer-address-form div.telephone input.input-text {
   box-sizing: border-box !important;
   border: none !important;
   border-bottom: 2px solid #979797 !important;
+  font-family: "Montserrat";
+  font-size: 14px;
 }
 
 body.customer-address-form div.telephone label.label {
-  display: none;
+  font-family: "Montserrat";
+  font-size: 14px;
 }
 
 body.customer-address-form div.company input.input-text {
@@ -153,10 +199,13 @@ body.customer-address-form div.company input.input-text {
   box-sizing: border-box !important;
   border: none !important;
   border-bottom: 2px solid #979797 !important;
+  font-family: "Montserrat";
+  font-size: 14px;
 }
 
 body.customer-address-form div.company label.label {
-  display: none;
+  font-family: "Montserrat";
+  font-size: 14px;
 }
 
 body.customer-address-form div.field-name-firstname input.input-text {
@@ -166,10 +215,13 @@ body.customer-address-form div.field-name-firstname input.input-text {
   box-sizing: border-box !important;
   border: none !important;
   border-bottom: 2px solid #979797 !important;
+  font-family: "Montserrat";
+  font-size: 14px;
 }
 
 body.customer-address-form div.field-name-firstname label.label {
-  display: none;
+  font-family: "Montserrat";
+  font-size: 14px;
 }
 
 body.customer-address-form div.field-name-lastname input.input-text {
@@ -181,10 +233,6 @@ body.customer-address-form div.field-name-lastname input.input-text {
   border-bottom: 2px solid #979797 !important;
 }
 
-body.customer-address-form div.field-name-lastname label.label {
-  display: none;
-}
-
 .label-check-box {
   font-family: "Montserrat";
   color: #000000;
@@ -193,6 +241,9 @@ body.customer-address-form div.field-name-lastname label.label {
 .btn-edit-address {
   background: #000000 !important;
   border-color: #000000 !important;
+  height: 35px;
+  font-size: 15px !important;
+  line-height: 0px !important;
 }
 
 .width-buttom {
@@ -257,18 +308,28 @@ body.customer-address-form div.sidebar-additional {
   }
 
   .label-check-box {
-    font-size: 18px;
+    font-size: 13px;
   }
 }
 
 /******************** Style for Address Info *********************/
-.btn-add-address{
+.title-defauld {
+  font-family: "Montserrat";
+  font-size: 15px;
+}
+
+.change-defauld {
+  font-family: "Montserrat";
+  font-size: 13px;
+}
+
+.btn-add-address {
   border-color: #000000 !important;
   float: initial !important;
   background: #000000 !important;
 }
 
-.changes-defauld-link{
+.changes-defauld-link {
   color: #000000 !important;
   font-weight: 600;
 }
@@ -305,7 +366,7 @@ body.customer-address-form div.sidebar-additional {
 
 .title4-addres-info-table {
   font-family: "Montserrat";
-  font-size: 15px;
+  font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -315,7 +376,7 @@ body.customer-address-form div.sidebar-additional {
 
 .title3-addres-info-table {
   font-family: "Montserrat";
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -325,7 +386,7 @@ body.customer-address-form div.sidebar-additional {
 
 .title2-addres-info-table {
   font-family: "Montserrat";
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -337,7 +398,7 @@ body.customer-address-form div.sidebar-additional {
   width: 100%;
   float: left;
   font-family: "Montserrat";
-  font-size: 15px;
+  font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -349,7 +410,7 @@ body.customer-address-form div.sidebar-additional {
   width: 100%;
   float: left;
   font-family: "Montserrat";
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -361,7 +422,7 @@ body.customer-address-form div.sidebar-additional {
   width: 100%;
   float: left;
   font-family: "Montserrat";
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -388,6 +449,10 @@ body.customer-address-index div.sidebar-additional {
 
 /******************** Style for Account Info *********************/
 body.customer-account-index div.page-title-wrapper {
+  display: none;
+}
+
+body.customer-account-index div.block-dashboard-orders {
   display: none;
 }
 
@@ -440,7 +505,7 @@ body.customer-account-index div.sidebar-additional {
     width: 20%;
     float: left;
     font-family: "Montserrat";
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
@@ -454,7 +519,7 @@ body.customer-account-index div.sidebar-additional {
     width: 80%;
     float: right;
     font-family: "Montserrat";
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
@@ -476,6 +541,7 @@ body.customer-account-edit div.password-info {
 .checkbox-edt-account-label {
   font-weight: bold !important;
   color: #000000;
+  font-size: 12px;
 }
 
 body.customer-account-edit div.sidebar-additional {
@@ -483,8 +549,8 @@ body.customer-account-edit div.sidebar-additional {
 }
 
 .title-edit-account {
-  font-family: Montserrat !important;
-  font-size: 25px;
+  font-family: "Montserrat" !important;
+  font-size: 20px;
   font-weight: bold !important;
   font-stretch: normal !important;
   font-style: normal !important;
@@ -502,6 +568,8 @@ body.customer-account-edit div.sidebar-additional {
 .btn-edit-account {
   background: #000000 !important;
   border-color: #000000 !important;
+  line-height: 10px;
+  font-size: 15px;
 }
 
 .delete-margin-edit-account {
@@ -517,7 +585,7 @@ body.customer-account-edit div.page-title-wrapper {
   width: 122px !important;
   height: 30px !important;
   font-family: "Montserrat" !important;
-  font-size: 20px !important;
+  font-size: 15px !important;
   font-weight: 600 !important;
   font-stretch: normal !important;
   font-style: normal !important;
@@ -595,7 +663,7 @@ body.customer-account-createpassword div.page-title-wrapper {
 }
 
 .title-change-pass .jpn {
-  font-family: PingFangSC !important;
+  font-family: "PingFangSC" !important;
   font-size: 30px;
   font-weight: 600 !important;
   font-stretch: normal !important;
@@ -610,7 +678,7 @@ body.customer-account-createpassword div.page-title-wrapper {
 }
 
 .title-change-pass .eng {
-  font-family: Montserrat !important;
+  font-family: "Montserrat" !important;
   font-size: 25px;
   font-weight: normal !important;
   font-stretch: normal !important;
@@ -644,7 +712,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 }
 
 .title-frgt-pass .jpn {
-  font-family: PingFangSC !important;
+  font-family: "PingFangSC" !important;
   font-size: 30px;
   font-weight: 600 !important;
   font-stretch: normal !important;
@@ -659,7 +727,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 }
 
 .title-frgt-pass .eng {
-  font-family: Montserrat !important;
+  font-family: "Montserrat" !important;
   font-size: 25px;
   font-weight: normal !important;
   font-stretch: normal !important;
@@ -736,6 +804,8 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 .field-name-firstname,
 .field-name-lastname {
   position: relative;
+  font-family: "Montserrat";
+  font-size: 14px;
 }
 
 #firstname-error {
@@ -747,7 +817,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 .You-can-use-a-phone {
   width: 349px;
   height: 19px;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 15px;
   font-weight: normal;
   font-stretch: normal;
@@ -807,7 +877,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 }
 
 .title-register .jpn-reg {
-  font-family: PingFangSC !important;
+  font-family: "PingFangSC" !important;
   font-size: 30px !important;
   font-weight: 600 !important;
   font-stretch: normal !important;
@@ -822,7 +892,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 }
 
 .title-register .eng-reg {
-  font-family: Montserrat !important;
+  font-family: "Montserrat" !important;
   font-size: 25px !important;
   font-weight: normal !important;
   font-stretch: normal !important;
@@ -877,7 +947,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 .Forgot-Password {
   width: 143px !important;
   height: 19px !important;
-  font-family: Montserrat !important;
+  font-family: "Montserrat" !important;
   font-size: 15px !important;
   font-weight: 500 !important;
   font-stretch: normal !important;
@@ -889,7 +959,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 }
 
 .title-login .jpn {
-  font-family: PingFangSC !important;
+  font-family: "PingFangSC" !important;
   font-size: 30px !important;
   font-weight: 600 !important;
   font-stretch: normal !important;
@@ -904,7 +974,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 }
 
 .title-login .eng {
-  font-family: Montserrat !important;
+  font-family: "Montserrat" !important;
   font-size: 25px !important;
   font-weight: normal !important;
   font-stretch: normal !important;
@@ -987,7 +1057,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
   .form.form-orders-search,
   .login-container,
   #form-validate {
-    margin-top: 50px !important;
+    margin-top: 50px;
   }
 }
 
@@ -1053,17 +1123,24 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 /******************** Style for Moonlay/CustomHome Module *********************/
 
 /* Global style */
+.rating-summary .rating-result > span:before {
+  z-index: 0;
+}
 
 .top-container {
-  position: relative;
+  position: fixed;
+  top: 124px;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  max-width: 1980px;
+  padding: 0;
 }
 
 .text-container {
-  position: absolute;
-  z-index: 3 !important;
-  right: 0;
-  top: -2px;
-  height: 47px;
+  width: 100% !important;
+  background-color: #fff;
+  height: 25px;
 }
 
 .running-text {
@@ -1072,10 +1149,10 @@ body.customer-account-forgotpassword div.page-title-wrapper {
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: 47px;
+  line-height: 25px;
   letter-spacing: normal;
   color: #505050;
-  background-color: #f0f0f0;
+  background-color: transparent;
   padding: 0;
 }
 
@@ -1324,10 +1401,6 @@ button.en {
 
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 767px) {
-  .text-container {
-    width: 100% !important;
-  }
-
   .banner {
     height: 100%;
     min-height: 190px;
@@ -1356,14 +1429,6 @@ button.en {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .text-container {
-    width: 73%;
-  }
-
-  .running-text {
-    background-color: transparent;
-  }
-
   .banner {
     min-height: 100%;
     height: 518px;
@@ -1391,17 +1456,10 @@ button.en {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .text-container {
-    width: 80%;
-  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .text-container {
-    width: 82%;
-  }
-
   .about {
     padding: 50px 150px;
   }
@@ -1410,6 +1468,235 @@ button.en {
 /******************** Style for Moonlay/bateeq Theme *********************/
 
 /* Global style */
+// Ranking Style
+body.cms-home div.column.main div:nth-child(9) li.product-item:hover,
+body.cms-home div.column.main div:nth-child(9) li.product-item.active {
+  box-shadow: none !important;
+  border: solid 5px #2362d8 !important;
+}
+body.cms-home div.column.main div:nth-child(9) li {
+  padding-left: 5px;
+  min-height: 450px;
+  border-radius: 5px;
+}
+body.cms-home div.column.main div:nth-child(9) li:nth-child(1) {
+  border: 5px solid #c1a358 !important;
+}
+body.cms-home div.column.main div:nth-child(9) li:nth-child(2) {
+  border: 5px solid #b8b8b8 !important;
+}
+body.cms-home div.column.main div:nth-child(9) li:nth-child(3) {
+  border: 5px solid #d47557 !important;
+}
+body.cms-home div.column.main div:nth-child(9) li:nth-child(4) {
+  border: 5px solid #505050 !important;
+}
+// Ranking Style End
+
+// Recomended Style
+body.cms-home div.column.main div:nth-child(11) li {
+  padding-left: 5px;
+  min-height: 450px;
+  border-radius: 5px;
+  margin-bottom: 1px;
+}
+
+body.cms-home div.column.main div:nth-child(11) div.product-item-info {
+  position: relative;
+}
+
+body.cms-home
+  div.column.main
+  div:nth-child(11)
+  div.product-item-info
+  div.product-item-details {
+  bottom: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 65% 0px;
+  text-align: center;
+  z-index: 1;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.55)
+  );
+}
+
+body.cms-home div.column.main div:nth-child(11) div.product-item-info {
+  height: 320px;
+}
+
+body.cms-home
+  div.column.main
+  div:nth-child(11)
+  div.product-item-details
+  div.product-reviews-summary {
+  display: none;
+}
+body.cms-home
+  div.column.main
+  div:nth-child(11)
+  div.product-item-details
+  div.price-box {
+  display: none;
+}
+body.cms-home
+  div.column.main
+  div:nth-child(11)
+  div.product-item-details
+  div[class*="swatch-opt"] {
+  display: none;
+}
+body.cms-home
+  div.column.main
+  div:nth-child(11)
+  div.product-item-details
+  div.product-item-inner {
+  display: none;
+}
+
+body.cms-home
+  div.column.main
+  div:nth-child(11)
+  div.product-item-details
+  strong.product-item-name
+  a {
+  color: white;
+}
+
+// Recomend Style End
+
+div.custom-wrapper {
+  position: relative;
+  min-height: 45px;
+  color: #505050;
+}
+
+div.custom-wrapper dl.product.options.list dt.label {
+  font-weight: normal;
+}
+
+div.custom-wrapper .label::after {
+  display: none;
+}
+
+div.custom-wrapper li.item.product.product-item {
+  cursor: default !important;
+}
+
+div.custom-wrapper div.details-qty.qty {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 0;
+}
+
+div.product-item-details .product-item-name {
+  font-weight: 600;
+}
+
+div.custom-wrapper div.details-qty.qty input.item-qty.cart-item-qty {
+  border: none;
+  border-bottom: 2px solid #c2c2c2;
+  width: 30px;
+  height: 20px;
+  margin-right: 0;
+  padding: 0;
+}
+
+div.custom-wrapper div.product.actions.act {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+}
+
+div.custom-wrapper div.product.actions.act div.primary {
+  display: none;
+}
+
+div.custom-wrapper div.product.options.prc {
+  position: absolute;
+  left: 0;
+  top: 23px;
+}
+
+div.custom-wrapper div.product-item-pricing {
+  position: absolute;
+  right: 0;
+  top: 23px;
+}
+
+div.custom-wrapper div.product-item-pricing span.price-excluding-tax {
+  margin: 0 !important;
+}
+
+div.custom-wrapper dl.product.options.list {
+  margin-bottom: 0;
+}
+
+div.custom-wrapper dl.product.options.list dt.label {
+  margin: 0 10px 0 0;
+}
+
+div.custom-wrapper dl.product.options.list dd.values {
+  margin: 0;
+}
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f9973f;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff7d09;
+}
+
+.minicart-items-wrapper {
+  max-height: 250px !important;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.sidebar-additional {
+  display: none;
+}
+
+._keyfocus *:focus,
+input:not([disabled]):focus,
+textarea:not([disabled]):focus,
+select:not([disabled]):focus {
+  outline: none !important;
+  box-shadow: unset !important;
+}
+
+body.checkout-index-index input,
+body.checkout-index-index select {
+  border: none;
+  border-bottom: 1px solid #c2c2c2 !important;
+}
+
+.opc-wrapper .form-login .fieldset .field .label,
+.opc-wrapper .form-shipping-address .fieldset .field .label {
+  font-weight: 600;
+}
+
 .checkout-shipping-method .actions-toolbar .action.primary {
   width: 140px;
   height: 40px;
@@ -1418,7 +1705,6 @@ button.en {
   border: 1px solid #000 !important;
   line-height: 0;
 }
-
 
 .opc-wrapper .action-select-shipping-item {
   background: #000;
@@ -1462,6 +1748,9 @@ button.en {
 
 .page-header {
   margin-bottom: 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
 }
 
 .page-header .panel.wrapper {
@@ -1542,6 +1831,11 @@ button.en {
   border: solid 0.5px #ff7d09;
 }
 
+.minicart-btn div.primary button {
+  padding: 8px 17px !important;
+  font-size: 1.55rem !important;
+}
+
 .block-minicart .block-content > .actions > .secondary a {
   font-family: "Montserrat";
   font-size: 15px;
@@ -1564,8 +1858,68 @@ button.en {
   box-shadow: unset !important;
 }
 
+.customer-welcome ul:before,
+.customer-welcome ul:after,
+.minicart-wrapper .block-minicart:before,
+.minicart-wrapper .block-minicart:after {
+  display: none;
+}
+
+.customer-welcome .header.links,
+.minicart-wrapper.active .block-minicart {
+  border-radius: 5px;
+  box-shadow: 0 2px 7px 0 rgba(193, 193, 193, 0.5);
+  background-color: #ffffff;
+}
+
+.minicart-wrapper .action.showcart .counter.qty {
+  height: 14px;
+  line-height: 11px;
+  margin: 0;
+  min-width: 9px;
+}
+
+div.items-total {
+  width: 100%;
+}
+
+div.subtotal span.label {
+  float: left;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+div.subtotal span.label,
+div.subtotal div.price-container {
+  color: #d0021b;
+}
+
+div.items-total {
+  display: none;
+}
+
+h2.shopping-cart {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  margin: 0 0 10px;
+}
+
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 767px) {
+  div.subtotal {
+    margin: 20px 0 !important;
+  }
+
+  .block-minicart .block-content > .actions > .primary {
+    margin: 0 !important;
+  }
+
   .logo {
     margin-top: 12px;
   }
@@ -1601,6 +1955,114 @@ button.en {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  div.subtotal {
+    margin: 20px 0 10px !important;
+  }
+
+  .minicart-btn {
+    width: 50%;
+    float: left;
+  }
+
+  .block-minicart .block-content > .actions > .primary {
+    margin: 0;
+    margin-left: 8px;
+  }
+
+  .block-minicart .block-content > .actions > .secondary {
+    margin-right: 8px;
+  }
+
+  .minicart-wrapper .action.showcart .counter-number {
+    font-size: 8px;
+  }
+
+  .logged-in {
+    font-family: "PingFangSC";
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+  }
+
+  .logged-in::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #000;
+    width: 100%;
+    margin: 5px auto 0;
+  }
+
+  .customer-welcome .action.switch:after {
+    color: #000000;
+    font-weight: 600;
+  }
+
+  .customer-welcome .header.links {
+    width: 250px;
+  }
+
+  .customer-welcome .header.links,
+  .navigation .level0.parent > .submenu,
+  .navigation .level0 .submenu .submenu {
+    padding: 20px;
+  }
+
+  .customer-welcome ul li,
+  .navigation .level0 .submenu li {
+    padding: 0;
+    border-bottom: 1px solid #aaa;
+  }
+
+  .customer-welcome ul li a,
+  .navigation .level0 .submenu li a {
+    padding: 15px 0;
+  }
+
+  .customer-welcome ul li a:hover,
+  .navigation .level0 .submenu li a:hover {
+    color: #ff7d09;
+  }
+
+  .customer-welcome ul li:hover,
+  .customer-welcome ul li a:hover,
+  .navigation .level0 .submenu li:hover,
+  .navigation .level0 .submenu li a:hover {
+    background-color: transparent;
+  }
+
+  li.wishlist a {
+    position: relative;
+  }
+
+  li.wishlist a span {
+    font-size: 11px;
+    font-weight: 800;
+    position: absolute;
+    top: 16px;
+    right: 0;
+  }
+
+  .checkout-success {
+    border-radius: 5px;
+    border: solid 0.5px #979797;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px;
+    width: 40%;
+    margin: 100px auto;
+  }
+
+  .checkout-success .actions-toolbar {
+    text-align: center;
+    width: 36%;
+    margin: 50px auto 0;
+  }
+
   .cart-empty {
     text-align: center !important;
     margin-top: 50px !important;
@@ -1707,6 +2169,41 @@ button.en {
     margin-top: 50px !important;
   }
 
+  #checkout-shipping-method-load {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 15px;
+  }
+
+  .product-item-details .product span.toggle {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 40px 5px 0;
+  }
+
+  .product-item-details .product span.toggle::after {
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+
+  dl.item-options {
+    margin-top: 8px;
+  }
+
+  div.details-qty span.label {
+    color: #000;
+    font-weight: 700;
+  }
+
+  span.cart-price span.price {
+    color: red;
+  }
+
+  .billing-address-details {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 15px 25px;
+  }
+
   .new-address-popup {
     text-align: center;
   }
@@ -1742,7 +2239,7 @@ button.en {
     width: calc((100% - 6%) / 4);
   }
 
-  .navigation .level0.parent:hover > .submenu,
+  .navigation .level0.parent > .submenu,
   .navigation .level0 .submenu .submenu {
     border-radius: 5px;
     box-shadow: 0 2px 7px 0 rgba(193, 193, 193, 0.5);
@@ -1792,8 +2289,9 @@ button.en {
 
   .products-grid .product-item-info:hover,
   .products-grid .product-item-info.active {
-    box-shadow: none !important;
-    border: solid 5px #c1a358 !important;
+    box-shadow: 0 2px 7px 0 rgba(193, 193, 193, 0.5);
+    border-radius: 5px 5px 0 0;
+    z-index: 0;
   }
 
   .block.widget .products-grid .product-item .product-item-inner,
@@ -1807,12 +2305,12 @@ button.en {
     .products-grid
     .product-item
     .product-item-inner {
-    box-shadow: none !important;
-    margin: 9px -4px 0 -5px !important;
+    box-shadow: 0 2px 7px 0 rgba(193, 193, 193, 0.5);
+    margin: 9px 0px 0 -1px !important;
+    border-radius: 0 0 5px 5px;
   }
 
   .products-grid .product-item-inner {
-    border: solid 5px #c1a358;
     border-top: none !important;
   }
 
@@ -1858,9 +2356,34 @@ button.en {
     margin-top: 7px;
   }
 
+  /*
+  .header.panel > .header.links li a:hover {
+    text-decoration: none;
+  }
+
+  li.authorization-link {
+    padding: 5px 0;
+  }
+
+  li.authorization-link a {
+    color: #000;
+    font-weight: 600;
+    border-bottom: 2px solid #000;
+  }
+
+  .header.panel > .header.links li:not(.authorization-link) a {
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    background-color: #000;
+  }*/
+
   .nav-sections {
+    position: sticky;
+    top: 77px;
+    z-index: 2;
     margin-bottom: 0;
-    z-index: 2 !important;
   }
 
   .customer-welcome .action.switch {
