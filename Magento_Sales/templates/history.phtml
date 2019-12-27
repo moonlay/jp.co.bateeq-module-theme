@@ -62,7 +62,7 @@ $imageManager = $objectManager->get('\Magento\Catalog\Helper\Image');
             <tbody>
                 <?php 
                     foreach ($orders as $_order) : 
-                        $datetime = new DateTime($_order->getCreatedAt());
+                        $datetime = new DateTime($block->formatDate($_order->getCreatedAt()));
                 ?>
                     <tr class="info-order">
                         <td data-th="<?= $block->escapeHtml(__('Order #')) ?>" class="col id"><?= $block->escapeHtml($_order->getRealOrderId()) ?></td>
