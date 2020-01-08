@@ -62,7 +62,7 @@
         <input type="hidden" name="error_url" value="<?= $block->escapeUrl($block->getErrorUrl()) ?>">
         <?= $block->getLayout()->createBlock(\Moonlay\CustomRegister\Block\Widget\Name::class)->setObject($block->getFormData())->setForceUseCustomerAttributes(true)->toHtml() ?>
         
-        <a class="fullname-register">Name (Kana)</a>
+        <!-- <a class="fullname-register">Name (Kana)</a> -->
         <?= $block->getChildHtml('form_additional_info') ?>
 
         <?php $_dob = $block->getLayout()->createBlock(\Magento\Customer\Block\Widget\Dob::class) ?>
