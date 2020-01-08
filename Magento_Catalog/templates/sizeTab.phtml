@@ -1,0 +1,11 @@
+<?php 
+/**
+ * Product additional attributes template
+ *
+ * @var $block \Magento\Catalog\Block\Product\View
+ */
+
+$product = $block->getProduct();
+$size_tab = $product->getData('size_information');
+echo $size_tab;
+?>

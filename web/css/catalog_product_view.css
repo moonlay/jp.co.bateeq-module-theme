@@ -142,20 +142,6 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 @media screen and (min-width: 768px) {
-    .product-info-price .price-box .price-container .price {
-        font-size: 35px !important;
-        line-height: 35px !important;
-    }
-
-#tab-label-description-title {
-    border-top-left-radius: 5px;
-}
-
-#tab-label-reviews-title {
-    border-top-right-radius: 5px;
-}
-
-@media screen and (min-width: 768px) {
     #product-review-container ol {
         display: inline-block;
     }
@@ -171,11 +157,6 @@ input[type=number]::-webkit-inner-spin-button {
     
     #product-review-container {
         float: right;
-        width: 55%;
-        margin-left: 3%;
-        padding-left: 3%;
-        border-left: 1px solid black;
-        display: inline-flex;
         width: 55%;
         margin-left: 3%;
         padding-left: 3%;
