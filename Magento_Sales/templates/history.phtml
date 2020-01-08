@@ -33,11 +33,14 @@ $imageManager = $objectManager->get('\Magento\Catalog\Helper\Image');
             endif;
             
         endforeach;
+        $indexTab = 0;
+        $size = count($groupedItemByStatus);
         foreach ($groupedItemByStatus as $status => $orders) :
+            $indexTab = $indexTab + 1;
 ?>
     <div class="data item title"
-            data-role="collapsible" id="tab-label-<?= $status ?>">
-        <a class="data switch"
+            data-role="collapsible" id="tab-label-<?= $size == $indexTab ? 'end' : $indexTab ?>">
+        <a class="data switch index-<?= $size == $indexTab ? 'end' : $indexTab ?>"
             tabindex="-1"
             data-toggle="trigger"
             href="#<?= $status ?>"
@@ -62,7 +65,7 @@ $imageManager = $objectManager->get('\Magento\Catalog\Helper\Image');
             <tbody>
                 <?php 
                     foreach ($orders as $_order) : 
-                        $datetime = new DateTime($_order->getCreatedAt());
+                        $datetime = new DateTime($block->formatDate($_order->getCreatedAt()));
                 ?>
                     <tr class="info-order">
                         <td data-th="<?= $block->escapeHtml(__('Order #')) ?>" class="col id"><?= $block->escapeHtml($_order->getRealOrderId()) ?></td>
