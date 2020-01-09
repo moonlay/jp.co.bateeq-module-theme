@@ -6,6 +6,12 @@
  */
 
 $product = $block->getProduct();
-$size_tab = $product->getData('size_information');
+$content = $product->getData('size_information');
+
+$om = \Magento\Framework\App\ObjectManager::getInstance();
+$filterManager = $om->get('Magento\Cms\Model\Template\FilterProvider')->getPageFilter();
+
+$size_tab = $filterManager->filter($content);
+
 echo $size_tab;
 ?>
