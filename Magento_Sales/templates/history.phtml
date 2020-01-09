@@ -37,10 +37,11 @@ $imageManager = $objectManager->get('\Magento\Catalog\Helper\Image');
         $size = count($groupedItemByStatus);
         foreach ($groupedItemByStatus as $status => $orders) :
             $indexTab = $indexTab + 1;
+            $selectorName = $size == $indexTab && $size > 1 ? 'end' : $indexTab;
 ?>
     <div class="data item title"
-            data-role="collapsible" id="tab-label-<?= $size == $indexTab && $size > 1 ? 'end' : $indexTab ?>">
-        <a class="data switch index-<?= $size == $indexTab && $size > 1 ? 'end' : $indexTab ?>"
+            data-role="collapsible" id="tab-label-<?=  $indexTab ?>">
+        <a class="data switch index-<?= $selectorName ?>"
             tabindex="-1"
             data-toggle="trigger"
             href="#<?= $status ?>"
