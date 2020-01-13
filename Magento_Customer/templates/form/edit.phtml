@@ -15,7 +15,7 @@
         <a class="fullname-edit-account">Fullname</a>
         <?= $block->getLayout()->createBlock(\Moonlay\CustomEditAccount\Block\Widget\Name::class)->setObject($block->getCustomer())->toHtml() ?>
 
-        <a class="fullname-edit-account">Name (Kana)</a>
+        <!-- <a class="fullname-edit-account">Name (Kana)</a> -->
         <?= $block->getChildHtml('form_additional_info') ?>
 
         <?php $_dob = $block->getLayout()->createBlock(\Magento\Customer\Block\Widget\Dob::class) ?>

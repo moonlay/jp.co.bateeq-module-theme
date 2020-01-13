@@ -35,6 +35,18 @@ body {
 }
 
 /******************** Style for Wishlist *********************/
+
+.btn-remove{
+  margin-top: 0px !important;
+  height: 31px;
+  width: 100px !important;
+}
+
+.btn-add-chart{
+  height: 31px !important;
+  width: 100px !important;
+}
+
 body.wishlist-index-index a.product-item-link {
   color: #505050 !important;
 }
@@ -388,6 +400,7 @@ body.customer-address-form div.sidebar-additional {
 }
 
 .title2-addres-info-table {
+  width: 100%;
   font-family: "Montserrat";
   font-size: 18px;
   font-weight: 600;
@@ -1397,7 +1410,7 @@ body.customer-account-login div.m-5{
 }
 
 .m-5 {
-  margin-top: 50px !important;
+  margin-top: 100px !important;
   margin-bottom: 50px !important;
 }
 
@@ -1521,8 +1534,7 @@ body.customer-account-login div.m-5{
 .about {
   min-height: 350px;
   padding: 50px 50px;
-  background-image: url("http://127.0.0.1/pub/static/version1574307734/frontend/Moonlay/bateeq/en_US/Moonlay_CustomHome/images/banner.jpg"),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-image: url("https://astraosastorage.blob.core.windows.net/reviews/Home_About.png"), linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1530,13 +1542,14 @@ body.customer-account-login div.m-5{
 }
 
 .about-logo {
+  display: none;
   margin-right: 100px;
 }
 
 .about-text {
-  max-width: 900px;
+  max-width: 400px;
   font-family: "PingFangSC";
-  font-size: 20px;
+  font-size: 10px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -1670,7 +1683,7 @@ button.en {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .about {
-    padding: 50px 150px;
+    padding: 50px 70px;
   }
 }
 
@@ -1691,6 +1704,7 @@ body.cms-home .product-image-photo {
 }
 
 // Ranking Style
+/*
 body.cms-home div.column.main div:nth-child(10) .product-item-details {
   padding: 0 9px 9px;
 }
@@ -1813,25 +1827,30 @@ body.cms-home
   border-top: none !important;
   margin: 9px -4px 0 -5px !important;
 }
+*/
 
 // Recomended Style
-body.cms-home div.column.main div:nth-child(12) div.product-item-info {
+body.cms-home div.column.main div:nth-child(9) div.product-item-name {
+  margin: 0;
+}
+
+body.cms-home div.column.main div:nth-child(9) div.product-item-info {
   position: relative;
 }
 
-body.cms-home div.column.main div:nth-child(12) div.product-item-info:hover {
+body.cms-home div.column.main div:nth-child(9) div.product-item-info:hover {
   box-shadow: none;
   border: none;
 }
 
-body.cms-home div.column.main div:nth-child(12) div.product-item-info a:hover {
+body.cms-home div.column.main div:nth-child(9) div.product-item-info a:hover {
   text-decoration: none;
   color: #f9973f !important;
 }
 
 body.cms-home
   div.column.main
-  div:nth-child(12)
+  div:nth-child(9)
   div.product-item-info
   div.product-item-details {
   bottom: 0;
@@ -1839,19 +1858,19 @@ body.cms-home
   top: 0;
   left: 0;
   right: 0;
-  padding: 65% 0px;
+  padding: 60% 0px;
   text-align: center;
   z-index: 1;
 }
 
-body.cms-home div.column.main div:nth-child(12) div.product-item-info div.product-item-details {
+body.cms-home div.column.main div:nth-child(9) div.product-item-info div.product-item-details {
   -webkit-transition: 0.8s !important;
   -o-transition: 0.8s !important;
   transition: 0.8s !important;
   opacity: 0.5 !important;
 }
 
-body.cms-home div.column.main div:nth-child(12) div.product-item-info div.product-item-details:hover {
+body.cms-home div.column.main div:nth-child(9) div.product-item-info div.product-item-details:hover {
   opacity: 1 !important;
   background-image: linear-gradient(
     to bottom,
@@ -1860,17 +1879,17 @@ body.cms-home div.column.main div:nth-child(12) div.product-item-info div.produc
   );
 }
 
-body.cms-home div.column.main div:nth-child(12) .product-item-name {
+body.cms-home div.column.main div:nth-child(9) .product-item-name {
   display: none;
 }
 
-body.cms-home div.column.main div:nth-child(12) div.product-item-info div.product-item-details:hover .product-item-name {
+body.cms-home div.column.main div:nth-child(9) div.product-item-info div.product-item-details:hover .product-item-name {
   display: block;
 }
 
 body.cms-home
   div.column.main
-  div:nth-child(12)
+  div:nth-child(9)
   div.product-item-details
   div.product-reviews-summary {
   display: none;
@@ -1878,7 +1897,7 @@ body.cms-home
 
 body.cms-home
   div.column.main
-  div:nth-child(12)
+  div:nth-child(9)
   div.product-item-details
   div.price-box {
   display: none;
@@ -1886,7 +1905,7 @@ body.cms-home
 
 body.cms-home
   div.column.main
-  div:nth-child(12)
+  div:nth-child(9)
   div.product-item-details
   div[class*="swatch-opt"] {
   display: none;
@@ -1894,7 +1913,7 @@ body.cms-home
 
 body.cms-home
   div.column.main
-  div:nth-child(12)
+  div:nth-child(9)
   div.product-item-details
   div.product-item-inner {
   display: none;
@@ -1902,7 +1921,7 @@ body.cms-home
 
 body.cms-home
   div.column.main
-  div:nth-child(12)
+  div:nth-child(9)
   div.product-item-details
   strong.product-item-name
   a {
@@ -2322,12 +2341,14 @@ body.cms-home .price-label {
     margin: 0 0 5px;
   }
 
+  /*
   body.cms-home div.column.main div:nth-child(10) li.product-item {
     margin-bottom: 50px;
   }
+  */
 
   // Recommended Products
-  body.cms-home div.column.main div:nth-child(12) li {
+  body.cms-home div.column.main div:nth-child(9) li {
     margin-bottom: 10px;
   }
 
@@ -2404,6 +2425,7 @@ body.cms-home .price-label {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   // Rank Products
+  /*
   body.cms-home
     div.column.main
     div:nth-child(10)
@@ -2450,10 +2472,16 @@ body.cms-home .price-label {
     .product-item-inner {
     border: 5px solid #505050;
   }
+  */
 
   // Recommended Products
-  body.cms-home div.column.main div:nth-child(12) li {
+  body.cms-home div.column.main div:nth-child(9) li {
     margin-bottom: 35px;
+  }
+
+  // About Page Video Youtube
+  body.cms-home div.column.main div.container-about div.item-about.video {
+    padding-bottom: 50px;
   }
 
   // Sticky Navbar
@@ -2842,7 +2870,7 @@ body.cms-home .price-label {
   }
 
   .wishlist-index-index .product-item-inner {
-    margin: 9px -4px 0 -5px;
+    //margin: 9px -4px 0 -5px;
   }
 
   .sticky {
