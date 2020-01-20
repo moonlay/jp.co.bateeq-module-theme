@@ -18,6 +18,7 @@
         <referenceBlock name="catalog.compare.link" remove="true"/>
         <referenceBlock name="page.main.title" display="false"/>
         <referenceContainer name="footer">
+            <block class="Moonlay\CustomHome\Block\CategoryTree" name="categorytree" template="Moonlay_CustomHome::categorytree.phtml"/>
             <!-- <block class="Moonlay\CustomHome\Block\SocMed" name="bateeq_socmed" template="Moonlay_CustomHome::socmed.phtml" /> -->
             <!-- <block class="Moonlay\CustomHome\Block\LangButton" name="bateeq_lang" template="Moonlay_CustomHome::langbutton.phtml" /> -->
             <block class="Moonlay\CustomHome\Block\Logo" name="bateeq_logo" template="Moonlay_CustomHome::logo.phtml" />
