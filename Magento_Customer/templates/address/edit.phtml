@@ -62,7 +62,7 @@
                         title="<?= /* @noEscape */ $block->getAttributeData()->getFrontendLabel('street') ?>"
                         id="street_1"
                         class="input-text input-text-login <?= $block->escapeHtmlAttr($_streetValidationClass) ?>"
-                        placeholder="Street Address"/>
+                        placeholder="住所"/>
                     <div class="nested">
                         <?php $_streetValidationClass = trim(str_replace('required-entry', '', $_streetValidationClass)); ?>
                         <?php for ($_i = 1, $_n = $this->helper(\Magento\Customer\Helper\Address::class)->getStreetLines(); $_i < $_n; $_i++) : ?>
@@ -108,7 +108,7 @@
                         title="<?= $block->escapeHtmlAttr(__('City')) ?>"
                         class="input-text input-text-login <?= $block->escapeHtmlAttr($this->helper(\Magento\Customer\Helper\Address::class)->getAttributeValidationClass('city')) ?>"
                         id="city"
-                        placeholder="City">
+                        placeholder="市">
                 </div>
             </div>
 
@@ -120,7 +120,7 @@
                     <select id="region_id" name="region_id"
                             title="<?= /* @noEscape */ $block->getAttributeData()->getFrontendLabel('region') ?>"
                             class="validate-select region_id dropdown-register" <?= /* @noEscape */ !$block->getConfig('general/region/display_all') ? ' disabled="disabled"' : '' ?>>
-                        <option value=""><?= $block->escapeHtml(__('State Province')) ?></option>
+                        <option value=""><?= $block->escapeHtml(__('州州')) ?></option>
                     </select>
                     <input type="text"
                         id="region"
@@ -141,7 +141,7 @@
                         value="<?= $block->escapeHtmlAttr($block->getAddress()->getPostcode()) ?>"
                         title="<?= /* @noEscape */ $block->getAttributeData()->getFrontendLabel('postcode') ?>"
                         id="zip"
-                        placeholder="Zip/Postal Code"
+                        placeholder="郵便番号"
                         class="input-text input-text-login validate-zip-international <?= $block->escapeHtmlAttr($this->helper(\Magento\Customer\Helper\Address::class)->getAttributeValidationClass('postcode')) ?>">
                     <div role="alert" class="message warning" style="display:none">
                         <span></span>

@@ -36,13 +36,13 @@ body {
 
 /******************** Style for Wishlist *********************/
 
-.btn-remove{
+.btn-remove {
   margin-top: 0px !important;
   height: 31px;
   width: 100px !important;
 }
 
-.btn-add-chart{
+.btn-add-chart {
   height: 31px !important;
   width: 100px !important;
 }
@@ -480,7 +480,7 @@ body.customer-account-index div.sidebar-additional {
   display: none;
 }
 
-.div-setting-margin{
+.div-setting-margin {
   width: 100%;
 }
 
@@ -489,7 +489,7 @@ body.customer-account-index div.sidebar-additional {
     display: none;
   }
 
-  .div-setting-margin{
+  .div-setting-margin {
     text-align: center;
     font-size: 18px;
   }
@@ -497,7 +497,7 @@ body.customer-account-index div.sidebar-additional {
 
 @media only screen and (device-width: 768px) {
   /* For general iPad layouts */
-  .div-setting-margin{
+  .div-setting-margin {
     margin-bottom: 50px;
     width: 100% !important;
   }
@@ -533,7 +533,7 @@ body.customer-account-index div.sidebar-additional {
   }
 
   .title-account-info {
-    width: 20%;
+    width: 40%;
     float: left;
     font-family: "Montserrat";
     font-size: 15px;
@@ -547,7 +547,7 @@ body.customer-account-index div.sidebar-additional {
   }
 
   .value-account-info {
-    width: 80%;
+    width: 60%;
     float: right;
     font-family: "Montserrat";
     font-size: 15px;
@@ -561,7 +561,7 @@ body.customer-account-index div.sidebar-additional {
 }
 
 @media only screen and (min-width: 992px) {
-  .div-setting-margin{
+  .div-setting-margin {
     margin-bottom: 50px;
   }
 
@@ -596,7 +596,7 @@ body.customer-account-index div.sidebar-additional {
   }
 
   .title-account-info {
-    width: 20%;
+    width: 40%;
     float: left;
     font-family: "Montserrat";
     font-size: 15px;
@@ -610,7 +610,7 @@ body.customer-account-index div.sidebar-additional {
   }
 
   .value-account-info {
-    width: 80%;
+    width: 60%;
     float: right;
     font-family: "Montserrat";
     font-size: 15px;
@@ -757,9 +757,7 @@ body.customer-account-edit div.page-title-wrapper {
   }
 }
 
-
 @media only screen and (min-width: 992px) {
-
   .add-border-full-name-ect-account {
     border: 20px solid #ffffff;
     width: 55% !important;
@@ -812,11 +810,11 @@ body.customer-account-edit div.page-title-wrapper {
 
 /******************** Style for forgot password *********************/
 /* Global style */
-body.customer-account-forgotpassword div.m-5{
+body.customer-account-forgotpassword div.m-5 {
   margin-top: 50px;
 }
 
-body.customer-account-createpassword div.m-5{
+body.customer-account-createpassword div.m-5 {
   margin-top: 50px;
 }
 
@@ -935,11 +933,11 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 /******************** Style for login & register *********************/
 /* Global style */
 
-body.customer-account-create div.m-5{
+body.customer-account-create div.m-5 {
   margin-top: 50px;
 }
 
-body.customer-account-login div.m-5{
+body.customer-account-login div.m-5 {
   margin-top: 50px;
 }
 
@@ -1278,7 +1276,7 @@ body.customer-account-login div.m-5{
   }
 
   .btn-login {
-    width: 115px !important;
+    width: 120px !important;
     height: 35px !important;
     background: #000000 !important;
     border: 1px solid #000000 !important;
@@ -1333,7 +1331,7 @@ body.customer-account-login div.m-5{
   }
 
   .btn-login {
-    width: 115px !important;
+    width: 120px !important;
     height: 35px !important;
     background: #000000 !important;
     border: 1px solid #000000 !important;
@@ -1490,6 +1488,7 @@ body.customer-account-login div.m-5{
 }
 
 .about p {
+  white-space: pre-wrap;
   font-family: "PingFangSC";
   font-size: 20px;
   font-weight: normal;
@@ -1505,12 +1504,11 @@ body.customer-account-login div.m-5{
 
   background-color: Transparent;
   border: solid 0.5px #ffffff;
-  width: 220px;
+  width: 325px;
   height: 40px;
   border-radius: 0;
   box-shadow: unset;
   padding: 0 15px;
-  vertical-align: text-bottom;
 }
 
 .collection a:nth-child(1) {
@@ -1534,7 +1532,8 @@ body.customer-account-login div.m-5{
 .about {
   min-height: 350px;
   padding: 50px 50px;
-  background-image: url("https://astraosastorage.blob.core.windows.net/reviews/Home_About.png"), linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-image: url("https://astraosastorage.blob.core.windows.net/reviews/Home_About.png"),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1543,11 +1542,10 @@ body.customer-account-login div.m-5{
 
 .about-logo {
   display: none;
-  margin-right: 100px;
 }
 
 .about-text {
-  max-width: 400px;
+  max-width: 40%;
   font-family: "PingFangSC";
   font-size: 10px;
   font-weight: normal;
@@ -1556,10 +1554,6 @@ body.customer-account-login div.m-5{
   letter-spacing: normal;
   line-height: 1.5;
   color: #ffffff;
-}
-
-button.more {
-  display: none;
 }
 
 .video iframe {
@@ -1623,6 +1617,20 @@ button.en {
 
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 767px) {
+  .about-text {
+    max-width: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .about button {
+    width: 100%;
+    height: auto;
+    border: solid 0.5px #000;
+    color: #000;
+  }
+
   .banner {
     height: 100%;
     min-height: 190px;
@@ -1656,11 +1664,6 @@ button.en {
     height: 518px;
   }
 
-  .about {
-    display: flex;
-    align-items: center;
-  }
-
   .video iframe {
     height: 500px;
   }
@@ -1682,9 +1685,6 @@ button.en {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .about {
-    padding: 50px 70px;
-  }
 }
 
 /******************** Style for Moonlay/bateeq Theme *********************/
@@ -1863,14 +1863,22 @@ body.cms-home
   z-index: 1;
 }
 
-body.cms-home div.column.main div:nth-child(9) div.product-item-info div.product-item-details {
+body.cms-home
+  div.column.main
+  div:nth-child(9)
+  div.product-item-info
+  div.product-item-details {
   -webkit-transition: 0.8s !important;
   -o-transition: 0.8s !important;
   transition: 0.8s !important;
   opacity: 0.5 !important;
 }
 
-body.cms-home div.column.main div:nth-child(9) div.product-item-info div.product-item-details:hover {
+body.cms-home
+  div.column.main
+  div:nth-child(9)
+  div.product-item-info
+  div.product-item-details:hover {
   opacity: 1 !important;
   background-image: linear-gradient(
     to bottom,
@@ -1883,7 +1891,12 @@ body.cms-home div.column.main div:nth-child(9) .product-item-name {
   display: none;
 }
 
-body.cms-home div.column.main div:nth-child(9) div.product-item-info div.product-item-details:hover .product-item-name {
+body.cms-home
+  div.column.main
+  div:nth-child(9)
+  div.product-item-info
+  div.product-item-details:hover
+  .product-item-name {
   display: block;
 }
 
@@ -2325,7 +2338,7 @@ body.cms-home .price-label {
     font-size: 10px;
     margin-top: 0px;
   }
-  
+
   body.cms-home .swatch-option.text {
     font-size: 9px;
     margin-right: 3px;
@@ -2395,7 +2408,9 @@ body.cms-home .price-label {
 
   .footer.content .links strong,
   .footer.content .links a,
-  .footer.content .links a:visited {
+  .footer.content .links a:visited,
+  .category-tree li a,
+  .category-tree li a:visited {
     color: #ffffff !important;
   }
 
@@ -2869,9 +2884,9 @@ body.cms-home .price-label {
     border-top: none !important;
   }
 
-  .wishlist-index-index .product-item-inner {
-    //margin: 9px -4px 0 -5px;
-  }
+  /*.wishlist-index-index .product-item-inner {
+    margin: 9px -4px 0 -5px;
+  }*/
 
   .sticky {
     position: fixed !important;
@@ -2949,13 +2964,16 @@ body.cms-home .price-label {
     min-width: 200px;
   }
 
-  .footer.content .links a:hover {
+  .footer.content .links a:hover,
+  .category-tree li a:hover {
     text-decoration: none;
     color: #ff7d09 !important;
   }
 
   .footer.content .links a,
-  .footer.content .links a:visited {
+  .footer.content .links a:visited,
+  .category-tree li a,
+  .category-tree li a:visited {
     color: #ffffff;
   }
 

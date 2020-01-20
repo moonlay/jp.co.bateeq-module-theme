@@ -62,7 +62,7 @@ $suffix = $block->showSuffix();
         <div class="margin-buttom-name-register">
             <div class="field field-name-firstname required">
                 
-                <input type="text" placeholder="First Name" id="<?= $block->escapeHtmlAttr($block->getFieldId('firstname')) ?>"
+                <input type="text" placeholder="ファーストネーム" id="<?= $block->escapeHtmlAttr($block->getFieldId('firstname')) ?>"
                     name="<?= $block->escapeHtmlAttr($block->getFieldName('firstname')) ?>"
                     value="<?= $block->escapeHtmlAttr($block->getObject()->getFirstname()) ?>"
                     title="<?= $block->escapeHtmlAttr($block->getStoreLabel('firstname')) ?>"
@@ -72,7 +72,7 @@ $suffix = $block->showSuffix();
             </div>
 
             <div class="field field-name-lastname required">
-                    <input type="text" placeholder="Last Name" id="<?= $block->escapeHtmlAttr($block->getFieldId('lastname')) ?>"
+                    <input type="text" placeholder="苗字" id="<?= $block->escapeHtmlAttr($block->getFieldId('lastname')) ?>"
                         name="<?= $block->escapeHtmlAttr($block->getFieldName('lastname')) ?>"
                         value="<?= $block->escapeHtmlAttr($block->getObject()->getLastname()) ?>"
                         title="<?= $block->escapeHtmlAttr($block->getStoreLabel('lastname')) ?>"
