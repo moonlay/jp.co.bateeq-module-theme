@@ -22,6 +22,15 @@ body {
   font-family: "Montserrat";
 }
 
+.m-5-KW{
+  margin-bottom: 50px !important;
+}
+
+/******************** Style for footer by sandy *********************/
+.margin-bawah-footer-ktgr{
+  margin-bottom: 8px !important;
+}
+
 /******************** Style for Sile Bar *********************/
 .disble-display-side-bar {
   display: none !important;
@@ -176,6 +185,11 @@ body.wishlist-index-index div.sidebar-additional {
 }
 
 /******************** Style for Address Edit *********************/
+.display-country{
+  visibility: hidden ;
+  position: absolute ;
+}
+
 .title-3-address-edit {
   font-family: "Montserrat";
   font-size: 14px;
@@ -1347,16 +1361,6 @@ body.customer-account-login div.m-5 {
   z-index: 0;
 }
 
-/*.text-container {
-  position: fixed;
-  top: 124px;
-  z-index: 2;
-  left: 0;
-  right: 0;
-  max-width: 1980px;
-  padding: 0;
-}*/
-
 .text-container {
   width: 100% !important;
   background-color: #fff;
@@ -1395,11 +1399,12 @@ body.customer-account-login div.m-5 {
 }
 
 .container-collection {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: auto;
-  grid-column-gap: 35px;
-  grid-row-gap: 50px;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
 .colspan-2 {
@@ -1408,7 +1413,7 @@ body.customer-account-login div.m-5 {
 }
 
 .m-5 {
-  margin-top: 100px !important;
+  margin-top: 50px !important;
   margin-bottom: 50px !important;
 }
 
@@ -1431,7 +1436,6 @@ body.customer-account-login div.m-5 {
   font-family: "PingFangSC";
   font-size: 30px;
   font-weight: 600;
-  //line-height: 2.33;
   line-height: 1.33;
   color: #000000;
 }
@@ -1447,26 +1451,24 @@ body.customer-account-login div.m-5 {
 
 .banner {
   position: relative;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  );
+  text-align: center;
+  color: white;
+  -ms-flex: 48%;
+  -webkit-box-flex: 48%;
+  flex: 48%;
+  max-width: 48%;
+  padding: 0 1%;
 }
 
-.banner:hover {
-  background: unset;
-}
-
-.banner > img {
-  position: relative;
-  z-index: -1;
-  object-fit: cover;
+.banner img {
+  vertical-align: middle;
   width: 100%;
+  height: 100%;
   max-height: 100%;
+  object-fit: cover;
 }
 
-.banner > .collection {
+.banner .collection {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1531,11 +1533,12 @@ body.customer-account-login div.m-5 {
 
 .about {
   min-height: 350px;
-  padding: 50px 50px;
-  background-image: url("https://astraosastorage.blob.core.windows.net/reviews/Home_About.png"),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  padding: 25px 25px;
+  /*background-image: url("https://astraosastorage.blob.core.windows.net/reviews/Home_About.jpg"),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));*/
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   margin-bottom: 50px;
 }
@@ -1554,10 +1557,6 @@ body.customer-account-login div.m-5 {
   letter-spacing: normal;
   line-height: 1.5;
   color: #ffffff;
-}
-
-.video iframe {
-  width: 100%;
 }
 
 .footer-socmed-container {
@@ -1631,11 +1630,6 @@ button.en {
     color: #000;
   }
 
-  .banner {
-    height: 100%;
-    min-height: 190px;
-  }
-
   .video iframe {
     height: 350px;
   }
@@ -1659,11 +1653,6 @@ button.en {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .banner {
-    min-height: 100%;
-    height: 518px;
-  }
-
   .video iframe {
     height: 500px;
   }
@@ -2325,6 +2314,26 @@ body.cms-home .price-label {
   display: none;
 }
 
+// About Page Video Youtube
+.item-about.video {
+  position: relative;
+  /*padding-bottom: 56.25%;*/
+  padding-bottom: 50px;
+  /*height: 0;*/
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.item-about.video iframe,
+.item-about.video object,
+.item-about.video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 767px) {
   // Rank Products
@@ -2353,12 +2362,6 @@ body.cms-home .price-label {
   body.cms-home .product-item .price-box {
     margin: 0 0 5px;
   }
-
-  /*
-  body.cms-home div.column.main div:nth-child(10) li.product-item {
-    margin-bottom: 50px;
-  }
-  */
 
   // Recommended Products
   body.cms-home div.column.main div:nth-child(9) li {
@@ -2494,14 +2497,8 @@ body.cms-home .price-label {
     margin-bottom: 35px;
   }
 
-  // About Page Video Youtube
-  body.cms-home div.column.main div.container-about div.item-about.video {
-    padding-bottom: 50px;
-  }
-
   // Sticky Navbar
   .page-header,
-  .nav-sections,
   .text-container {
     position: sticky;
     left: 0;
@@ -2513,14 +2510,32 @@ body.cms-home .price-label {
     z-index: 4;
   }
 
+  .logo {
+    position: absolute;
+    left: 3%;
+    margin: 0px auto 0 0;
+  }
+
   .nav-sections {
-    top: 70px;
+    position: fixed;
+    width: 33%;
+    top: 13px;
+    left: 16%;
     margin-bottom: 0;
-    z-index: 3;
+    z-index: 4;
+  }
+
+  .nav-sections,
+  .navigation {
+    background: transparent;
+  }
+
+  .block-search {
+    width: 26%;
   }
 
   .text-container {
-    top: 115px;
+    top: 70px;
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
     z-index: 2;
   }
@@ -2884,10 +2899,6 @@ body.cms-home .price-label {
     border-top: none !important;
   }
 
-  /*.wishlist-index-index .product-item-inner {
-    margin: 9px -4px 0 -5px;
-  }*/
-
   .sticky {
     position: fixed !important;
     top: 0;
@@ -2906,55 +2917,12 @@ body.cms-home .price-label {
   }
 
   .minicart-wrapper {
-    width: 7%;
-  }
-
-  .logo {
-    width: 15%;
-    margin: 0px auto 0 0;
-  }
-
-  .block-search {
-    width: 40%;
-  }
-
-  .minicart-wrapper {
     margin-top: 2px;
   }
 
   .header.panel > .header.links {
     margin-top: 7px;
   }
-
-  /*
-  .header.panel > .header.links li a:hover {
-    text-decoration: none;
-  }
-
-  li.authorization-link {
-    padding: 5px 0;
-  }
-
-  li.authorization-link a {
-    color: #000;
-    font-weight: 600;
-    border-bottom: 2px solid #000;
-  }
-
-  .header.panel > .header.links li:not(.authorization-link) a {
-    border: 2px solid #000;
-    border-radius: 5px;
-    padding: 5px;
-    color: #fff;
-    background-color: #000;
-  }*/
-
-  /*.nav-sections {
-    position: sticky;
-    top: 73px;
-    z-index: 2;
-    margin-bottom: 0;
-  }*/
 
   .customer-welcome .action.switch {
     color: #505050;
@@ -2988,10 +2956,25 @@ body.cms-home .price-label {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .nav-sections {
+    left: 14%;
+  }
+
+  .block-search {
+    width: 31%;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .nav-sections {
+    left: 13%;
+  }
+
+  .block-search {
+    width: 40%;
+  }
+
   .page-layout-1column
     .block.widget
     .products-grid
@@ -2999,16 +2982,31 @@ body.cms-home .price-label {
     margin-left: 2%;
   }
 
-  .minicart-wrapper {
-    width: 5%;
+  .logo {
+    margin: 0px auto 0 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .logo {
+    left: 8%;
   }
 
-  .logo {
-    width: 10%;
-    margin: 0px auto 0 0;
+  .nav-sections {
+    left: 17%;
   }
 
   .block-search {
-    width: 50%;
+    width: 44%;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .logo {
+    left: 17%;
+  }
+
+  .nav-sections {
+    left: 24%;
   }
 }
