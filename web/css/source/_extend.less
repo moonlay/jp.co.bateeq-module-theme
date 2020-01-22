@@ -27,6 +27,11 @@ body {
 }
 
 /******************** Style for footer by sandy *********************/
+.add-new-link-footer{
+  float: left;
+  width: 100%;
+}
+
 .margin-bawah-footer-ktgr{
   margin-bottom: 8px !important;
 }
@@ -1557,6 +1562,7 @@ body.customer-account-login div.m-5 {
   letter-spacing: normal;
   line-height: 1.5;
   color: #ffffff;
+  margin-bottom: 25px;
 }
 
 .footer-socmed-container {
@@ -1630,9 +1636,9 @@ button.en {
     color: #000;
   }
 
-  .video iframe {
+  /*.video iframe {
     height: 350px;
-  }
+  }*/
 }
 
 /* iPad portrait and landscape */
@@ -1653,9 +1659,9 @@ button.en {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .video iframe {
+  /*.video iframe {
     height: 500px;
-  }
+  }*/
 
   .footer-logo-container {
     float: right;
@@ -1677,6 +1683,46 @@ button.en {
 }
 
 /******************** Style for Moonlay/bateeq Theme *********************/
+
+
+.cart-summary .block .title strong,
+th.price,
+th.subtotal,
+.product-info-stock-sku {
+  position: relative;
+}
+
+th.price, th.subtotal {
+    width: 17%;
+}
+
+th.price span:after, th.subtotal span:after,
+strong#block-shipping-heading:after,
+.product-info-stock-sku:before {
+    content: '(消費税10%込み価格)';
+    color: #333;
+    position: absolute;
+
+}
+
+th.price span:after, th.subtotal span:after {
+    font-size: 8px;
+    right: 10px;
+    bottom: 3px;
+}
+
+strong#block-shipping-heading:after {
+    font-size: 8px;
+    right: 17px;
+    bottom: -8px;
+}
+
+.product-info-stock-sku:before {
+    font-size: 18px;
+    left: 10px;
+    top: 6px;
+}
+
 body.cms-home .products-grid .product-item-info:hover,
 body.cms-home .products-grid .product-item-info.active {
   padding: 0;
@@ -2317,9 +2363,10 @@ body.cms-home .price-label {
 // About Page Video Youtube
 .item-about.video {
   position: relative;
-  /*padding-bottom: 56.25%;*/
-  padding-bottom: 50px;
-  /*height: 0;*/
+  padding-bottom: 56.25%;
+  /*padding-bottom: 50px;*/
+  margin-bottom: 25px;
+  height: 0;
   overflow: hidden;
   max-width: 100%;
 }
