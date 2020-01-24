@@ -12,8 +12,9 @@
     <div class="block-content div-info-account">
         <div class="box box-information div-setting-margin">
             <div>
-                <p class="title-account-info">フルネーム</p>
-                <p class="value-account-info"><?= $block->escapeHtml($block->getName()) ?></p>
+                <p class="title-account-info">お名前</p>
+                <!-- <p class="value-account-info"><?= $block->escapeHtml($block->getName()) ?></p> -->
+                <p class="value-account-info"><?= $block->escapeHtml($block->getCustomer()->getLastname()) ?> <?= $block->escapeHtml($block->getCustomer()->getFirstname()) ?></p>
             </div>
             
             <div>

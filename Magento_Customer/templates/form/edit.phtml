@@ -12,7 +12,7 @@
 
         <?= $block->getBlockHtml('formkey') ?>
 
-        <a class="fullname-edit-account">フルネーム</a>
+        <a class="fullname-edit-account">お名前</a>
         <?= $block->getLayout()->createBlock(\Moonlay\CustomEditAccount\Block\Widget\Name::class)->setObject($block->getCustomer())->toHtml() ?>
 
         <!-- <a class="fullname-edit-account">Name (Kana)</a> -->
