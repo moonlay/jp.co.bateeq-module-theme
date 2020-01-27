@@ -1573,7 +1573,7 @@ and the product descriptor can be up to 18, 14, or 9 characters respectively (wi
 "Cannot delete option with id %1","id %1 のオプションは削除できません",module,Magento_Bundle
 "Could not save option","オプションを保存できません",module,Magento_Bundle
 "Price Range","価格範囲",module,Magento_Bundle
-"As Low as","同じかそれ以下",module,Magento_Bundle
+"As Low as","",module,Magento_Bundle
 "Together","まとめて",module,Magento_Bundle
 "Separately","別々",module,Magento_Bundle
 "Please specify product option(s).","商品オプションを指定してください。",module,Magento_Bundle
@@ -1614,7 +1614,7 @@ and the product descriptor can be up to 18, 14, or 9 characters respectively (wi
 "Shipped","荷送り人",module,Magento_Bundle
 "Refunded","返金",module,Magento_Bundle
 "Canceled","キャンセル済",module,Magento_Bundle
-"As low as","同じかそれ以下",module,Magento_Bundle
+"As low as","",module,Magento_Bundle
 "Regular Price","通常価格",module,Magento_Bundle
 "From","開始",module,Magento_Bundle
 "To","終了",module,Magento_Bundle
@@ -2139,7 +2139,7 @@ and the product descriptor can be up to 18, 14, or 9 characters respectively (wi
 "Multiple Select","複数選択",module,Magento_Catalog
 "Dropdown","ドロップダウン",module,Magento_Catalog
 "%1 doesn't extend \Magento\Framework\Filter\Template","%1 は \Magento\Framework\Filter\Template　を拡張できません。",module,Magento_Catalog
-"As low as","同じかそれ以下",module,Magento_Catalog
+"As low as","",module,Magento_Catalog
 "test","テスト",module,Magento_Catalog
 "Some text is here.","いくつかのテキストがここにあります。",module,Magento_Catalog
 "Some exception","何らかの例外",module,Magento_Catalog
@@ -4502,7 +4502,7 @@ You need to create a simple product for each configuration (Ex: a product for ea
 "Remove Product","商品削除",module,Magento_ConfigurableProduct
 "Create Product Configurations","商品設定をしてください",module,Magento_ConfigurableProduct
 "Cancel","キャンセル",module,Magento_ConfigurableProduct
-"As low as","同じかそれ以下",module,Magento_ConfigurableProduct
+"As low as","",module,Magento_ConfigurableProduct
 "Regular Price","通常価格",module,Magento_ConfigurableProduct
 "New Product Review","新製品レビュー",module,Magento_ConfigurableProduct
 "Here are the products you're about to create.","作成しようとしている製品は次のとおりです。",module,Magento_ConfigurableProduct

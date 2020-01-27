@@ -3,119 +3,94 @@
  */
 
 @font-face {
-  font-family: "PingFangSC";
-  src: url("../fonts/PingFangSC-Semibold.woff2");
-  font-weight: 600;
-  font-style: normal;
+  font-family: "Noto Sans JP";
+  src: url("../fonts/NotoSansJP-Regular.otf");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.otf");
-  font-weight: normal;
-  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PingFangSC";
+  src: url("../fonts/PingFangSC-Semibold.woff2");
   font-display: swap;
 }
 
 body {
-  font-family: "Montserrat";
+  font-family: "Noto Sans JP", "Montserrat", "PingFangSC", sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
 }
 
-.m-5-KW {
-  margin-bottom: 50px !important;
-}
-
-/******************** Style for adress(shipping) by sandy *********************/
-//after login
-body.checkout-index-index
-div.modals-wrapper
-form.form-shipping-address{
+/******************** Style for address (shipping) *********************/
+//START after login
+body.checkout-index-index div.modals-wrapper form.form-shipping-address {
   max-width: unset !important;
 }
 
 body.checkout-index-index
-div.modals-wrapper
-div.address
-fieldset.street
-div.control
-div.additional
-{
+  div.modals-wrapper
+  div.address
+  fieldset.street
+  div.control
+  div.additional {
   visibility: unset !important;
   position: unset !important;
 }
 
-body.checkout-index-index
-div.modals-wrapper
-div.address
-div:nth-child(3)
-{
-  visibility: hidden;
-  position: absolute;
+body.checkout-index-index div.modals-wrapper div.address div:nth-child(3),
+body.checkout-index-index div.modals-wrapper div.address div:nth-child(9) {
+  visibility: hidden !important;
+  position: absolute !important;
 }
+//END after login
 
-body.checkout-index-index
-div.modals-wrapper
-div.address
-div:nth-child(9)
-{
-  visibility: hidden;
-  position: absolute;
-}
-//end after login
-
-//before login
-body.checkout-index-index
-div.page-wrapper
-form.form-shipping-address{
+//START before login
+body.checkout-index-index div.page-wrapper form.form-shipping-address {
   max-width: unset !important;
 }
 
-body.checkout-index-index
-div.page-wrapper
-form.form-login{
+body.checkout-index-index div.page-wrapper form.form-login {
   max-width: unset !important;
 }
 
-body.checkout-index-index form.form-login{
+body.checkout-index-index form.form-login {
   border-bottom: unset !important;
   padding-bottom: unset !important;
 }
 
 body.checkout-index-index
-div.page-wrapper
-main.page-main
-div.address
-fieldset.street
-div.control
-div.additional
-{
+  div.page-wrapper
+  main.page-main
+  div.address
+  fieldset.street
+  div.control
+  div.additional {
   visibility: unset !important;
   position: unset !important;
 }
 
 body.checkout-index-index
-div.page-wrapper
-main.page-main
-div.address
-div:nth-child(3)
-{
-  visibility: hidden;
-  position: absolute;
-}
-
+  div.page-wrapper
+  main.page-main
+  div.address
+  div:nth-child(3),
 body.checkout-index-index
-div.page-wrapper
-main.page-main
-div.address
-div:nth-child(9)
-{
+  div.page-wrapper
+  main.page-main
+  div.address
+  div:nth-child(9) {
   visibility: hidden !important;
   position: absolute !important;
 }
-//end before login
+//END before login
 
-/******************** Style for footer by sandy *********************/
+/******************** Style for footer *********************/
 .add-new-link-footer {
   float: left;
   width: 100%;
@@ -125,7 +100,7 @@ div:nth-child(9)
   margin-bottom: 8px !important;
 }
 
-/******************** Style for Sile Bar *********************/
+/******************** Style for sidebar *********************/
 .disble-display-side-bar {
   display: none !important;
 }
@@ -134,11 +109,9 @@ div:nth-child(9)
   font-size: 15px;
   color: #505050;
   background-color: #ffffff !important;
-  font-family: "Montserrat";
 }
 
 /******************** Style for Wishlist *********************/
-
 .btn-remove {
   margin-top: 0px !important;
   height: 31px;
@@ -155,70 +128,39 @@ body.wishlist-index-index a.product-item-link {
 }
 
 body.wishlist-index-index span.price-final_price span.price-wrapper {
-  font-family: "Montserrat";
   font-size: 20px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 0.75;
-  letter-spacing: normal;
   color: #000000;
 }
 
 body.wishlist-index-index button.primary {
-  font-family: "Montserrat";
   font-size: 12px !important;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: normal !important;
-  letter-spacing: normal;
 }
 
 .btn-remove-wishlist {
-  font-family: "Montserrat";
   font-size: 12px;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: normal;
-  letter-spacing: normal;
   background: #ffffff;
 }
 
-body.wishlist-index-index div.qty {
-  display: none !important;
-}
-
+body.wishlist-index-index div.qty,
+body.wishlist-index-index div.product-item-actions a.edit,
+body.wishlist-index-index div.comment-box,
+body.wishlist-index-index div.page-title-wrapper,
+body.wishlist-index-index div.sidebar-additional,
 .products-grid.wishlist .product-item-actions .action.edit,
 .products-grid.wishlist .product-item-actions .action.delete:before {
-  display: none;
-}
-
-body.wishlist-index-index div.product-item-actions a.edit {
   display: none !important;
-}
-
-body.wishlist-index-index div.comment-box {
-  display: none;
 }
 
 .title-item-list {
-  font-family: "Montserrat";
   font-size: 12px;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
   color: #505050;
-}
-
-body.wishlist-index-index div.page-title-wrapper {
-  display: none;
-}
-
-body.wishlist-index-index div.sidebar-additional {
-  display: none;
 }
 
 @media only screen and (max-width: 767px) {
@@ -285,12 +227,10 @@ body.wishlist-index-index div.sidebar-additional {
 }
 
 .title-3-address-edit {
-  font-family: "Montserrat";
   font-size: 14px;
 }
 
 .legen-title-edit-address {
-  font-family: "Montserrat";
   font-size: 18px !important;
   font-weight: bold !important;
 }
@@ -299,54 +239,9 @@ body.wishlist-index-index div.sidebar-additional {
   padding: 0px 20px;
 }
 
-body.customer-address-form div.telephone input.input-text {
-  width: 100% !important;
-  padding: 12px 20px !important;
-  margin: 8px 0 !important;
-  box-sizing: border-box !important;
-  border: none !important;
-  border-bottom: 2px solid #979797 !important;
-  font-family: "Montserrat";
-  font-size: 14px;
-}
-
-body.customer-address-form div.telephone label.label {
-  font-family: "Montserrat";
-  font-size: 14px;
-}
-
-body.customer-address-form div.company input.input-text {
-  width: 100% !important;
-  padding: 12px 20px !important;
-  margin: 8px 0 !important;
-  box-sizing: border-box !important;
-  border: none !important;
-  border-bottom: 2px solid #979797 !important;
-  font-family: "Montserrat";
-  font-size: 14px;
-}
-
-body.customer-address-form div.company label.label {
-  font-family: "Montserrat";
-  font-size: 14px;
-}
-
-body.customer-address-form div.field-name-firstname input.input-text {
-  width: 100% !important;
-  padding: 12px 20px !important;
-  margin: 8px 0 !important;
-  box-sizing: border-box !important;
-  border: none !important;
-  border-bottom: 2px solid #979797 !important;
-  font-family: "Montserrat";
-  font-size: 14px;
-}
-
-body.customer-address-form div.field-name-firstname label.label {
-  font-family: "Montserrat";
-  font-size: 14px;
-}
-
+body.customer-address-form div.telephone input.input-text,
+body.customer-address-form div.company input.input-text,
+body.customer-address-form div.field-name-firstname input.input-text,
 body.customer-address-form div.field-name-lastname input.input-text {
   width: 100% !important;
   padding: 12px 20px !important;
@@ -354,10 +249,26 @@ body.customer-address-form div.field-name-lastname input.input-text {
   box-sizing: border-box !important;
   border: none !important;
   border-bottom: 2px solid #979797 !important;
+  font-size: 14px;
+}
+
+body.customer-address-form select.required-entry {
+  width: 100% !important;
+  padding: 12px 20px !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  border: none !important;
+  border-bottom: 2px solid #979797 !important;
+  height: auto !important;
+}
+
+body.customer-address-form div.telephone label.label,
+body.customer-address-form div.company label.label,
+body.customer-address-form div.field-name-firstname label.label {
+  font-size: 14px;
 }
 
 .label-check-box {
-  font-family: "Montserrat";
   color: #000000;
 }
 
@@ -376,13 +287,9 @@ body.customer-address-form div.field-name-lastname input.input-text {
 .title2-addres-create {
   border-bottom: unset !important;
   height: 30px;
-  font-family: "Montserrat";
   font-size: 25px !important;
   font-weight: 500 !important;
-  font-stretch: normal;
-  font-style: normal;
   line-height: normal !important;
-  letter-spacing: normal;
   color: #000000;
 }
 
@@ -390,25 +297,9 @@ body.customer-address-form div.field-name-lastname input.input-text {
   width: 100% !important;
 }
 
-body.customer-address-form select.required-entry {
-  width: 100% !important;
-  padding: 12px 20px !important;
-  margin: 0 !important;
-  box-sizing: border-box !important;
-  border: none !important;
-  border-bottom: 2px solid #979797 !important;
-  height: auto !important;
-}
-
-body.customer-address-form div.page-title-wrapper {
-  display: none;
-}
-
+body.customer-address-form div.page-title-wrapper,
 body.customer-address-form div.sidebar-additional {
   display: none;
-}
-
-@media only screen and (max-width: 767px) {
 }
 
 @media only screen and (min-width: 992px) {
@@ -437,12 +328,10 @@ body.customer-address-form div.sidebar-additional {
 
 /******************** Style for Address Info *********************/
 .title-defauld {
-  font-family: "Montserrat";
   font-size: 15px;
 }
 
 .change-defauld {
-  font-family: "Montserrat";
   font-size: 13px;
 }
 
@@ -488,102 +377,60 @@ body.customer-address-form div.sidebar-additional {
 }
 
 .title4-addres-info-table {
-  font-family: "Montserrat";
   font-size: 13px;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
   color: #000000;
 }
 
 .title3-addres-info-table {
-  font-family: "Montserrat";
   font-size: 13px;
   font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
   color: #000000;
 }
 
 .title2-addres-info-table {
   width: 100%;
-  font-family: "Montserrat";
   font-size: 18px;
   font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
   color: #000000;
 }
 
 .title4-addres-info {
   width: 100%;
   float: left;
-  font-family: "Montserrat";
   font-size: 13px;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
   color: #000000;
 }
 
 .title3-addres-info {
   width: 100%;
   float: left;
-  font-family: "Montserrat";
   font-size: 15px;
   font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
   color: #000000;
 }
 
 .title2-addres-info {
   width: 100%;
   float: left;
-  font-family: "Montserrat";
   font-size: 18px;
   font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
   color: #000000;
   margin-bottom: 20px;
 }
 
-body.customer-address-form div.page-title-wrapper {
-  display: none;
-}
-
-body.customer-address-form div.sidebar-additional {
-  display: none;
-}
-
-body.customer-address-index div.page-title-wrapper {
-  display: none;
-}
-
+body.customer-address-form div.page-title-wrapper,
+body.customer-address-form div.sidebar-additional,
+body.customer-address-index div.page-title-wrapper,
 body.customer-address-index div.sidebar-additional {
   display: none;
 }
 
 /******************** Style for Account Info *********************/
-body.customer-account-index div.page-title-wrapper {
-  display: none;
-}
-
-body.customer-account-index div.block-dashboard-orders {
-  display: none;
-}
-
-body.customer-account-index div.block-dashboard-addresses {
-  display: none;
-}
-
+body.customer-account-index div.page-title-wrapper,
+body.customer-account-index div.block-dashboard-orders,
+body.customer-account-index div.block-dashboard-addresses,
 body.customer-account-index div.sidebar-additional {
   display: none;
 }
@@ -643,13 +490,9 @@ body.customer-account-index div.sidebar-additional {
   .title-account-info {
     width: 40%;
     float: left;
-    font-family: "Montserrat";
     font-size: 15px;
     font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 3;
-    letter-spacing: normal;
     color: #000000;
     margin-bottom: 0px;
   }
@@ -657,13 +500,9 @@ body.customer-account-index div.sidebar-additional {
   .value-account-info {
     width: 60%;
     float: right;
-    font-family: "Montserrat";
     font-size: 15px;
     font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 3;
-    letter-spacing: normal;
     color: #505050;
   }
 }
@@ -706,13 +545,9 @@ body.customer-account-index div.sidebar-additional {
   .title-account-info {
     width: 40%;
     float: left;
-    font-family: "Montserrat";
     font-size: 15px;
     font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 3;
-    letter-spacing: normal;
     color: #000000;
     margin-bottom: 0px;
   }
@@ -720,13 +555,9 @@ body.customer-account-index div.sidebar-additional {
   .value-account-info {
     width: 60%;
     float: right;
-    font-family: "Montserrat";
     font-size: 15px;
     font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 3;
-    letter-spacing: normal;
     color: #505050;
   }
 }
@@ -736,7 +567,9 @@ body.customer-account-index div.sidebar-additional {
   margin-bottom: 0px !important;
 }
 
-body.customer-account-edit div.password-info {
+body.customer-account-edit div.password-info,
+body.customer-account-edit div.sidebar-additional,
+body.customer-account-edit div.page-title-wrapper {
   display: none;
 }
 
@@ -746,18 +579,10 @@ body.customer-account-edit div.password-info {
   font-size: 12px;
 }
 
-body.customer-account-edit div.sidebar-additional {
-  display: none;
-}
-
 .title-edit-account {
-  font-family: "Montserrat" !important;
   font-size: 20px;
   font-weight: bold !important;
-  font-stretch: normal !important;
-  font-style: normal !important;
   line-height: 2.8 !important;
-  letter-spacing: normal !important;
   text-align: left !important;
   color: #000000 !important;
   margin-top: 0 !important;
@@ -776,33 +601,21 @@ body.customer-account-edit div.sidebar-additional {
   margin-top: 0 !important;
 }
 
-body.customer-account-edit div.page-title-wrapper {
-  display: none;
-}
-
 .fullname-edit-account {
   margin-top: 0px !important;
   width: 122px !important;
   height: 30px !important;
-  font-family: "Montserrat" !important;
   font-size: 15px !important;
   font-weight: 600 !important;
-  font-stretch: normal !important;
-  font-style: normal !important;
   line-height: normal !important;
-  letter-spacing: normal !important;
   color: #000000 !important;
 }
 
 .title-chages-passandemail {
   margin-top: 0px !important;
-  font-family: "Montserrat" !important;
   font-size: 19px;
   font-weight: 600 !important;
-  font-stretch: normal !important;
-  font-style: normal !important;
   line-height: normal !important;
-  letter-spacing: normal !important;
   color: #000000 !important;
 }
 
@@ -918,10 +731,7 @@ body.customer-account-edit div.page-title-wrapper {
 
 /******************** Style for forgot password *********************/
 /* Global style */
-body.customer-account-forgotpassword div.m-5 {
-  margin-top: 50px;
-}
-
+body.customer-account-forgotpassword div.m-5,
 body.customer-account-createpassword div.m-5 {
   margin-top: 50px;
 }
@@ -931,13 +741,10 @@ body.customer-account-createpassword div.page-title-wrapper {
 }
 
 .title-change-pass .jpn {
-  font-family: "PingFangSC" !important;
+  font-family: "Hiragino Sans", "Noto Sans JP", "Meiryo", sans-serif;
   font-size: 30px;
   font-weight: 600 !important;
-  font-stretch: normal !important;
-  font-style: normal !important;
   line-height: 2.33 !important;
-  letter-spacing: normal !important;
   text-align: center !important;
   color: #000000 !important;
   margin-top: 0 !important;
@@ -946,13 +753,9 @@ body.customer-account-createpassword div.page-title-wrapper {
 }
 
 .title-change-pass .eng {
-  font-family: "Montserrat" !important;
   font-size: 25px;
   font-weight: normal !important;
-  font-stretch: normal !important;
-  font-style: normal !important;
   line-height: 2.8 !important;
-  letter-spacing: normal !important;
   text-align: center !important;
   color: #000000 !important;
   margin-top: 0 !important;
@@ -980,13 +783,10 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 }
 
 .title-frgt-pass .jpn {
-  font-family: "PingFangSC" !important;
+  font-family: "Hiragino Sans", "Noto Sans JP", "Meiryo", sans-serif;
   font-size: 30px;
   font-weight: 600 !important;
-  font-stretch: normal !important;
-  font-style: normal !important;
   line-height: 2.33 !important;
-  letter-spacing: normal !important;
   text-align: center !important;
   color: #004376 !important;
   margin-top: 0 !important;
@@ -995,13 +795,9 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 }
 
 .title-frgt-pass .eng {
-  font-family: "Montserrat" !important;
   font-size: 25px;
   font-weight: normal !important;
-  font-stretch: normal !important;
-  font-style: normal !important;
   line-height: 2.8 !important;
-  letter-spacing: normal !important;
   text-align: center !important;
   color: #505050 !important;
   margin-top: 0 !important;
@@ -1079,7 +875,6 @@ body.customer-account-login div.m-5 {
 .field-name-firstname,
 .field-name-lastname {
   position: relative;
-  font-family: "Montserrat";
   font-size: 14px;
 }
 
@@ -1092,13 +887,9 @@ body.customer-account-login div.m-5 {
 .You-can-use-a-phone {
   width: 349px;
   height: 19px;
-  font-family: "Montserrat";
   font-size: 15px;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: normal;
-  letter-spacing: normal;
   text-align: right;
   color: #505050;
 }
@@ -1132,13 +923,9 @@ body.customer-account-login div.m-5 {
   margin-top: 0px !important;
   width: 122px !important;
   height: 30px !important;
-  font-family: "Montserrat" !important;
   font-size: 25px !important;
   font-weight: 600 !important;
-  font-stretch: normal !important;
-  font-style: normal !important;
   line-height: normal !important;
-  letter-spacing: normal !important;
   color: #000000 !important;
 }
 
@@ -1152,13 +939,10 @@ body.customer-account-login div.m-5 {
 }
 
 .title-register .jpn-reg {
-  font-family: "PingFangSC" !important;
+  font-family: "Hiragino Sans", "Noto Sans JP", "Meiryo", sans-serif;
   font-size: 30px !important;
   font-weight: 600 !important;
-  font-stretch: normal !important;
-  font-style: normal !important;
   line-height: 2.33 !important;
-  letter-spacing: normal !important;
   text-align: center !important;
   color: #000000 !important;
   margin-top: 0 !important;
@@ -1167,13 +951,9 @@ body.customer-account-login div.m-5 {
 }
 
 .title-register .eng-reg {
-  font-family: "Montserrat" !important;
   font-size: 25px !important;
   font-weight: normal !important;
-  font-stretch: normal !important;
-  font-style: normal !important;
   line-height: 2.8 !important;
-  letter-spacing: normal !important;
   text-align: center !important;
   color: #505050 !important;
   margin-top: 0 !important;
@@ -1207,7 +987,8 @@ body.customer-account-login div.m-5 {
   text-align: right;
 }
 
-.disble-display {
+.disble-display,
+.login-container .fieldset:after {
   display: none !important;
 }
 
@@ -1215,32 +996,21 @@ body.customer-account-login div.m-5 {
   position: relative;
 }
 
-.login-container .fieldset:after {
-  display: none;
-}
-
 .Forgot-Password {
   width: 143px !important;
   height: 19px !important;
-  font-family: "Montserrat" !important;
   font-size: 15px !important;
   font-weight: 500 !important;
-  font-stretch: normal !important;
-  font-style: normal !important;
   line-height: normal !important;
-  letter-spacing: normal !important;
   text-align: right !important;
   color: #000000 !important;
 }
 
 .title-login .jpn {
-  font-family: "PingFangSC" !important;
+  font-family: "Hiragino Sans", "Noto Sans JP", "Meiryo", sans-serif;
   font-size: 30px !important;
   font-weight: 600 !important;
-  font-stretch: normal !important;
-  font-style: normal !important;
   line-height: 2.33 !important;
-  letter-spacing: normal !important;
   text-align: center !important;
   color: #000000 !important;
   margin-top: 0 !important;
@@ -1249,13 +1019,9 @@ body.customer-account-login div.m-5 {
 }
 
 .title-login .eng {
-  font-family: "Montserrat" !important;
   font-size: 25px !important;
   font-weight: normal !important;
-  font-stretch: normal !important;
-  font-style: normal !important;
   line-height: 2.8 !important;
-  letter-spacing: normal !important;
   text-align: center !important;
   color: #505050 !important;
   margin-top: 0 !important;
@@ -1446,10 +1212,6 @@ body.customer-account-login div.m-5 {
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
-
 /******************** Style for Moonlay/CustomHome Module *********************/
 .rating-summary .rating-result > span:before {
   z-index: 0;
@@ -1462,14 +1224,10 @@ body.customer-account-login div.m-5 {
   text-align: center;
 }
 
-.running-text {
-  font-family: "PingFangSC";
+.text-container strong {
   font-size: 15px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 25px;
-  letter-spacing: normal;
   color: #505050;
   background-color: transparent;
   padding: 0;
@@ -1486,6 +1244,7 @@ body.customer-account-login div.m-5 {
 
 .owl-carousel .owl-item img {
   height: 625px;
+  /*height: auto;*/
   object-fit: cover;
 }
 
@@ -1502,21 +1261,17 @@ body.customer-account-login div.m-5 {
   padding: 0;
 }
 
-.colspan-2 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
 .m-5 {
   margin-top: 50px !important;
   margin-bottom: 50px !important;
 }
 
+.m-5-KW {
+  margin-bottom: 50px !important;
+}
+
 .title,
 .block-products-list .block-title {
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
   text-align: center;
   margin-bottom: 0;
 }
@@ -1528,7 +1283,7 @@ body.customer-account-login div.m-5 {
 }
 
 .title h2:nth-child(1) {
-  font-family: "PingFangSC";
+  font-family: "Hiragino Sans", "Noto Sans JP", "Meiryo", sans-serif;
   font-size: 30px;
   font-weight: 600;
   line-height: 1.33;
@@ -1537,7 +1292,6 @@ body.customer-account-login div.m-5 {
 
 .title h2:nth-child(2),
 .block-products-list .block-title {
-  font-family: "Montserrat";
   font-size: 25px;
   font-weight: normal;
   line-height: 1;
@@ -1581,61 +1335,21 @@ body.customer-account-login div.m-5 {
 }
 
 .collection a,
+.about a,
 .about p,
+.about h1,
+.about h2,
+.about h3,
+.about h4,
+.about h5,
+.about h6,
 .about button {
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
   color: #ffffff;
-}
-
-.about p {
-  white-space: pre-wrap;
-  font-family: "PingFangSC";
-  font-size: 20px;
-  font-weight: normal;
-  line-height: 1.5;
-  text-align: justify;
-}
-
-.about button {
-  font-family: "PingFangSC";
-  font-size: 20px;
-  font-weight: normal;
-  line-height: normal;
-
-  background-color: Transparent;
-  border: solid 0.5px #ffffff;
-  width: 325px;
-  height: 40px;
-  border-radius: 0;
-  box-shadow: unset;
-  padding: 0 15px;
-}
-
-.collection a:nth-child(1) {
-  font-family: "PingFangSC";
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 1;
-}
-
-.collection a:nth-child(3) {
-  font-family: "Montserrat";
-  font-size: 21px;
-  font-weight: normal;
-  line-height: 1.4;
-}
-
-.collection a:hover {
-  text-decoration: none;
 }
 
 .about {
   min-height: 350px;
   padding: 25px 25px;
-  /*background-image: url("https://astraosastorage.blob.core.windows.net/reviews/Home_About.jpg"),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));*/
   background-position: center;
   background-repeat: no-repeat;
   /*background-attachment: fixed;*/
@@ -1643,21 +1357,57 @@ body.customer-account-login div.m-5 {
   margin-bottom: 50px;
 }
 
-.about-logo {
-  display: none;
+.about p {
+  font-family: "Hiragino Sans", "Noto Sans JP", "Meiryo", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.1;
+  text-align: justify;
+  white-space: pre-wrap;
+  margin-bottom: 50px;
+}
+
+.about h2 {
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: -15px;
+}
+
+.about h3 {
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
 .about-text {
-  max-width: 40%;
-  font-family: "PingFangSC";
-  font-size: 10px;
+  max-width: 45%;
+}
+
+.about button {
+  background-color: transparent;
+  border: solid 0.5px #ffffff;
+  width: 325px;
+  height: 40px;
+  border-radius: 0;
+  box-shadow: unset;
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+.collection a:nth-child(1) {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.collection a:nth-child(3) {
+  font-size: 21px;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: 1.5;
-  color: #ffffff;
-  margin-bottom: 25px;
+  line-height: 1.4;
+}
+
+.collection a:hover {
+  text-decoration: none;
 }
 
 .footer-socmed-container {
@@ -1670,7 +1420,6 @@ body.customer-account-login div.m-5 {
 
 .footer-socmed-container span,
 .footer-socmed-container span a {
-  font-family: "Montserrat";
   font-size: 15px;
   font-weight: normal;
   font-stretch: normal;
@@ -1717,47 +1466,37 @@ button.en {
 
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 767px) {
+  .product-item .tocart {
+    font-size: 1rem;
+  }
+
   .about-text {
     max-width: 100%;
     background: rgba(0, 0, 0, 0.25);
     padding: 15px;
     border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+  .about {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .about p {
+    margin-bottom: 0;
   }
 
   .about button {
     width: 100%;
-    height: auto;
     border: solid 0.5px #000;
     color: #000;
+    border-radius: 5px;
   }
-
-  /*.video iframe {
-    height: 350px;
-  }*/
-}
-
-/* iPad portrait and landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-}
-
-/* iPad portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-}
-
-/* iPad Pro portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-}
-
-/* iPad Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  /*.video iframe {
-    height: 500px;
-  }*/
-
   .footer-logo-container {
     float: right;
     width: 350px;
@@ -1810,6 +1549,11 @@ th.subtotal span:after {
   bottom: 3px;
 }
 
+span.normal-price:after {
+  content: "税込";
+  color: #333;
+}
+
 strong#block-shipping-heading:after {
   font-size: 8px;
   left: 0;
@@ -1828,14 +1572,14 @@ body.cms-home .products-grid .product-item-info.active {
   margin: 0;
 }
 
-/*.product-image-wrapper {
-  z-index: -1;
-}*/
-
 body.cms-home .product-image-container,
 body.cms-home .product-image-photo {
   width: 100% !important;
 }
+
+/*.product-image-wrapper {
+  z-index: -1;
+}*/
 
 // Ranking Style
 /*
@@ -2336,7 +2080,6 @@ body.checkout-index-index select {
 }
 
 .block-minicart .block-content > .actions > .secondary a {
-  font-family: "Montserrat";
   font-size: 15px;
   font-weight: 600;
   font-stretch: normal;
@@ -2398,7 +2141,6 @@ div.items-total {
 }
 
 h2.shopping-cart {
-  font-family: "Montserrat";
   font-size: 20px;
   font-weight: 600;
   font-stretch: normal;
@@ -2481,13 +2223,13 @@ body.cms-home .price-label {
 }
 
 body.cms-home div.column.main div:nth-child(9) li a.product-item-link {
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    padding-top: 60%;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding-top: 60%;
 }
 
 /* Extra small devices (phones, 767px and down) */
@@ -2743,13 +2485,9 @@ body.cms-home div.column.main div:nth-child(9) li a.product-item-link {
   }
 
   .logged-in {
-    font-family: "PingFangSC";
     font-size: 15px;
     font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
     line-height: normal;
-    letter-spacing: normal;
     text-align: center;
     color: #000000;
   }
@@ -3032,13 +2770,9 @@ body.cms-home div.column.main div:nth-child(9) li a.product-item-link {
   }
 
   a.multicheckout {
-    font-family: "Montserrat";
     font-size: 12px;
     font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
     line-height: normal;
-    letter-spacing: normal;
     color: #000000;
   }
 
