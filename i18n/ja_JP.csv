@@ -1,3 +1,7 @@
+"Total Bill","合計"
+"Shopping Cart","カート"
+"View Cart","カートを見る"
+"Check Out","購入に進む"
 "All","全て",module,Magento_AdminGws
 "None","なし",module,Magento_AdminGws
 "Allowed Scopes","許可されたスコープ",module,Magento_AdminGws
@@ -3307,7 +3311,7 @@ Time in seconds between the widget updates.,module,Magento_CatalogWidget
 "Items","アイテム",module,Magento_Checkout
 "Total:","合計:",module,Magento_Checkout
 "Billing Address:","請求先:",module,Magento_Checkout
-"Shipping Address:","お届け先住所:",module,Magento_Checkout
+"Shipping Address:","ご購入者情報:",module,Magento_Checkout
 "Shipping Method:","配送方法:",module,Magento_Checkout
 "Payment Method:","支払方法:",module,Magento_Checkout
 "Date & Time:","日時:",module,Magento_Checkout
@@ -3375,7 +3379,7 @@ Time in seconds between the widget updates.,module,Magento_CatalogWidget
 "Send Payment Failed Email Copy Method","支払失敗コピーメール送信方法",module,Magento_Checkout
 "Summary","レビュータイトル",module,Magento_Checkout
 "Order Total","注文合計",module,Magento_Checkout
-"Shipping Address","お届け先住所",module,Magento_Checkout
+"Shipping Address","ご購入者情報",module,Magento_Checkout
 "We'll send your order confirmation here.","ここに注文確認を送ります。",module,Magento_Checkout
 "Payment","支払",module,Magento_Checkout
 "Not yet calculated","未確定",module,Magento_Checkout
@@ -4918,7 +4922,7 @@ new products will be created. Use this step to customize images and price for yo
 "Per Website","ウェブサイトごと",module,Magento_Customer
 "We can't share customer accounts globally when the accounts share identical email addresses on more than one website.","アカウント達が同一のEメールアドレスを1つ以上のウェブサイトでシェアする時には顧客アカウントをグローバルにシェアすることはできません。",module,Magento_Customer
 "Billing Address","請求先住所",module,Magento_Customer
-"Shipping Address","お届け先住所",module,Magento_Customer
+"Shipping Address","ご購入者情報",module,Magento_Customer
 "-- Please Select --","-- 選択してください --",module,Magento_Customer
 "Please enter a valid password reset token.","有効なパスワードのリセットトークンを入力してください。",module,Magento_Customer
 "The password can not begin or end with a space.","パスワードの始まりと終わりはスペースにはできません",module,Magento_Customer
@@ -7134,7 +7138,7 @@ Promo Section""",module,Magento_Cybersource
 "Type","種別",module,Magento_GiftRegistry
 "Owner","所有者",module,Magento_GiftRegistry
 "Created on","作成日",module,Magento_GiftRegistry
-"Shipping Address","お届け先住所",module,Magento_GiftRegistry
+"Shipping Address","ご購入者情報",module,Magento_GiftRegistry
 "Shopping Cart Items","ショッピングカート商品",module,Magento_GiftRegistry
 "New Attribute","新規属性",module,Magento_GiftRegistry
 "Input Type","入力形式",module,Magento_GiftRegistry
@@ -7641,7 +7645,7 @@ e.g. var/export, var/import, var/export/some/dir",module,Magento_ImportExport
 "Instant Purchase","即時購入",module,Magento_InstantPurchase
 "Instant Purchase Confirmation","即時購入の確認",module,Magento_InstantPurchase
 "Are you sure you want to place order and pay?","注文を確定してお支払いしてもよろしいですか？",module,Magento_InstantPurchase
-"Shipping Address","お届け先住所",module,Magento_InstantPurchase
+"Shipping Address","ご購入者情報",module,Magento_InstantPurchase
 "Billing Address","請求先住所",module,Magento_InstantPurchase
 "Payment Method","お支払方法",module,Magento_InstantPurchase
 "Shipping Method","お届け方法",module,Magento_InstantPurchase
@@ -8716,7 +8720,7 @@ it will make no affect on Price filter.",module,Magento_LayeredNavigation
 "Shipping Information","配送情報",module,Magento_NegotiableQuote
 "Shipping Methods & Price","配送方法と配送価格",module,Magento_NegotiableQuote
 "Sorry, rates are not available for this quote.","申し訳ありませんが、この見積もりでレートはご利用いただけません。",module,Magento_NegotiableQuote
-"Shipping Address","お届け先住所",module,Magento_NegotiableQuote
+"Shipping Address","ご購入者情報",module,Magento_NegotiableQuote
 "You have no shipping address for this quote.","この見積もりに対する配送先住所がありません。",module,Magento_NegotiableQuote
 "Incl. Tax","税込",module,Magento_NegotiableQuote
 "Proposed Shipping Price","提案された配送料",module,Magento_NegotiableQuote
@@ -8733,7 +8737,7 @@ it will make no affect on Price filter.",module,Magento_LayeredNavigation
 "Never","まだ",module,Magento_NegotiableQuote
 "(Updated)","(更新)",module,Magento_NegotiableQuote
 "(Added)","(追加済み)",module,Magento_NegotiableQuote
-"Shipping address","お届け先住所",module,Magento_NegotiableQuote
+"Shipping address","ご購入者情報",module,Magento_NegotiableQuote
 "Proposed shipping price","提案された配送料",module,Magento_NegotiableQuote
 "Shipping method","配送方法",module,Magento_NegotiableQuote
 "removed","削除済",module,Magento_NegotiableQuote
@@ -9654,7 +9658,7 @@ If field is empty default value localhost will be saved.","Varnish上のキャ�
 "Please select a shipping method...","送付方法を選んで下さい...",module,Magento_Paypal
 "Update Shipping Method","配送方法をアップデート",module,Magento_Paypal
 "Sorry, no quotes are available for this order right now.","申し訳ありません、現在この注文の見積もりはできません。",module,Magento_Paypal
-"Shipping Address","お届け先住所",module,Magento_Paypal
+"Shipping Address","ご購入者情報",module,Magento_Paypal
 "Edit","編集",module,Magento_Paypal
 "Buy now with PayPal","PayPalで購入しましょう",module,Magento_Paypal
 "Edit Payment Information","支払情報編集",module,Magento_Paypal
@@ -11522,7 +11526,7 @@ target=""_blank"">DevDocs' Release Information</a>.,module,Magento_ReleaseNotifi
 "Return Date: ","返品日: ",module,Magento_Rma
 "Order # ","注文 # ",module,Magento_Rma
 "Ordered: ","注文済み: ",module,Magento_Rma
-"Shipping Address:","お届け先住所:",module,Magento_Rma
+"Shipping Address:","ご購入者情報:",module,Magento_Rma
 "Return Address:","返品住所:",module,Magento_Rma
 "Condition","条件",module,Magento_Rma
 "Qty","個数",module,Magento_Rma
@@ -11594,7 +11598,7 @@ target=""_blank"">DevDocs' Release Information</a>.,module,Magento_ReleaseNotifi
 "Notified","通知済",module,Magento_Rma
 "Not Notified","未通知",module,Magento_Rma
 "Return Address","返品住所",module,Magento_Rma
-"Order Shipping Address","お届け先住所",module,Magento_Rma
+"Order Shipping Address","ご購入者情報",module,Magento_Rma
 "Delete Line","行を削除",module,Magento_Rma
 "Select All","全て選択",module,Magento_Rma
 "Weight","重さ",module,Magento_Rma
@@ -11649,7 +11653,7 @@ target=""_blank"">DevDocs' Release Information</a>.,module,Magento_ReleaseNotifi
 "Are you sure you want to delete this tracking information?","この追跡情報を削除してもよろしいですか？",module,Magento_Rma
 "Request Information","要求情報",module,Magento_Rma
 "Date Requested","依頼日付",module,Magento_Rma
-"Shipping Address","お届け先住所",module,Magento_Rma
+"Shipping Address","ご購入者情報",module,Magento_Rma
 "This won't take long . . .","This won't take long . . .",module,Magento_Rma
 "Shipping and Tracking Information","配送と追跡情報",module,Magento_Rma
 "Track this shipment","この荷物を追跡する",module,Magento_Rma
@@ -11818,7 +11822,7 @@ target=""_blank"">DevDocs' Release Information</a>.,module,Magento_ReleaseNotifi
 "Price","価格",module,Magento_Sales
 "Select","選択",module,Magento_Sales
 "Quantity","個数",module,Magento_Sales
-"Shipping Address","お届け先住所",module,Magento_Sales
+"Shipping Address","ご購入者情報",module,Magento_Sales
 "Shipping Method","お届け方法",module,Magento_Sales
 "Update Changes","変更内容を保存",module,Magento_Sales
 "Shopping Cart","カート",module,Magento_Sales
@@ -12665,7 +12669,7 @@ Choose...;選択してください...",module,Magento_Sales
 "Refunded","返金",module,Magento_SalesArchive
 "Order Status","注文ステータス",module,Magento_SalesArchive
 "Billing Address","請求先住所",module,Magento_SalesArchive
-"Shipping Address","お届け先住所",module,Magento_SalesArchive
+"Shipping Address","ご購入者情報",module,Magento_SalesArchive
 "Customer Name","顧客名",module,Magento_SalesArchive
 "Email","Eメール",module,Magento_SalesArchive
 "Customer Group","顧客グループ",module,Magento_SalesArchive
@@ -14423,7 +14427,7 @@ Select a different range to add a new Future Update.","この時間帯の次回�
 "You cannot delete this tax class because it is used in existing %1(s).","%1にてすでに使われているので、この税クラスを削除できません",module,Magento_Tax
 "Custom price if available","利用できればカスタム価格",module,Magento_Tax
 "Original price only","オリジナル価格のみ",module,Magento_Tax
-"Shipping Address","お届け先住所",module,Magento_Tax
+"Shipping Address","ご購入者情報",module,Magento_Tax
 "Billing Address","請求先住所",module,Magento_Tax
 "Shipping Origin","配送元",module,Magento_Tax
 "No (price without tax)","No（税抜価格）",module,Magento_Tax
