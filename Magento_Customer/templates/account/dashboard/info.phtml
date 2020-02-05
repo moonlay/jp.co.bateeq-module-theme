@@ -1,11 +1,3 @@
-<?php
-/**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
-
-/** @var \Magento\Customer\Block\Account\Dashboard\Info $block */
-?>
 <div class="block block-dashboard-info">
 
 
@@ -13,25 +5,35 @@
         <div class="box box-information div-setting-margin">
             <div>
                 <p class="title-account-info">お名前</p>
-                <!-- <p class="value-account-info"><?= $block->escapeHtml($block->getName()) ?></p> -->
-                <p class="value-account-info"><?= $block->escapeHtml($block->getCustomer()->getLastname()) ?> <?= $block->escapeHtml($block->getCustomer()->getFirstname()) ?></p>
+                <!-- <p class="value-account-info"><?= $block->escapeHtml(
+                  $block->getName()
+                ) ?></p> -->
+                <p class="value-account-info"><?= $block->escapeHtml(
+                  $block->getCustomer()->getFirstname()
+                ) ?> <?= $block->escapeHtml(
+   $block->getCustomer()->getLastname()
+ ) ?></p>
             </div>
-            
+
             <div>
                 <p class="title-account-info">電子メールアドレス</p>
-                <p class="value-account-info"><?= $block->escapeHtml($block->getCustomer()->getEmail()) ?></p>
+                <p class="value-account-info"><?= $block->escapeHtml(
+                  $block->getCustomer()->getEmail()
+                ) ?></p>
             </div>
-            
-            <?= $block->getChildHtml('customer.account.dashboard.info.extra'); ?>
-            
-            
+
+            <?= $block->getChildHtml('customer.account.dashboard.info.extra') ?>
+
+
         </div>
 
         <div class="box-actions">
-            <a type="submit" class="action edit primary btn-edit-account" href="<?= $block->escapeUrl($block->getUrl('customer/account/edit')) ?>" style="text-align: center;">
+            <a type="submit" class="action edit primary btn-edit-account" href="<?= $block->escapeUrl(
+              $block->getUrl('customer/account/edit')
+            ) ?>" style="text-align: center;">
                 <span><?= $block->escapeHtml(__('Edit')) ?></span>
             </a>
         </div>
-        
+
     </div>
 </div>
