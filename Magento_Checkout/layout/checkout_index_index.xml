@@ -24,9 +24,9 @@
                                                     <item name="shipping-address-fieldset" xsi:type="array">
                                                         <item name="children" xsi:type="array">
                                                         <!-- Start: Important part -->
-                                                            <item name="lastname" xsi:type="array">
+                                                            <!-- <item name="lastname" xsi:type="array">
                                                                 <item name="sortOrder" xsi:type="string">1</item>
-                                                            </item>
+                                                            </item> -->
                                                             <item name="postcode" xsi:type="array">
                                                                 <item name="sortOrder" xsi:type="string">71</item>
                                                             </item>

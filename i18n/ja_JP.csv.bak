@@ -546,8 +546,8 @@ href=""https://dashboard.rjmetrics.com/v2/magento/signup/"">Magento BIEssentials
 "My Account","マイアカウント",module,Magento_Backend
 "Account Information","アカウント情報",module,Magento_Backend
 "User Name","ユーザ名",module,Magento_Backend
-"First Name","姓",module,Magento_Backend
-"Last Name","名",module,Magento_Backend
+"First Name","名",module,Magento_Backend
+"Last Name","姓",module,Magento_Backend
 "Email","Eメール",module,Magento_Backend
 "User Email","ユーザーメールアドレス",module,Magento_Backend
 "New Password","新パスワード",module,Magento_Backend
@@ -1376,8 +1376,8 @@ Accept or Deny Payment""",module,Magento_Braintree
 "Addresses must have at least one field filled in.","住所には少なくとも1つの入力されたフィールドが必要です。",module,Magento_Braintree
 "Company is too long.","Company is too long.",module,Magento_Braintree
 "Extended address is too long.","Extended address is too long.",module,Magento_Braintree
-"First name is too long.","姓 is too long.",module,Magento_Braintree
-"Last name is too long.","名 is too long.",module,Magento_Braintree
+"First name is too long.","First name is too long.",module,Magento_Braintree
+"Last name is too long.","Last name is too long.",module,Magento_Braintree
 "Locality is too long.","Locality is too long.",module,Magento_Braintree
 "Postal code is required.","Postal code is required.",module,Magento_Braintree
 "Postal code may contain no more than 9 letter or number characters.","Postal code may contain no more than 9 letter or number characters.",module,Magento_Braintree
@@ -1471,8 +1471,8 @@ Accept or Deny Payment""",module,Magento_Braintree
 "Card Verification Number Visual Reference","カード確認番号の参考画像",module,Magento_Braintree
 "Make Default","デフォルトにする",module,Magento_Braintree
 "Billing Address","請求先住所",module,Magento_Braintree
-"First Name","姓",module,Magento_Braintree
-"Last Name","名",module,Magento_Braintree
+"First Name","名",module,Magento_Braintree
+"Last Name","姓",module,Magento_Braintree
 "Company","会社名",module,Magento_Braintree
 "Address","住所",module,Magento_Braintree
 "City","市区町村",module,Magento_Braintree
@@ -1824,8 +1824,8 @@ and the product descriptor can be up to 18, 14, or 9 characters respectively (wi
 "Price Alert Subscriptions","価格アラート購読",module,Magento_Catalog
 "Stock Alert Subscriptions","在庫アラート購読",module,Magento_Catalog
 "There are no customers for this alert.","このアラートに顧客は登録されていません。",module,Magento_Catalog
-"First Name","姓",module,Magento_Catalog
-"Last Name","名",module,Magento_Catalog
+"First Name","名",module,Magento_Catalog
+"Last Name","姓",module,Magento_Catalog
 "Email","Eメール",module,Magento_Catalog
 "Subscribe Date","登録日",module,Magento_Catalog
 "Last Notified","最終通知日",module,Magento_Catalog
@@ -3754,9 +3754,9 @@ Time in seconds between the widget updates.,module,Magento_CatalogWidget
 "Job Title:","職名:",module,Magento_Company
 "Email Address:","メールアドレス:",module,Magento_Company
 "Prefix:","接頭辞:",module,Magento_Company
-"First Name:","姓:",module,Magento_Company
+"First Name:","名:",module,Magento_Company
 "Middle Name/Initial:","ミドルネーム/イニシャル:",module,Magento_Company
-"Last Name:","名:",module,Magento_Company
+"Last Name:","姓:",module,Magento_Company
 "Suffix:","サフィックス:",module,Magento_Company
 "Gender:","性別:",module,Magento_Company
 "Duplicated","複製",module,Magento_Company
@@ -3905,8 +3905,8 @@ Time in seconds between the widget updates.,module,Magento_CatalogWidget
 "Delete Selected","選択項目を削除",module,Magento_Company
 "Error","エラー",module,Magento_Company
 "User Role","ユーザー権限",module,Magento_Company
-"First Name","姓",module,Magento_Company
-"Last Name","名",module,Magento_Company
+"First Name","名",module,Magento_Company
+"Last Name","姓",module,Magento_Company
 "Status","ステータス",module,Magento_Company
 "Team Title","チームタイトル",module,Magento_Company
 "Description","概要",module,Magento_Company
@@ -5237,8 +5237,8 @@ Email template chosen based on theme fallback when ""Default"" option is selecte
 "Billing Firstname","支払人の名",module,Magento_Customer
 "Billing Lastname","支払人の姓",module,Magento_Customer
 "Account Lock","アカウントロック",module,Magento_Customer
-"First Name","姓",module,Magento_Customer
-"Last Name","名",module,Magento_Customer
+"First Name","名",module,Magento_Customer
+"Last Name","姓",module,Magento_Customer
 "Last Activity","最近の行動",module,Magento_Customer
 "Type","種別",module,Magento_Customer
 "Customer Information","顧客情報",module,Magento_Customer
@@ -5258,15 +5258,15 @@ Email template chosen based on theme fallback when ""Default"" option is selecte
 "Invalid input","不正な入力",module,Magento_Customer
 "Confirm your new password.","新しいパスワードを確認してください。",module,Magento_Customer
 "Something went wrong while changing the password.","パスワード変更中に問題が発生しました。",module,Magento_Customer
-"Please enter the first name.","姓を入力してください。",module,Magento_Customer
-"Please enter the last name.","名を入力してください。",module,Magento_Customer
+"Please enter the first name.","名を入力してください。",module,Magento_Customer
+"Please enter the last name.","姓を入力してください。",module,Magento_Customer
 "Please enter the street.","住所を入力してください。",module,Magento_Customer
 "Please enter the city.","市区町村を入力してください。",module,Magento_Customer
 "Please enter the phone number.","電話番号を入力してください。",module,Magento_Customer
 "Please enter the zip/postal code.","郵便番号を入力してください。",module,Magento_Customer
 "Please enter the country.","国を入力してください。",module,Magento_Customer
-"Please enter a first name.","姓を入力してください",module,Magento_Customer
-"Please enter a last name.","名を入力してください",module,Magento_Customer
+"Please enter a first name.","名を入力してください",module,Magento_Customer
+"Please enter a last name.","姓を入力してください",module,Magento_Customer
 "Please correct this email address: ""%1"".","Eメールアドレスを修正してください: ""%1""。",module,Magento_Customer
 "Please enter a date of birth.","生年月日を入力して下さい。",module,Magento_Customer
 "Please enter a TAX/VAT number.","TAX/VAT番号を入力してください。",module,Magento_Customer
@@ -7089,8 +7089,8 @@ Promo Section""",module,Magento_Cybersource
 "The wish list item has been added to this gift registry.","ほしい物リストアイテムがこのギフトレジストリに追加されました。",module,Magento_GiftRegistry
 "We couldn’t add your wish list items to your gift registry.","ほしい物リストアイテムをギフトレジストリに追加できませんでした。",module,Magento_GiftRegistry
 "Please enter correct search options.","正しい検索オプションを入力してください。",module,Magento_GiftRegistry
-"Please enter at least 2 letters of the first name.","姓の最初の2文字を入力してください。",module,Magento_GiftRegistry
-"Please enter at least 2 letters of the last name.","名の最初の2文字を入力してください。",module,Magento_GiftRegistry
+"Please enter at least 2 letters of the first name.","名の最初の2文字を入力してください。",module,Magento_GiftRegistry
+"Please enter at least 2 letters of the last name.","姓の最初の2文字を入力してください。",module,Magento_GiftRegistry
 "Please enter a valid email address.","正しいメールアドレスを入力してください。",module,Magento_GiftRegistry
 "Please enter a gift registry ID.","ギフトレジストリIDを入力してください。",module,Magento_GiftRegistry
 "Please enter the quantity of items to add to cart.","カートに追加するアイテム数を入力してください。",module,Magento_GiftRegistry
@@ -7125,8 +7125,8 @@ Promo Section""",module,Magento_Cybersource
 "Please correct the item option format.","アイテムのオプション形式を修正してください。",module,Magento_GiftRegistry
 "An item option with code %1 already exists.","コード%1の商品オプションは既に存在します",module,Magento_GiftRegistry
 "New","新規",module,Magento_GiftRegistry
-"Please enter the first name.","姓を入力してください。",module,Magento_GiftRegistry
-"Please enter the last name.","名を入力してください。",module,Magento_GiftRegistry
+"Please enter the first name.","名を入力してください。",module,Magento_GiftRegistry
+"Please enter the last name.","姓を入力してください。",module,Magento_GiftRegistry
 "Please enter a valid email address(for example, daniel@x.com).","有効なメールアドレスを入力してください（例：daniel@x.com）。",module,Magento_GiftRegistry
 "Ship to the recipient's address.","受取人の住所に発送してください。",module,Magento_GiftRegistry
 "-- All --","-- すべて --",module,Magento_GiftRegistry
@@ -7176,7 +7176,7 @@ Promo Section""",module,Magento_Cybersource
 "You haven't created a gift registry yet.","まだギフトレジストリを作成していません。",module,Magento_GiftRegistry
 "Add New","新規作成",module,Magento_GiftRegistry
 "Remove","削除",module,Magento_GiftRegistry
-"First Name","姓",module,Magento_GiftRegistry
+"First Name","名",module,Magento_GiftRegistry
 "Name","名前",module,Magento_GiftRegistry
 "Email","Eメール",module,Magento_GiftRegistry
 "* Required Fields","* 必須項目",module,Magento_GiftRegistry
@@ -7187,7 +7187,7 @@ Promo Section""",module,Magento_Cybersource
 "Gift Registry Type","ギフトレジストリ種別",module,Magento_GiftRegistry
 "Please select a gift registry type.","ギフトレジストリタイプを選択してください。",module,Magento_GiftRegistry
 "Next","次",module,Magento_GiftRegistry
-"Last Name","名",module,Magento_GiftRegistry
+"Last Name","姓",module,Magento_GiftRegistry
 "Registrant Information","登録者情報",module,Magento_GiftRegistry
 "Maximum %1 registrants.","最大 %1 人の登録者。",module,Magento_GiftRegistry
 "Add Registrant","登録者を追加",module,Magento_GiftRegistry
@@ -7902,8 +7902,8 @@ e.g. var/export, var/import, var/export/some/dir",module,Magento_ImportExport
 "Invitee Information","被招待者情報",module,Magento_Invitation
 "Customer ID","顧客ID",module,Magento_Invitation
 "Customer Group","顧客グループ",module,Magento_Invitation
-"First Name","姓",module,Magento_Invitation
-"Last Name","名",module,Magento_Invitation
+"First Name","名",module,Magento_Invitation
+"Last Name","姓",module,Magento_Invitation
 "Sign Up At","登録日",module,Magento_Invitation
 "Inviter Information","招待者情報",module,Magento_Invitation
 "Admin","管理者",module,Magento_Invitation
@@ -8242,8 +8242,8 @@ it will make no affect on Price filter.",module,Magento_LayeredNavigation
 "%1's Wish List","%1 のほしい物リスト",module,Magento_MultipleWishlist
 "%1's Wish List (%2)","%1さんのほしい物リスト(%2)",module,Magento_MultipleWishlist
 "Please enter a valid email address.","正しいメールアドレスを入力してください。",module,Magento_MultipleWishlist
-"Please enter at least 2 letters of the first name.","姓の最初の2文字を入力してください。",module,Magento_MultipleWishlist
-"Please enter at least 2 letters of the last name.","名の最初の2文字を入力してください。",module,Magento_MultipleWishlist
+"Please enter at least 2 letters of the first name.","名の最初の2文字を入力してください。",module,Magento_MultipleWishlist
+"Please enter at least 2 letters of the last name.","姓の最初の2文字を入力してください。",module,Magento_MultipleWishlist
 "Sign in to edit wish lists.","ほしい物リストを編集するにはログインしてください。",module,Magento_MultipleWishlist
 "The wish list is not assigned to your account and can't be edited.","ほしい物リストはあなたのアカウントに割り当てられておらず、編集できません。",module,Magento_MultipleWishlist
 "Provide the wish list name.","ほしい物リスト名を指定します。",module,Magento_MultipleWishlist
@@ -8275,8 +8275,8 @@ it will make no affect on Price filter.",module,Magento_LayeredNavigation
 "Copy to Wish List","ほしい物リストにコピー",module,Magento_MultipleWishlist
 "Search Options","検索オプション",module,Magento_MultipleWishlist
 "Required Fields","必須フィールド",module,Magento_MultipleWishlist
-"First Name","姓",module,Magento_MultipleWishlist
-"Last Name","名",module,Magento_MultipleWishlist
+"First Name","名",module,Magento_MultipleWishlist
+"Last Name","姓",module,Magento_MultipleWishlist
 "Search","検索",module,Magento_MultipleWishlist
 "Search Results","検索結果",module,Magento_MultipleWishlist
 "Wish List Name","ほしい物リスト名",module,Magento_MultipleWishlist
@@ -9061,8 +9061,8 @@ information on installing the agent is available <a target=""_blank"" href=""%1"
 "Type","種別",module,Magento_Newsletter
 "Guest","ゲスト様",module,Magento_Newsletter
 "Customer","顧客",module,Magento_Newsletter
-"Customer First Name","顧客姓",module,Magento_Newsletter
-"Customer Last Name","顧客名",module,Magento_Newsletter
+"Customer First Name","顧客名",module,Magento_Newsletter
+"Customer Last Name","顧客姓",module,Magento_Newsletter
 "Not Activated","未アクティブ",module,Magento_Newsletter
 "Subscribed","購読済",module,Magento_Newsletter
 "Unsubscribed","購読解除",module,Magento_Newsletter
@@ -9269,8 +9269,8 @@ If field is empty default value localhost will be saved.","Varnish上のキャ�
 "Billing Agreements","ご請求履歴",module,Magento_Paypal
 "ID","ID",module,Magento_Paypal
 "Email","Eメール",module,Magento_Paypal
-"First Name","姓",module,Magento_Paypal
-"Last Name","名",module,Magento_Paypal
+"First Name","名",module,Magento_Paypal
+"Last Name","姓",module,Magento_Paypal
 "Reference ID","リファレンスID",module,Magento_Paypal
 "Status","ステータス",module,Magento_Paypal
 "Created","作成済",module,Magento_Paypal
@@ -10788,8 +10788,8 @@ target=""_blank"">DevDocs' Release Information</a>.,module,Magento_ReleaseNotifi
 "IP Address","IPアドレス",module,Magento_Reports
 "Customers","顧客",module,Magento_Reports
 "ID","ID",module,Magento_Reports
-"First Name","姓",module,Magento_Reports
-"Last Name","名",module,Magento_Reports
+"First Name","名",module,Magento_Reports
+"Last Name","姓",module,Magento_Reports
 "Items in Cart","点の商品",module,Magento_Reports
 "Products in carts","カート内の商品",module,Magento_Reports
 "Carts","カート",module,Magento_Reports
@@ -11367,8 +11367,8 @@ target=""_blank"">DevDocs' Release Information</a>.,module,Magento_ReleaseNotifi
 "Order","注文",module,Magento_Rma
 "Purchase Point","購入店舗",module,Magento_Rma
 "Purchased","購入済み",module,Magento_Rma
-"Customer First Name","顧客姓",module,Magento_Rma
-"Customer Last Name","顧客名",module,Magento_Rma
+"Customer First Name","顧客名",module,Magento_Rma
+"Customer Last Name","顧客姓",module,Magento_Rma
 "Grand Total (Base)","合計 (ベース)",module,Magento_Rma
 "Grand Total (Purchased)","合計 (購入)",module,Magento_Rma
 "Status","ステータス",module,Magento_Rma
@@ -12077,8 +12077,8 @@ target=""_blank"">DevDocs' Release Information</a>.,module,Magento_ReleaseNotifi
 "You cannot remove the hold.","保留を削除できません",module,Magento_Sales
 "We cannot cancel this order.","この注文をキャンセルできません",module,Magento_Sales
 "Guest","ゲスト様",module,Magento_Sales
-"Please enter the first name.","姓を入力してください。",module,Magento_Sales
-"Please enter the last name.","名を入力してください。",module,Magento_Sales
+"Please enter the first name.","名を入力してください。",module,Magento_Sales
+"Please enter the last name.","姓を入力してください。",module,Magento_Sales
 "Please enter the street.","住所を入力してください。",module,Magento_Sales
 "Please enter the city.","市区町村を入力してください。",module,Magento_Sales
 "Please enter the phone number.","電話番号を入力してください。",module,Magento_Sales
@@ -12223,8 +12223,8 @@ target=""_blank"">DevDocs' Release Information</a>.,module,Magento_ReleaseNotifi
 "Company","会社名",module,Magento_Sales
 "Country","国",module,Magento_Sales
 "Email","Eメール",module,Magento_Sales
-"First Name","姓",module,Magento_Sales
-"Last Name","名",module,Magento_Sales
+"First Name","名",module,Magento_Sales
+"Last Name","姓",module,Magento_Sales
 "State/Province","都道府県",module,Magento_Sales
 "Street Address","住所",module,Magento_Sales
 "Phone Number","電話番号",module,Magento_Sales
@@ -12395,7 +12395,7 @@ target=""_blank"">DevDocs' Release Information</a>.,module,Magento_ReleaseNotifi
 "Gift Message for this Order","この注文のギフトメッセージ",module,Magento_Sales
 "Shipped By","配送元",module,Magento_Sales
 "Tracking Number","追跡番号",module,Magento_Sales
-"Billing Last Name","請求先名",module,Magento_Sales
+"Billing Last Name","請求先姓",module,Magento_Sales
 "Find Order By","注文検索",module,Magento_Sales
 "ZIP Code","郵便番号",module,Magento_Sales
 "Billing ZIP Code","請求先郵便番号",module,Magento_Sales
@@ -15244,8 +15244,8 @@ formElements/*[name(.)=../../@formElement]/settings/title,module,Magento_Ui
 "Role Users","権限ユーザー",module,Magento_User
 "User ID","ユーザーID",module,Magento_User
 "User Name","ユーザ名",module,Magento_User
-"First Name","姓",module,Magento_User
-"Last Name","名",module,Magento_User
+"First Name","名",module,Magento_User
+"Last Name","姓",module,Magento_User
 "Email","Eメール",module,Magento_User
 "Status","ステータス",module,Magento_User
 "Active","アクティブ",module,Magento_User
@@ -15317,8 +15317,8 @@ formElements/*[name(.)=../../@formElement]/settings/title,module,Magento_Ui
 "You need more permissions to access this.","アクセスするには更に権限が必要です。",module,Magento_User
 "Your account is temporarily disabled.","あなたのアカウントは一時的に無効になっています。",module,Magento_User
 "User Name is a required field.","ユーザーネームは必須項目です。",module,Magento_User
-"First Name is a required field.","姓前は必須項目です。",module,Magento_User
-"Last Name is a required field.","名は必須項目です。",module,Magento_User
+"First Name is a required field.","名前は必須項目です。",module,Magento_User
+"Last Name is a required field.","姓は必須項目です。",module,Magento_User
 "Please enter a valid email.","正しいメールアドレスを入力してください。",module,Magento_User
 "Password is required field.","パスワードは必須項目です。",module,Magento_User
 "Your password must be at least %1 characters.","パスワードは少なくとも%1キャラクターでなくてはなりません。",module,Magento_User
@@ -15382,8 +15382,8 @@ formElements/*[name(.)=../../@formElement]/settings/title,module,Magento_Ui
 "The password reset token is incorrect. Verify the token and try again.","パスワードのリセットトークンが正しくありません。トークンを確認して再度お試し下さい。",module,Magento_User
 "Your account is temporarily disabled. Please try again later.","あなたのアカウントは一時的にご利用できません。後で再度お試し下さい。",module,Magento_User
 """User Name"" is required. Enter and try again.","""User Name"" is required. Enter and try again.",module,Magento_User
-"""First Name"" is required. Enter and try again.","""姓"" is required. Enter and try again.",module,Magento_User
-"""Last Name"" is required. Enter and try again.","""名"" is required. Enter and try again.",module,Magento_User
+"""First Name"" is required. Enter and try again.","""First Name"" is required. Enter and try again.",module,Magento_User
+"""Last Name"" is required. Enter and try again.","""Last Name"" is required. Enter and try again.",module,Magento_User
 "First-Class Mail Large Envelope","ファーストクラス郵便 封筒大",module,Magento_Usps
 "First-Class Mail Letter","ファーストクラス郵便 はがき",module,Magento_Usps
 "First-Class Package Service - Retail","ファーストクラスパッケージサービス - 小売",module,Magento_Usps
