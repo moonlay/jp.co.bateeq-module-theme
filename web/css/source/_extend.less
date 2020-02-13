@@ -20,6 +20,46 @@
   font-display: swap;
 }
 
+//
+@media only screen and (min-width: 992px) {
+  div.footer.content div:nth-child(1) {
+    margin-top: 100px !important;
+    margin-bottom: 100px !important;
+    float: left !important;
+  }
+  div.footer.content div:nth-child(2) {
+    width: auto !important;
+    position: absolute !important;
+    margin-left: 30% !important;
+  }
+  div.footer.content div:nth-child(3) {
+    width: auto !important;
+    position: absolute !important;
+    margin-left: 45% !important;
+  }
+  div.footer.content div:nth-child(4) {
+    width: auto !important;
+    position: absolute !important;
+    margin-left: 60% !important;
+  }
+  div.footer.content div:nth-child(5) {
+    width: auto !important;
+    position: absolute !important;
+    margin-left: 80% !important;
+  }
+}
+
+.footer.content a:hover{
+  color: #f9973f;
+  text-decoration: none;
+}
+
+.footer.content a{
+  color: #ffffff;
+}
+
+//
+
 body {
   font-family: "Noto Sans JP", "Montserrat", "PingFangSC", sans-serif;
   font-stretch: normal;
@@ -43,8 +83,8 @@ body.checkout-index-index
   position: unset !important;
 }
 
-body.checkout-index-index div.modals-wrapper div.address div:nth-child(3),
-body.checkout-index-index div.modals-wrapper div.address div:nth-child(9) {
+body.checkout-index-index div[name="shippingAddress.company"],
+body.checkout-index-index div[name="shippingAddress.country_id"] {
   visibility: hidden !important;
   position: absolute !important;
 }
@@ -75,16 +115,8 @@ body.checkout-index-index
   position: unset !important;
 }
 
-body.checkout-index-index
-  div.page-wrapper
-  main.page-main
-  div.address
-  div:nth-child(3),
-body.checkout-index-index
-  div.page-wrapper
-  main.page-main
-  div.address
-  div:nth-child(9) {
+body.checkout-index-index div[name="shippingAddress.company"],
+body.checkout-index-index div[name="shippingAddress.country_id"] {
   visibility: hidden !important;
   position: absolute !important;
 }
