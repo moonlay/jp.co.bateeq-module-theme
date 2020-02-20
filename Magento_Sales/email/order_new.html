@@ -21,7 +21,7 @@
 <table style="margin-top: 1em;">
     <tr class="email-intro">
         <td>
-            <p class="greeting">{{trans "こんにちは%customer_name、" customer_name=$order.getCustomerName()}}</p>
+            <p class="greeting">{{trans "こんにちは %customer_name、" customer_name=$order.getCustomerName()}}</p>
             <p>
                 {{trans "注文に対する支払いを受け取りました #%increment_id。パッケージが発送されたら" increment_id=$order.increment_id |raw}}
                 {{trans "追跡番号を送信します。"}}
@@ -91,4 +91,5 @@
         </td>
     </tr>
 </table>
+
 {{template config_path="design/email/footer_template"}}
