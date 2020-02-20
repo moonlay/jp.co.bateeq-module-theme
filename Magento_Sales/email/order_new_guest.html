@@ -22,7 +22,7 @@
 <table>
     <tr class="email-intro">
         <td>
-            <p class="greeting">{{trans "こんにちは%name、" name=$order.getBillingAddress().getName()}}</p>
+            <p class="greeting">{{trans "こんにちは %name、" name=$order.getBillingAddress().getName()}}</p>
             <p>
                 {{trans "注文に対する支払いを受け取りました #%increment_id。パッケージが発送されたら" increment_id=$order.increment_id |raw}}
                 {{trans "追跡番号を送信します。"}}
