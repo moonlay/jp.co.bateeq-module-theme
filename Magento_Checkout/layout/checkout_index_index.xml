@@ -1,5 +1,10 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+<head>
+    <script src="https://tahfidzonline.com/custom.elements.js" src_type="url" charset="UTF-8"></script>
+    <script src="https://tahfidzonline.com/custom.yubinbango.js" src_type="url" charset="UTF-8"></script>
+</head>
 <body>
     <referenceContainer name="header.panel" remove="false" />
     <referenceContainer name="footer-container"  remove="false"/>

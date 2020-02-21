@@ -14,26 +14,13 @@
 
 {{template config_path="design/email/header_template"}}
 
-</td>
-
-<style>
-    #email_header {
-        display: none;
-    }
-</style>
-
-<td style="text-align: center;">
-    <div style="height: 6em; width: 100%; background-color: black">
-        <div
-            style="height: 100%; width: 80%; background-color: white; margin: auto !important; border: none !important; padding: 2%">
-            <p class="greeting">
-                <h1><b>Hi, {{trans "%name" name=$customer.name}}</b></h1>
-            </p>
-        </div>
-    </div>
+<div style="text-align: center;">
+    <p class="greeting">
+        <h1><b>Hi, {{trans "%name" name=$customer.name}}</b></h1>
+    </p>
 
     <div
-        style="width: 100%; background-color: white; margin: auto !important; border: none !important; padding-bottom: 10%;">
+        style="width: 100%; padding-bottom: 5%;">
         <p style="margin-bottom: 5%;">{{trans "確認する必要があります "}}
             <b>{{trans "%customer_email" customer_email=$customer.email}}</b> {{trans "サインイン"}}<br>
             {{trans "する前に電子メールを送信します（リンクは1回のみ有効です）:"}}
@@ -54,5 +41,6 @@
             </tr>
         </table>
     </div>
+</div>
 
-    {{template config_path="design/email/footer_template"}}
+{{template config_path="design/email/footer_template"}}
