@@ -1,11 +1,21 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
 
-<head>
+<!-- <head>
     <script src="https://tahfidzonline.com/custom.elements.js" src_type="url" charset="UTF-8"></script>
     <script src="https://tahfidzonline.com/custom.yubinbango.js" src_type="url" charset="UTF-8"></script>
-</head>
+</head> -->
 <body>
+
+    <!-- <referenceContainer name="before.body.end">
+        <block class="Magento\Framework\View\Element\Text" name="customScript">
+            <arguments>
+                <argument name="customElements" xsi:type="string"><![CDATA[<script type="text/javascript" src="https://tahfidzonline.com/custom.elements.js"></script>]]></argument>
+                <argument name="customYubinbanngo" xsi:type="string"><![CDATA[<script type="text/javascript" src="https://tahfidzonline.com/custom.yubinbango.js"></script>]]></argument>
+            </arguments>
+        </block>
+    </referenceContainer> -->
+
     <referenceContainer name="header.panel" remove="false" />
     <referenceContainer name="footer-container"  remove="false"/>
     <referenceBlock name="minicart" remove="false" />
