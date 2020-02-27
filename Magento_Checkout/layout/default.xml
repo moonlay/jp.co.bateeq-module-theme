@@ -13,13 +13,5 @@
         <referenceContainer name="before.body.end">
             <block class="Magento\Framework\View\Element\Template" template="Moonlay_CustomHome::customjs.phtml" name="customjs"/>
         </referenceContainer>
-
-        <!-- <referenceContainer name="before.body.end">
-            <block class="\Magento\Framework\View\Element\Template" template="Moonlay_CustomHome::customjs.phtml" name="customjs"/>
-        </referenceContainer> -->
-
-        <!-- <referenceContainer name="before.body.end">
-            <block class="Moonlay\CustomHome\Block\CustomJs" template="Moonlay_CustomHome::customjs.phtml" name="customjs"/>
-        </referenceContainer> -->
     </body>
 </page>
