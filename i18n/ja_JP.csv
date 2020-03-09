@@ -15003,7 +15003,7 @@ formElements/*[name(.)=../../@formElement]/settings/title,module,Magento_Ui
 "The fewest you may purchase is %1.","購入の最低限数量は%1です。",module,Magento_Ui
 "The maximum you may purchase is %1.","The maximum you may purchase is %1.",module,Magento_Ui
 "You can buy this product only in quantities of %1 at a time.","この商品は数量%1づつのみ一度に買うことができます。",module,Magento_Ui
-"First character must be letter.","First character must be letter.",module,Magento_Ui
+"First character must be letter.","最初の文字は文字でなければなりません。",module,Magento_Ui
 "If enabled, can be used by functional tests for extended reporting","If enabled, can be used by functional tests for extended reporting",module,Magento_Ui
 "Use this key to retrieve collected js errors","Use this key to retrieve collected js errors",module,Magento_Ui
 "The configuration parameter ""formElement"" is a required for ""' . . '"" field.","The configuration parameter ""formElement"" is a required for ""' . . '"" field.",module,Magento_Ui
@@ -16427,5 +16427,5 @@ Priority Mail Small Flat Rate Box Hold For Pickup""",module,Magento_Usps
 "Insert Variable","Insert Variable",lib,web
 "Insert Widget","ウィジェット挿入",lib,web
 "The widget %1 is no longer available. Select a different widget.","The widget %1 is no longer available. Select a different widget.",lib,web
-"First character must be letter.","First character must be letter.",lib,web
+"First character must be letter.","最初の文字は文字でなければなりません。",lib,web
 "The password can't be the same as the email address. Create a new password and try again.","The password can't be the same as the email address. Create a new password and try again.",lib,web

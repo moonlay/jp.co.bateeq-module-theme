@@ -20,8 +20,25 @@
   font-display: swap;
 }
 
-.form-shipping-address--duplicate {
+#opc-shipping_method,
+.checkout-shipping-method {
+  display: block !important;
+}
+
+.form-shipping-address--duplicate,
+.methods-shipping--duplicate,
+.custom-alert {
   display: none;
+}
+
+input[name="region"]:-moz-read-only,
+input[name="city"]:-moz-read-only {
+  border-bottom: none !important;
+}
+
+input[name="region"]:read-only,
+input[name="city"]:read-only {
+  border-bottom: none !important;
 }
 
 @media only screen and (min-width: 992px) {
