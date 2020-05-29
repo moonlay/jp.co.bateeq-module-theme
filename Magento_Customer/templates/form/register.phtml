@@ -13,8 +13,8 @@
     <?= /* @noEscape */ $block->getBlockHtml('formkey'); ?>
     <fieldset class="fieldset create info margin-title-register">
 
-        
-        
+
+
     </fieldset>
 
     <fieldset class="fieldset create account delete-margin">
@@ -52,7 +52,7 @@
             <div class="control">
                 <input type="password" placeholder="コンフィリメーション パスワード" name="password_confirmation" title="<?= $block->escapeHtmlAttr(__('Confirm Password')) ?>" id="password-confirmation" class="input-text input-text-login" data-validate="{required:true, equalTo:'#password'}" autocomplete="off">
             </div>
-        </div>        
+        </div>
     </fieldset>
 
     <fieldset class="fieldset create info margin-title-register">
@@ -61,7 +61,7 @@
         <input type="hidden" name="success_url" value="<?= $block->escapeUrl($block->getSuccessUrl()) ?>">
         <input type="hidden" name="error_url" value="<?= $block->escapeUrl($block->getErrorUrl()) ?>">
         <?= $block->getLayout()->createBlock(\Moonlay\CustomRegister\Block\Widget\Name::class)->setObject($block->getFormData())->setForceUseCustomerAttributes(true)->toHtml() ?>
-        
+
         <!-- <a class="fullname-register">Name (Kana)</a> -->
         <?= $block->getChildHtml('form_additional_info') ?>
 
@@ -80,8 +80,8 @@
         <?php $_gender = $block->getLayout()->createBlock(\Moonlay\CustomRegister\Block\Widget\Gender::class) ?>
         <?php if ($_gender->isEnabled()) : ?>
         <?= $_gender->setGender($block->getFormData()->getGender())->toHtml() ?>
-        <?php endif ?>       
-        
+        <?php endif ?>
+
     </fieldset>
 
     <!-- <fieldset class="fieldset address delete-margin-butto-register">
@@ -101,7 +101,7 @@
     <div class="actions-toolbar">
         <div class="chekboxTandCRegis">
             <input type="checkbox" onchange="document.getElementById('Regis').disabled = !this.checked;" />
-            <a href="/terms">私は利用規約に同意します。</a>
+            <a href="/terms" rel="noopener noreferrer" target="_blank">私は利用規約に同意します。</a>
         </div>
         <div class="primary btn-reg-div">
             <button type="submit" class="action submit primary btn-register" id="Regis" title="<?= $block->escapeHtmlAttr(__('Create an Account')) ?>" disabled><span><?= $block->escapeHtml(__('登録')) ?></span></button>
@@ -110,7 +110,7 @@
 
 </form>
 
-<script>    
+<script>
 require([
     'jquery',
     'mage/mage'
