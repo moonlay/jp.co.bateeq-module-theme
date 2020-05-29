@@ -32,6 +32,11 @@
                                                             <item name="city" xsi:type="array">
                                                                 <item name="sortOrder" xsi:type="string">73</item>
                                                             </item>
+                                                            <item name="telephone" xsi:type="array">
+                                                              <item name="config" xsi:type="array">
+                                                                  <item name="tooltip" xsi:type="boolean">false</item>
+                                                              </item>
+                                                            </item>
                                                         <!-- End: Important part: -->
                                                         </item>
                                                     </item>
