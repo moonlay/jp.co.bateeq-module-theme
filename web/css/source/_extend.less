@@ -20,6 +20,62 @@
   font-display: swap;
 }
 
+.pages .action.first {
+  margin-right: 8px;
+}
+
+.pages .action.last {
+  margin-left: 8px;
+}
+
+.pages .action.first,
+.pages .action.last {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.pages .action.first:visited:before,
+.pages .action.last:visited:before {
+  color: #7d7d7d;
+}
+
+.pages .action.first:before,
+.pages .action.last:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  line-height: inherit;
+  color: #7d7d7d;
+  font-family: 'luma-icons';
+  margin: 0;
+  vertical-align: top;
+  display: inline-block;
+  font-weight: normal;
+  overflow: hidden;
+  speak: none;
+  text-align: center;
+}
+
+.pages .action.first:before {
+  content: '\e617 \e617';
+}
+
+.pages .action.last:before {
+  content: '\e608 \e608';
+}
+
+.pages .action.first > span,
+.pages .action.last > span {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 #layer-product-list div.toolbar-products p.toolbar-amount {
   display: none !important;
 }
