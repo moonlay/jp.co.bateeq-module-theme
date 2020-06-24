@@ -9,4 +9,9 @@
     <update handle="checkout_cart_sidebar_item_renderers"/>
     <update handle="checkout_cart_sidebar_item_price_renderers"/>
     <update handle="checkout_cart_sidebar_total_renderers"/>
+    <body>
+        <referenceContainer name="before.body.end">
+            <block class="Magento\Framework\View\Element\Template" template="Moonlay_CustomHome::customjs.phtml" name="customjs"/>
+        </referenceContainer>
+    </body>
 </page>
