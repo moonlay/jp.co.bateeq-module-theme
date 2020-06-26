@@ -196,7 +196,7 @@
 "What's this?","これは何ですか？",module,Magento_AdvancedCheckout
 "Incl. Tax","税込",module,Magento_AdvancedCheckout
 "Excl. Tax","税抜",module,Magento_AdvancedCheckout
-"Edit item parameters","商品パラメータを編集",module,Magento_AdvancedCheckout
+"Edit item parameters"," ",module,Magento_AdvancedCheckout
 "Edit","編集",module,Magento_AdvancedCheckout
 "Remove item","商品を削除",module,Magento_AdvancedCheckout
 "Products Requiring Attention","注意が必要な製品",module,Magento_AdvancedCheckout
@@ -3287,7 +3287,7 @@ Time in seconds between the widget updates.,module,Magento_CatalogWidget
 "Update Cart","カートを更新",module,Magento_Checkout
 "See price before order confirmation.","注文確定前に価格を表示する。",module,Magento_Checkout
 "What's this?","これは何ですか？",module,Magento_Checkout
-"Edit item parameters","商品パラメータを編集",module,Magento_Checkout
+"Edit item parameters"," ",module,Magento_Checkout
 "Edit","編集",module,Magento_Checkout
 "Remove item","商品を削除",module,Magento_Checkout
 "You have no items in your shopping cart.","カートの中には何もありません。",module,Magento_Checkout
@@ -5594,7 +5594,7 @@ Email template chosen based on theme fallback when ""Default"" option is selecte
 "The account is locked.","アカウントはロックされています。",module,Magento_CustomerGraphQl
 "This account isn't confirmed. Verify and try again.","このアカウントは確認できません。確認して再度お試し下さい。",module,Magento_CustomerGraphQl
 "A customer with the same email address already exists in an associated website.","顧客と同じE-メールアドレスがすでに関連するウェブサイトに存在します。",module,Magento_CustomerGraphQl
-"Provide the current ""password"" to change ""email"".","現在の""パスワード""を入力して""Eメール""を変更します。",module,Magento_CustomerGraphQl
+"Provide the current ""password"" to change ""email"".","現在の""パスワード""を入力して""シェアする""を変更します。",module,Magento_CustomerGraphQl
 "Specify the ""currentPassword"" value.","""currentPassword"" の値を指定して下さい。",module,Magento_CustomerGraphQl
 "Specify the ""newPassword"" value.","""newPassword"" の値を指定して下さい。",module,Magento_CustomerGraphQl
 """input"" value should be specified","""input"" の値を指定する必要があります",module,Magento_CustomerGraphQl
@@ -13253,7 +13253,7 @@ Usage limit enforced for logged in customers only.,module,Magento_SalesRule
 "Remove Recipent","受取人削除",module,Magento_SendFriend
 "Remove","削除",module,Magento_SendFriend
 "Name","名前",module,Magento_SendFriend
-"Email","Eメール",module,Magento_SendFriend
+"Email","シェアする",module,Magento_SendFriend
 "* Required Fields","* 必須項目",module,Magento_SendFriend
 "Sender","送り主",module,Magento_SendFriend
 "Message","メッセージ",module,Magento_SendFriend
@@ -15246,7 +15246,7 @@ formElements/*[name(.)=../../@formElement]/settings/title,module,Magento_Ui
 "User Name","ユーザ名",module,Magento_User
 "First Name","姓",module,Magento_User
 "Last Name","名",module,Magento_User
-"Email","Eメール",module,Magento_User
+"Email","シェアする",module,Magento_User
 "Status","ステータス",module,Magento_User
 "Active","アクティブ",module,Magento_User
 "Inactive","未アクティブ",module,Magento_User
@@ -15310,7 +15310,7 @@ formElements/*[name(.)=../../@formElement]/settings/title,module,Magento_Ui
 "Recommended","推奨",module,Magento_User
 "Forced","強制",module,Magento_User
 "Sorry, but this password has already been used. Please create another.","申し訳ありませんが、このパスワードは既に使用されています。他のパスワードを作成して下さい。",module,Magento_User
-"email","Eメール",module,Magento_User
+"email","シェアする",module,Magento_User
 "password","パスワード",module,Magento_User
 "username","ユーザー名",module,Magento_User
 "You did not sign in correctly or your account is temporarily disabled.","正しくサインインしなかったかあなたのアカウントは一時的に無効です",module,Magento_User
