@@ -39,7 +39,7 @@
 <!--Shipping method template-->
 <li id="opc-shipping_method"
     class="checkout-shipping-method"
-    data-bind="fadeVisible: , blockLoader: isLoading"
+    data-bind="fadeVisible: visible(), blockLoader: isLoading"
     role="presentation">
     <div class="checkout-shipping-method">
         <div class="step-title"
@@ -49,7 +49,7 @@
         <each args="getRegion('before-shipping-method-form')" render="" />
 
         <div id="checkout-step-shipping_method"
-             class="step-content"
+             class="step-content custom-shipping-method"
              data-role="content"
              role="tabpanel"
              aria-hidden="false">
@@ -70,16 +70,19 @@
                     <span text="errorValidationMessage()" />
                 </div>
                 <div class="actions-toolbar" id="shipping-method-buttons-container">
-                    <div class="primary">
-                        <button type="button" class="button action primary" onclick="javascript:history.go(-2)" style="margin-right: 5px;">
+                    <div class="secondary">
+                        <a class="action" href="/" >
                             <span data-bind="i18n: 'Back'"></span>
-                        </button>
+                        </a>
+                    </div>
+                    <div class="primary">
                         <button data-role="opc-continue" type="submit" class="button action continue primary">
                             <span translate="'Next'" />
                         </button>
                     </div>
                 </div>
             </form>
+
             <div class="no-quotes-block"
                  ifnot="rates().length > 0"
                  translate="'Sorry, no quotes are available for this order at this time'" />

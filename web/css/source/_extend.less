@@ -20,6 +20,71 @@
   font-display: swap;
 }
 
+.checkout-index-index #checkout-shipping-method-load,
+.checkout-index-index .checkout-shipping-method .step-title {
+  display: none !important;
+}
+
+.checkout-payment-method div#checkout-step-payment {
+  border: none !important;
+  padding: 21px 0 0 0 !important;
+}
+
+.checkout-payment-method div#checkout-step-payment .payment-group {
+  border-radius: 5px !important;
+  border: solid 0.5px #979797 !important;
+  padding: 5px 25px !important;
+}
+
+.custom-payment-method {
+  display: flex !important;
+  margin-bottom: 15px !important;
+}
+
+.custom-payment-method button {
+  border: solid 0.5px #ff7d09 !important;
+  background: transparent !important;
+  color: #ff7d09 !important;
+  width: 140px !important;
+  height: 40px !important;
+}
+
+.custom-shipping-method {
+  border: none !important;
+  padding: 0 !important;
+}
+
+.methods-shipping .actions-toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.methods-shipping .actions-toolbar .secondary {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  border: solid 0.5px #ff7d09;
+  margin-right: 8px;
+}
+
+.methods-shipping .actions-toolbar .secondary a {
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #ff7d09 !important;
+  margin-top: 0;
+  display: inline-block;
+  width: 140px;
+  height: 40px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .checkout-cart-index .actions-toolbar .towishlist,
 a.use-ajax.action.towishlist.action-towishlist {
   display: none !important;
@@ -89,10 +154,31 @@ a.use-ajax.action.towishlist.action-towishlist {
   display: none !important;
 }
 
-#opc-shipping_method,
-.checkout-shipping-method {
-  display: block !important;
-}
+// #opc-shipping_method,
+// .checkout-shipping-method {
+//   display: block !important;
+// }
+
+// #opc-shipping_method {
+//   display: block !important;
+// }
+
+// ol#checkoutSteps {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// ol#checkoutSteps li#shipping {
+//   order: 1;
+// }
+
+// ol#checkoutSteps li#opc-shipping_method {
+//   order: 3;
+// }
+
+// ol#checkoutSteps li#payment {
+//   order: 2;
+// }
 
 .form-shipping-address--duplicate,
 .methods-shipping--duplicate,
@@ -2186,8 +2272,17 @@ body.checkout-index-index select {
   width: 140px;
   height: 40px;
   border-radius: 5px;
-  background-color: #000 !important;
-  border: 1px solid #000 !important;
+  background: #ff7d09;
+  border: 1px solid #ff7d09;
+  line-height: 0;
+}
+
+.checkout-shipping-method .actions-toolbar .action.primary:hover {
+  width: 140px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #000;
+  border: 1px solid #000;
   line-height: 0;
 }
 
