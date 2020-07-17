@@ -8,7 +8,7 @@
 
 /** @var \Magento\Sales\Block\Order\History $block */
 ?>
-<?php 
+<?php
 $_orders = $block->getOrders();
 $fullFormatter = new IntlDateFormatter(
     'ja_JP',
@@ -22,16 +22,20 @@ $imageManager = $objectManager->get('\Magento\Catalog\Helper\Image');
 <?php if ($_orders && count($_orders)) : ?>
     <div class="product info detailed">
     <div class="product data items" data-mage-init='{"tabs":{"openedState":"active"}}'>
-    <?php 
+    <?php
         $groupedItemByStatus = array();
         foreach ($_orders as $_order) :
             $status = $block->escapeHtml($_order->getStatusLabel());
+            // Skip canceled status not to be rendered
+            if ($status === 'キャンセル済') {
+                continue;
+            }
             if (array_key_exists($status, $groupedItemByStatus)) :
                 array_push($groupedItemByStatus[$status], $_order);
             else :
                 $groupedItemByStatus[$status] = array( $_order );
             endif;
-            
+
         endforeach;
         $indexTab = 0;
         $size = count($groupedItemByStatus);
@@ -64,8 +68,8 @@ $imageManager = $objectManager->get('\Magento\Catalog\Helper\Image');
                 </tr>
             </thead>
             <tbody>
-                <?php 
-                    foreach ($orders as $_order) : 
+                <?php
+                    foreach ($orders as $_order) :
                         $datetime = new DateTime($block->formatDate($_order->getCreatedAt()));
                 ?>
                     <tr class="info-order">
@@ -132,7 +136,7 @@ $imageManager = $objectManager->get('\Magento\Catalog\Helper\Image');
                             </div>
                         </td>
                     </tr>
-                    <?php 
+                    <?php
                             endforeach;
                         endif;
                     ?>
