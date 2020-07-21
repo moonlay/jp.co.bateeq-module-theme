@@ -4731,7 +4731,7 @@ new products will be created. Use this step to customize images and price for yo
 "You have not set a default billing address.","標準のご請求先が指定されていません。",module,Magento_Customer
 "Address Book","お届け先一覧",module,Magento_Customer
 "Edit Address","住所を編集",module,Magento_Customer
-"Add New Address","アカウント追加",module,Magento_Customer
+"Add New Address","新しい住所の登録",module,Magento_Customer
 "region","地域",module,Magento_Customer
 "Create Order","注文作成",module,Magento_Customer
 "Save Customer","保存",module,Magento_Customer
@@ -7181,7 +7181,7 @@ Promo Section""",module,Magento_Cybersource
 "Email","Eメール",module,Magento_GiftRegistry
 "* Required Fields","* 必須項目",module,Magento_GiftRegistry
 "Sender","送り主",module,Magento_GiftRegistry
-"Invitee","被招待者",module,Magento_GiftRegistry
+"Invitee","送信先",module,Magento_GiftRegistry
 "Maximum %1 email addresses.","最大 %1 のメールアドレス。",module,Magento_GiftRegistry
 "Add Invitee","送信先を追加",module,Magento_GiftRegistry
 "Gift Registry Type","ギフトレジストリ種別",module,Magento_GiftRegistry
@@ -7938,7 +7938,7 @@ e.g. var/export, var/import, var/export/some/dir",module,Magento_ImportExport
 "Are you sure you want to do this?","実行してもよろしいですか？",module,Magento_Invitation
 "Send Selected","選択したものを送信",module,Magento_Invitation
 "ID","ID",module,Magento_Invitation
-"Invitee","被招待者",module,Magento_Invitation
+"Invitee","送信先",module,Magento_Invitation
 "Registered","登録済",module,Magento_Invitation
 "Valid Website","有効なウェブサイト",module,Magento_Invitation
 "Name","名前",module,Magento_Invitation
@@ -8369,7 +8369,7 @@ it will make no affect on Price filter.",module,Magento_LayeredNavigation
 "Default Billing","標準の請求先",module,Magento_Multishipping
 "Default Shipping","標準の配送方法",module,Magento_Multishipping
 "Select Address","住所選択",module,Magento_Multishipping
-"Add New Address","アカウント追加",module,Magento_Multishipping
+"Add New Address","新しい住所の登録",module,Magento_Multishipping
 "Back to Billing Information","請求先情報に戻る",module,Magento_Multishipping
 "Please select a shipping address for applicable items.","商品のための送付先住所を選択してください",module,Magento_Multishipping
 "Product","商品",module,Magento_Multishipping
@@ -8758,7 +8758,7 @@ it will make no affect on Price filter.",module,Magento_LayeredNavigation
 "Expires:","失効:",module,Magento_NegotiableQuote
 "Sales Rep.:","販売担当者.:",module,Magento_NegotiableQuote
 "Select Existing Address","既存の住所を選択",module,Magento_NegotiableQuote
-"Add New Address","アカウント追加",module,Magento_NegotiableQuote
+"Add New Address","新しい住所の登録",module,Magento_NegotiableQuote
 "Shipping Method","お届け方法",module,Magento_NegotiableQuote
 "No shipping information available","有効な配送方法がありません。",module,Magento_NegotiableQuote
 "Select a shipping address from your address book.","アドレス帳からお届け先住所を選択して下さい。",module,Magento_NegotiableQuote
@@ -12286,7 +12286,7 @@ target=""_blank"">DevDocs' Release Information</a>.,module,Magento_ReleaseNotifi
 "Order Currency:","注文通貨:",module,Magento_Sales
 "Same As Billing Address","請求先と同じ",module,Magento_Sales
 "Select from existing customer addresses:","登録済の顧客と住所から選択:",module,Magento_Sales
-"Add New Address","アカウント追加",module,Magento_Sales
+"Add New Address","新しい住所の登録",module,Magento_Sales
 "Save in address book","アドレス帳に保存",module,Magento_Sales
 "You don't need to select a shipping address.","送付先住所を選択する必要はありません",module,Magento_Sales
 "Gift Message for the Entire Order","この注文のギフトメッセージ",module,Magento_Sales
@@ -13257,7 +13257,7 @@ Usage limit enforced for logged in customers only.,module,Magento_SalesRule
 "* Required Fields","* 必須項目",module,Magento_SendFriend
 "Sender","送り主",module,Magento_SendFriend
 "Message","メッセージ",module,Magento_SendFriend
-"Invitee","被招待者",module,Magento_SendFriend
+"Invitee","送信先",module,Magento_SendFriend
 "Maximum %1 email addresses allowed.","最大 %1 メールアドレスが可能",module,Magento_SendFriend
 "Add Invitee","送信先を追加",module,Magento_SendFriend
 "Send Email","メール送信",module,Magento_SendFriend
