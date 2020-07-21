@@ -20,6 +20,12 @@
   font-display: swap;
 }
 
+body.account.customer-account-edit .field.choice.chekbox-edit-account,
+body.account.customer-account-edit .field.choice #change-password,
+body.account.customer-account-edit .field.choice .label.checkbox-edt-account-label {
+  display: none !important;
+}
+
 .checkout-index-index #checkout-shipping-method-load,
 .checkout-index-index .checkout-shipping-method .step-title {
   display: none !important;
@@ -86,7 +92,8 @@
 }
 
 .checkout-cart-index .actions-toolbar .towishlist,
-a.use-ajax.action.towishlist.action-towishlist {
+a.use-ajax.action.towishlist.action-towishlist,
+a.use-ajax.action.towishlist.action-towishlist span {
   display: none !important;
 }
 
@@ -2316,12 +2323,12 @@ body.checkout-index-index select {
   border: 1px solid #000;
 }
 
-.action.towishlist,
+// .action.towishlist,
 .action.tocompare {
   color: #f45757 !important;
 }
 
-.action.towishlist:hover,
+// .action.towishlist:hover,
 .action.tocompare:hover {
   color: #ff0000 !important;
 }
