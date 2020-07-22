@@ -16158,7 +16158,7 @@ Priority Mail Small Flat Rate Box Hold For Pickup""",module,Magento_Usps
 "Product Details and Comment","商品の詳細とコメント",module,Magento_Wishlist
 "Add To Wishlist","欲しいものリストに追加",module,Magento_Wishlist
 "Are you sure you want to remove this product from your Wish List?","この商品をあなたのウィッシュリストから削除しますか？",module,Magento_Wishlist
-"%1 has been removed from your Wish List.","%1 has been removed from your Wish List.",module,Magento_Wishlist
+"%1 has been removed from your Wish List.","%1 はほしいものリストから削除されました",module,Magento_Wishlist
 "10 by default. Max - 10000","10 by default. Max - 10000",module,Magento_Wishlist
 "255 by default","255 by default",module,Magento_Wishlist
 "The Wish List item can't load at this time. Please try again later.","The Wish List item can't load at this time. Please try again later.",module,Magento_Wishlist
