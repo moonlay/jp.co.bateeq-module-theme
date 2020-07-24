@@ -22,12 +22,12 @@
         <legend class="legend title2-addres-create">
             <span class="legen-title-edit-address"><?= $block->escapeHtml(__('Contact Information')) ?></span>
         </legend><br>
-        
+
         <div class="fieldset div-contact-infomartion">
             <?= $block->getBlockHtml('formkey') ?>
             <input type="hidden" name="success_url" value="<?= $block->escapeUrl($block->getSuccessUrl()) ?>">
             <input type="hidden" name="error_url" value="<?= $block->escapeUrl($block->getErrorUrl()) ?>">
-            
+
             <?= $block->getNameBlockHtml() ?>
 
             <?php if ($_telephone->isEnabled()) : ?>
@@ -46,7 +46,7 @@
             <span class="legen-title-edit-address"><?= $block->escapeHtml(__('Address')) ?></span>
         </legend><br>
         <?php $_streetValidationClass = $this->helper(\Magento\Customer\Helper\Address::class)->getAttributeValidationClass('street'); ?>
-        
+
         <div class="fieldset div-contact-infomartion">
 
             <div class="field zip required">
@@ -67,7 +67,7 @@
                 </div>
             </div>
 
-            
+
 
             <?php if ($this->helper(\Magento\Customer\Helper\Address::class)->isVatAttributeVisible()) : ?>
                 <div class="field taxvat">
@@ -85,6 +85,25 @@
                 </div>
             <?php endif; ?>
 
+<div class="field region required">
+    <label class="label" for="region_id">
+        <span class="title-3-address-edit"><?= /* @noEscape */ $block->getAttributeData()->getFrontendLabel('region') ?></span>
+    </label>
+    <div class="control">
+        <select id="region_id" name="region_id"
+                title="<?= /* @noEscape */ $block->getAttributeData()->getFrontendLabel('region') ?>"
+                class="validate-select region_id dropdown-register" <?= /* @noEscape */ !$block->getConfig('general/region/display_all') ? ' disabled="disabled"' : '' ?>>
+            <option value=""><?= $block->escapeHtml(__('州州')) ?></option>
+        </select>
+        <input type="text"
+            id="region"
+            name="region"
+            value="<?= $block->escapeHtmlAttr($block->getRegion()) ?>"
+            title="<?= /* @noEscape */ $block->getAttributeData()->getFrontendLabel('region') ?>"
+            class="input-text input-text-login validate-not-number-first <?= $block->escapeHtmlAttr($this->helper(\Magento\Customer\Helper\Address::class)->getAttributeValidationClass('region')) ?>"<?= !$block->getConfig('general/region/display_all') ? ' disabled="disabled"' : '' ?>/>
+    </div>
+</div>
+
             <div class="field city required">
                 <label class="label" for="city"><span class="title-3-address-edit"><?= /* @noEscape */ $block->getAttributeData()->getFrontendLabel('city') ?></span></label>
                 <div class="control">
@@ -95,25 +114,6 @@
                         class="input-text input-text-login <?= $block->escapeHtmlAttr($this->helper(\Magento\Customer\Helper\Address::class)->getAttributeValidationClass('city')) ?>"
                         id="city"
                         placeholder="市">
-                </div>
-            </div>
-
-            <div class="field region required">
-                <label class="label" for="region_id">
-                    <span class="title-3-address-edit"><?= /* @noEscape */ $block->getAttributeData()->getFrontendLabel('region') ?></span>
-                </label>
-                <div class="control">
-                    <select id="region_id" name="region_id"
-                            title="<?= /* @noEscape */ $block->getAttributeData()->getFrontendLabel('region') ?>"
-                            class="validate-select region_id dropdown-register" <?= /* @noEscape */ !$block->getConfig('general/region/display_all') ? ' disabled="disabled"' : '' ?>>
-                        <option value=""><?= $block->escapeHtml(__('州州')) ?></option>
-                    </select>
-                    <input type="text"
-                        id="region"
-                        name="region"
-                        value="<?= $block->escapeHtmlAttr($block->getRegion()) ?>"
-                        title="<?= /* @noEscape */ $block->getAttributeData()->getFrontendLabel('region') ?>"
-                        class="input-text input-text-login validate-not-number-first <?= $block->escapeHtmlAttr($this->helper(\Magento\Customer\Helper\Address::class)->getAttributeValidationClass('region')) ?>"<?= !$block->getConfig('general/region/display_all') ? ' disabled="disabled"' : '' ?>/>
                 </div>
             </div>
 
@@ -190,8 +190,8 @@
                 <input type="hidden" name="default_shipping" value="1">
             <?php endif; ?>
         </div>
-        
-        
+
+
     </fieldset>
 
     <div class="actions-toolbar">
