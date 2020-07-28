@@ -60,6 +60,7 @@
                         title="<?= /* @noEscape */ $block->getAttributeData()->getFrontendLabel('postcode') ?>"
                         id="zip"
                         placeholder="郵便番号"
+                        onkeyup="getAddressData()"
                         class="input-text input-text-login validate-zip-international <?= $block->escapeHtmlAttr($this->helper(\Magento\Customer\Helper\Address::class)->getAttributeValidationClass('postcode')) ?>">
                     <div role="alert" class="message warning" style="display:none">
                         <span></span>
@@ -226,4 +227,91 @@
             }
         }
     }
+</script>
+
+<script>
+// Init elements
+const postcode = document.querySelector('[name=postcode]')
+const region = document.querySelector('[name=region_id]')
+const city = document.querySelector('[name=city]')
+
+// Get default value from storage
+postcode.value = localStorage.getItem("postcode");
+region.options[region.selectedIndex].value = localStorage.getItem('region') || '';
+region.options[region.selectedIndex].label = localStorage.getItem('regionLabel') || '州州';
+city.value = localStorage.getItem("city");
+
+const getAddressData = () => {
+  const postcodePattern1 = new RegExp("^[0-9]{7}$");
+  const postcodePattern2 = new RegExp("^[0-9]{3}\-[0-9]{4}$");
+  if (postcodePattern1.test(postcode.value)) {
+    const nameFile = postcode.value.substr(0, 3);
+    fetch(`https://moonlay.github.io/yubinbango-data/data/${nameFile}.js`)
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        }
+        return Promise.reject(response);
+      })
+      .then(data => {
+        const regionValue = data[0].hasOwnProperty(postcode.value) && data[0][postcode.value][0];
+        const cityValue = data[0].hasOwnProperty(postcode.value) ? data[0][postcode.value][1] : '';
+
+        // Set value to storage
+        localStorage.setItem("postcode", postcode.value);
+        localStorage.setItem("region", regionValue);
+        localStorage.setItem("city", cityValue);
+
+        // Get value from storage
+        postcode.value = localStorage.getItem("postcode");
+        region.value = localStorage.getItem("region");
+        city.value = localStorage.getItem("city");
+
+        // Set region label to storage
+        const regionLabel = region.options[region.selectedIndex].label;
+        localStorage.setItem("regionLabel", regionLabel);
+      })
+      .catch(error => console.warning(error));
+  } else if(postcodePattern2.test(postcode.value)) {
+    const nameFile = postcode.value.substr(0, 3);
+    fetch(`https://moonlay.github.io/yubinbango-data/data/${nameFile}.js`)
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        }
+        return Promise.reject(response);
+      })
+      .then(data => {
+        const postcodeModified = nameFile.concat(postcode.value.substr(4, 4))
+        const regionValue = data[0].hasOwnProperty(postcodeModified) && data[0][postcodeModified][0];
+        const cityValue = data[0].hasOwnProperty(postcodeModified) ? data[0][postcodeModified][1] : '';
+
+        // Set value to storage
+        localStorage.setItem("postcode", postcode.value);
+        localStorage.setItem("region", regionValue);
+        localStorage.setItem("city", cityValue);
+
+        // Get value from storage
+        postcode.value = localStorage.getItem("postcode");
+        region.value = localStorage.getItem("region");
+        city.value = localStorage.getItem("city");
+
+        // Set region label to storage
+        const regionLabel = region.options[region.selectedIndex].label;
+        localStorage.setItem("regionLabel", regionLabel);
+      })
+      .catch(error => console.warning(error));
+  } else {
+    // Clean storage
+    localStorage.setItem("postcode", postcode.value);
+    localStorage.setItem("region", "");
+    localStorage.setItem("regionLabel", "州州");
+    localStorage.removeItem("city");
+
+    // Clean field
+    region.options[region.selectedIndex].value = '';
+    region.options[region.selectedIndex].label = '州州';
+    city.value = '';
+  }
+}
 </script>
