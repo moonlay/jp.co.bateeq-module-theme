@@ -245,7 +245,7 @@ region.options[region.selectedIndex].value = localStorage.getItem('region') || '
 region.options[region.selectedIndex].label = localStorage.getItem('regionLabel') || '州州';
 city.value = localStorage.getItem("city");
 
-const getAddressData = () => {
+function getAddressData() {
   const postcodePattern1 = new RegExp("^[0-9]{7}$");
   const postcodePattern2 = new RegExp("^[0-9]{3}\-[0-9]{4}$");
   if (postcodePattern1.test(postcode.value)) {

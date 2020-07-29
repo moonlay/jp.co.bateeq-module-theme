@@ -26,10 +26,6 @@ $imageManager = $objectManager->get('\Magento\Catalog\Helper\Image');
         $groupedItemByStatus = array();
         foreach ($_orders as $_order) :
             $status = $block->escapeHtml($_order->getStatusLabel());
-            // Skip canceled status not to be rendered
-            if ($status === 'キャンセル済') {
-                continue;
-            }
             if (array_key_exists($status, $groupedItemByStatus)) :
                 array_push($groupedItemByStatus[$status], $_order);
             else :
