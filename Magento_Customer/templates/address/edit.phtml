@@ -95,7 +95,7 @@
             name="region_id"
             title="<?= /* @noEscape */ $block->getAttributeData()->getFrontendLabel('region') ?>"
             class="validate-select region_id dropdown-register" <?= /* @noEscape */ !$block->getConfig('general/region/display_all') ? ' disabled="disabled"' : '' ?>>
-            <option value=""><?= $block->escapeHtml(__('州州')) ?></option>
+            <option value=""><?= $block->escapeHtml(__('選択してください')) ?></option>
           </select>
           <input type="text"
             id="region"
@@ -235,7 +235,7 @@ const city = document.querySelector('[name=city]')
 // Get default value from storage
 postcode.value = localStorage.getItem("postcode");
 region.options[region.selectedIndex].value = localStorage.getItem('region') || '';
-region.options[region.selectedIndex].label = localStorage.getItem('regionLabel') || '州州';
+region.options[region.selectedIndex].label = localStorage.getItem('regionLabel') || '';
 city.value = localStorage.getItem("city");
 
 function getAddressData() {
@@ -302,12 +302,12 @@ function getAddressData() {
     // Clean storage
     localStorage.setItem("postcode", postcode.value);
     localStorage.setItem("region", "");
-    localStorage.setItem("regionLabel", "州州");
+    localStorage.setItem("regionLabel", "");
     localStorage.removeItem("city");
 
     // Clean fields
     region.options[region.selectedIndex].value = '';
-    region.options[region.selectedIndex].label = '州州';
+    region.options[region.selectedIndex].label = '';
     city.value = '';
   }
 }
