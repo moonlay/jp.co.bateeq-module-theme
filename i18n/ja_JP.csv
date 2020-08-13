@@ -1477,7 +1477,7 @@ Accept or Deny Payment""",module,Magento_Braintree
 "Address","住所",module,Magento_Braintree
 "City","市区町村",module,Magento_Braintree
 "State/Province","都道府県",module,Magento_Braintree
-"Please select region, state or province","都道府県を選択してください",module,Magento_Braintree
+"Please select region, state or province","選択してください",module,Magento_Braintree
 "Zip/Postal Code","郵便番号",module,Magento_Braintree
 "Submit","送信",module,Magento_Braintree
 "Add Credit Card","クレジットカード追加",module,Magento_Braintree
@@ -3886,7 +3886,7 @@ Time in seconds between the widget updates.,module,Magento_CatalogWidget
 "City","市区町村",module,Magento_Company
 "Country","国",module,Magento_Company
 "State/Province","都道府県",module,Magento_Company
-"Please select a region, state or province.","都道府県を選択してください",module,Magento_Company
+"Please select a region, state or province.","選択してください",module,Magento_Company
 "ZIP/Postal Code","郵便番号",module,Magento_Company
 "Phone Number","電話番号",module,Magento_Company
 "Company Administrator","会社管理者",module,Magento_Company
@@ -5049,7 +5049,7 @@ new products will be created. Use this step to customize images and price for yo
 "VAT Number","VAT番号",module,Magento_Customer
 "City","市区町村",module,Magento_Customer
 "State/Province","都道府県",module,Magento_Customer
-"Please select a region, state or province.","都道府県を選択してください",module,Magento_Customer
+"Please select a region, state or province.","選択してください",module,Magento_Customer
 "Zip/Postal Code","郵便番号",module,Magento_Customer
 "Country","国",module,Magento_Customer
 "It's a default billing address.","標準の請求先",module,Magento_Customer
@@ -5537,7 +5537,7 @@ Email template chosen based on theme fallback when ""Default"" option is selecte
 "VAT Number","VAT番号",module,Magento_CustomerCustomAttributes
 "City","市区町村",module,Magento_CustomerCustomAttributes
 "State/Province","都道府県",module,Magento_CustomerCustomAttributes
-"Please select a region, state or province.","都道府県を選択してください",module,Magento_CustomerCustomAttributes
+"Please select a region, state or province.","選択してください",module,Magento_CustomerCustomAttributes
 "Zip/Postal Code","郵便番号",module,Magento_CustomerCustomAttributes
 "Country","国",module,Magento_CustomerCustomAttributes
 "This is your default billing address.","これがデフォルトの請求先住所です。",module,Magento_CustomerCustomAttributes
@@ -5998,7 +5998,7 @@ Promo Section""",module,Magento_Cybersource
 "Please correct the country code: %1.","国別コードを修正してください: %1.",module,Magento_Directory
 "Country and Format Type combination should be unique","国とフォーマットタイプの組み合わせはユニークである必要があります",module,Magento_Directory
 "Please correct the rates received","受理したレートを修正してください",module,Magento_Directory
-"Please select a region, state or province.","都道府県を選択してください",module,Magento_Directory
+"Please select a region, state or province.","選択してください",module,Magento_Directory
 "Currency","通貨",module,Magento_Directory
 "Your current currency is: %1.","現在の通貨: %1.",module,Magento_Directory
 "Continue","続ける",module,Magento_Directory
@@ -7033,7 +7033,7 @@ Promo Section""",module,Magento_Cybersource
 "Edit Gift Registry","ギフトレジストリの編集",module,Magento_GiftRegistry
 "Create Gift Registry","ギフトレジストリを作成する",module,Magento_GiftRegistry
 "State/Province","都道府県",module,Magento_GiftRegistry
-"Please select a region, state or province","地域、都道府県を選択してください",module,Magento_GiftRegistry
+"Please select a region, state or province","選択してください",module,Magento_GiftRegistry
 "Please Select","選択してください",module,Magento_GiftRegistry
 "View Gift Registry %1","ギフトレジストリ％1を表示",module,Magento_GiftRegistry
 "Share '%1' Gift Registry","共有  '%1' ギフトレジストリ",module,Magento_GiftRegistry
@@ -7155,7 +7155,7 @@ Promo Section""",module,Magento_Cybersource
 "Street Address","住所",module,Magento_GiftRegistry
 "Street Address %1","番地 %1",module,Magento_GiftRegistry
 "City","市区町村",module,Magento_GiftRegistry
-"Please select a region, state or province.","都道府県を選択してください",module,Magento_GiftRegistry
+"Please select a region, state or province.","選択してください",module,Magento_GiftRegistry
 "Zip/Postal Code","郵便番号",module,Magento_GiftRegistry
 "Country","国",module,Magento_GiftRegistry
 "Phone Number","電話番号",module,Magento_GiftRegistry
