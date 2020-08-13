@@ -2,29 +2,80 @@
  * CSS in LESS ^_^v
  */
 
-@font-face {
-  font-family: "Noto Sans JP";
-  src: url("../fonts/NotoSansJP-Regular.otf");
+ @font-face {
+  font-family: 'Noto Sans JP';
+  src: url('../fonts/NotoSansJP-Regular.otf');
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.otf");
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.otf');
   font-display: swap;
 }
 
 @font-face {
-  font-family: "PingFangSC";
-  src: url("../fonts/PingFangSC-Semibold.woff2");
+  font-family: 'PingFangSC';
+  src: url('../fonts/PingFangSC-Semibold.woff2');
   font-display: swap;
 }
 
-body.account.wishlist-index-index .products-grid .product-item-info:hover, .products-grid .product-item-info.active {
+body.account.wishlist-index-index .products-grid .product-item-info:hover,
+.products-grid .product-item-info.active {
   z-index: 2 !important;
 }
 
-body.page-product-configurable.catalog-product-view .page-wrapper>.breadcrumbs {
+body.account.wishlist-index-index
+  .products-grid.wishlist
+  .product-item-info:hover
+  .product-item-inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: none;
+  border-radius: 0 0 5px 5px;
+  margin-top: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  body.account.wishlist-index-index
+  .products-grid.wishlist
+  .product-item-info:hover
+  .product-item-inner {
+    display: block;
+  }
+
+  body.account.wishlist-index-index div.box-tocart {
+    margin-right: 5px !important;
+  }
+}
+
+body.account.wishlist-index-index div.box-tocart,
+body.account.wishlist-index-index div.box-tocart .fieldset,
+body.account.wishlist-index-index div.box-tocart .fieldset:last-child,
+body.account.wishlist-index-index .product-item-actions,
+body.account.wishlist-index-index .product-item-actions .btn-remove-wishlist {
+  margin: 0 !important;
+}
+
+body.account.wishlist-index-index div.box-tocart button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.account.wishlist-index-index .product-item-actions .btn-remove-wishlist {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  border: #ff7d09 1px solid;
+  background: white;
+}
+
+body.page-product-configurable.catalog-product-view
+  .page-wrapper
+  > .breadcrumbs {
   display: none !important;
 }
 
@@ -35,13 +86,16 @@ body.page-product-configurable.catalog-product-view .page-wrapper>.breadcrumbs {
   z-index: 2 !important;
 }
 
-body.account.customer-account-edit fieldset.fieldset.password.margin-changes-pssamdemail.back-edit-passsandemail.width-changes-email-and-pass {
+body.account.customer-account-edit
+  fieldset.fieldset.password.margin-changes-pssamdemail.back-edit-passsandemail.width-changes-email-and-pass {
   display: block !important;
 }
 
 body.account.customer-account-edit .field.choice.chekbox-edit-account,
 body.account.customer-account-edit .field.choice #change-password,
-body.account.customer-account-edit .field.choice .label.checkbox-edt-account-label {
+body.account.customer-account-edit
+  .field.choice
+  .label.checkbox-edt-account-label {
   display: none !important;
 }
 
@@ -212,13 +266,13 @@ a.use-ajax.action.towishlist.action-towishlist span {
   display: none;
 }
 
-input[name="region"]:-moz-read-only,
-input[name="city"]:-moz-read-only {
+input[name='region']:-moz-read-only,
+input[name='city']:-moz-read-only {
   border-bottom: none !important;
 }
 
-input[name="region"]:read-only,
-input[name="city"]:read-only {
+input[name='region']:read-only,
+input[name='city']:read-only {
   border-bottom: none !important;
 }
 
@@ -278,19 +332,19 @@ input[name="city"]:read-only {
   }
 }
 
-.footer.content a:hover{
+.footer.content a:hover {
   color: #f9973f;
   text-decoration: none;
 }
 
-.footer.content a{
+.footer.content a {
   color: #ffffff;
 }
 
 //
 
 body {
-  font-family: "Noto Sans JP", "Montserrat", "PingFangSC", sans-serif;
+  font-family: 'Noto Sans JP', 'Montserrat', 'PingFangSC', sans-serif;
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
@@ -312,8 +366,8 @@ body.checkout-index-index
   position: unset !important;
 }
 
-body.checkout-index-index div[name="shippingAddress.company"],
-body.checkout-index-index div[name="shippingAddress.country_id"] {
+body.checkout-index-index div[name='shippingAddress.company'],
+body.checkout-index-index div[name='shippingAddress.country_id'] {
   visibility: hidden !important;
   position: absolute !important;
 }
@@ -344,8 +398,8 @@ body.checkout-index-index
   position: unset !important;
 }
 
-body.checkout-index-index div[name="shippingAddress.company"],
-body.checkout-index-index div[name="shippingAddress.country_id"] {
+body.checkout-index-index div[name='shippingAddress.company'],
+body.checkout-index-index div[name='shippingAddress.country_id'] {
   visibility: hidden !important;
   position: absolute !important;
 }
@@ -431,9 +485,9 @@ body.wishlist-index-index div.sidebar-additional,
     margin: 5px 0;
   }
 
-  body.wishlist-index-index div.box-tocart {
-    margin: 0px;
-  }
+  // body.wishlist-index-index div.box-tocart {
+  //   margin: 0px;
+  // }
 
   body.wishlist-index-index fieldset.fieldset {
     margin-bottom: 0px !important;
@@ -452,29 +506,29 @@ body.wishlist-index-index div.sidebar-additional,
 }
 
 @media only screen and (min-width: 992px) {
-  body.wishlist-index-index div.box-tocart {
-    width: 45% !important;
-  }
+  // body.wishlist-index-index div.box-tocart {
+  //   width: 45% !important;
+  // }
 
   body.wishlist-index-index button.btn-remove {
     margin: 0px !important;
     width: 100%;
   }
 
-  body.wishlist-index-index div.product-item-actions {
-    float: right;
-    margin: 0px !important;
-  }
+  // body.wishlist-index-index div.product-item-actions {
+  //   float: right;
+  //   margin: 0px !important;
+  // }
 
-  body.wishlist-index-index div.product-item-inner div:nth-child(3) {
-    width: 48% !important;
-  }
+  // body.wishlist-index-index div.product-item-inner div:nth-child(3) {
+  //   width: 48% !important;
+  // }
 
-  body.wishlist-index-index div.box-tocart {
-    width: 50%;
-    float: left;
-    margin-bottom: 0px;
-  }
+  // body.wishlist-index-index div.box-tocart {
+  //   width: 50%;
+  //   float: left;
+  //   margin-bottom: 0px;
+  // }
 
   .list-border {
     border: 0.5px solid #979797;
@@ -1008,7 +1062,7 @@ body.customer-account-createpassword div.page-title-wrapper {
 }
 
 .title-change-pass .jpn {
-  font-family: "Hiragino Sans", "Noto Sans JP", "Meiryo", sans-serif;
+  font-family: 'Hiragino Sans', 'Noto Sans JP', 'Meiryo', sans-serif;
   font-size: 30px;
   font-weight: 600 !important;
   line-height: 2.33 !important;
@@ -1050,7 +1104,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 }
 
 .title-frgt-pass .jpn {
-  font-family: "Hiragino Sans", "Noto Sans JP", "Meiryo", sans-serif;
+  font-family: 'Hiragino Sans', 'Noto Sans JP', 'Meiryo', sans-serif;
   font-size: 30px;
   font-weight: 600 !important;
   line-height: 2.33 !important;
@@ -1206,7 +1260,7 @@ body.customer-account-login div.m-5 {
 }
 
 .title-register .jpn-reg {
-  font-family: "Hiragino Sans", "Noto Sans JP", "Meiryo", sans-serif;
+  font-family: 'Hiragino Sans', 'Noto Sans JP', 'Meiryo', sans-serif;
   font-size: 30px !important;
   font-weight: 600 !important;
   line-height: 2.33 !important;
@@ -1274,7 +1328,7 @@ body.customer-account-login div.m-5 {
 }
 
 .title-login .jpn {
-  font-family: "Hiragino Sans", "Noto Sans JP", "Meiryo", sans-serif;
+  font-family: 'Hiragino Sans', 'Noto Sans JP', 'Meiryo', sans-serif;
   font-size: 30px !important;
   font-weight: 600 !important;
   line-height: 2.33 !important;
@@ -1550,7 +1604,7 @@ body.customer-account-login div.m-5 {
 }
 
 .title h2:nth-child(1) {
-  font-family: "Hiragino Sans", "Noto Sans JP", "Meiryo", sans-serif;
+  font-family: 'Hiragino Sans', 'Noto Sans JP', 'Meiryo', sans-serif;
   font-size: 30px;
   font-weight: 600;
   line-height: 1.33;
@@ -1625,7 +1679,7 @@ body.customer-account-login div.m-5 {
 }
 
 .about p {
-  font-family: "Hiragino Sans", "Noto Sans JP", "Meiryo", sans-serif;
+  font-family: 'Hiragino Sans', 'Noto Sans JP', 'Meiryo', sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 1.1;
@@ -1829,7 +1883,7 @@ body.catalogsearch-result-index .product-image-wrapper {
 
 // START about bateeq page
 .cms-about-bateeq .clearfix::after {
-  content: "";
+  content: '';
   clear: both;
   display: table;
 }
@@ -1884,7 +1938,7 @@ th.price span:after,
 th.subtotal span:after,
 strong#block-shipping-heading:after,
 .product-info-stock-sku:before {
-  content: "(消費税10%込み価格)";
+  content: '(消費税10%込み価格)';
   color: #333;
   position: absolute;
 }
@@ -1897,7 +1951,7 @@ th.subtotal span:after {
 }
 
 body.page-products span.normal-price:after {
-  content: "税込";
+  content: '税込';
   color: #333;
 }
 
@@ -2145,7 +2199,7 @@ body.cms-home
   div.column.main
   div:nth-child(9)
   div.product-item-details
-  div[class*="swatch-opt"] {
+  div[class*='swatch-opt'] {
   display: none;
 }
 
@@ -2885,7 +2939,7 @@ body.cms-home div.column.main div:nth-child(9) li a.product-item-link {
   }
 
   .logged-in::after {
-    content: "";
+    content: '';
     display: block;
     border-bottom: 3px solid #000;
     width: 100%;
