@@ -233,10 +233,10 @@ const region = document.querySelector('[name=region_id]')
 const city = document.querySelector('[name=city]')
 
 // Get default value from storage
-postcode.value = localStorage.getItem("postcode");
+postcode.value = localStorage.getItem("postcode") || '';
 region.options[region.selectedIndex].value = localStorage.getItem('region') || '';
 region.options[region.selectedIndex].label = localStorage.getItem('regionLabel') || '';
-city.value = localStorage.getItem("city");
+city.value = localStorage.getItem("city") || '';
 
 function getAddressData() {
   const postcodePattern1 = new RegExp("^[0-9]{7}$");
@@ -260,15 +260,17 @@ function getAddressData() {
         localStorage.setItem("city", cityValue);
 
         // Get value from storage
-        postcode.value = localStorage.getItem("postcode");
-        region.value = localStorage.getItem("region");
-        city.value = localStorage.getItem("city");
+        postcode.value = localStorage.getItem("postcode") || postcode.value;
+        region.value = localStorage.getItem("region") || regionValue;
+        city.value = localStorage.getItem("city") || cityValue;
 
         // Set region label to storage
-        const regionLabel = region.options[region.selectedIndex].label;
-        localStorage.setItem("regionLabel", regionLabel);
+        if(region.options[region.selectedIndex]) {
+          const regionLabel = region.options[region.selectedIndex].label || '';
+          localStorage.setItem("regionLabel", regionLabel);
+        }
       })
-      .catch(error => console.warning(error));
+      .catch(error => console.warn(error));
   } else if (postcodePattern2.test(postcode.value)) {
     const nameFile = postcode.value.substr(0, 3);
     fetch(`https://moonlay.github.io/yubinbango-data/data/${nameFile}.js`)
@@ -289,25 +291,25 @@ function getAddressData() {
         localStorage.setItem("city", cityValue);
 
         // Get value from storage
-        postcode.value = localStorage.getItem("postcode");
-        region.value = localStorage.getItem("region");
-        city.value = localStorage.getItem("city");
+        postcode.value = localStorage.getItem("postcode") || postcode.value;
+        region.value = localStorage.getItem("region") || regionValue;
+        city.value = localStorage.getItem("city") || cityValue;
 
         // Set region label to storage
-        const regionLabel = region.options[region.selectedIndex].label;
-        localStorage.setItem("regionLabel", regionLabel);
+        if(region.options[region.selectedIndex]) {
+          const regionLabel = region.options[region.selectedIndex].label || '';
+          localStorage.setItem("regionLabel", regionLabel);
+        }
       })
-      .catch(error => console.warning(error));
+      .catch(error => console.warn(error));
   } else {
     // Clean storage
     localStorage.setItem("postcode", postcode.value);
     localStorage.setItem("region", "");
-    localStorage.setItem("regionLabel", "");
+    localStorage.setItem("regionLabel", "選択してください");
     localStorage.removeItem("city");
 
     // Clean fields
-    region.options[region.selectedIndex].value = '';
-    region.options[region.selectedIndex].label = '';
     city.value = '';
   }
 }
