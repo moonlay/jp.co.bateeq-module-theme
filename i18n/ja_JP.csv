@@ -4597,7 +4597,7 @@ new products will be created. Use this step to customize images and price for yo
 "Searchable","検索可能",module,Magento_ConfigurableProductStaging
 "Comparable","比較可能",module,Magento_ConfigurableProductStaging
 "Page not found.","ページが見つかりません。",module,Magento_Contact
-"Thanks for contacting us with your comments and questions. We'll respond to you very soon.","Comment: %comment",module,Magento_Contact
+"Thanks for contacting us with your comments and questions. We'll respond to you very soon.","メールが送りました",module,Magento_Contact
 "An error occurred while processing your form. Please try again later.","フォームの処理中にエラーが発生しました。後で再度お試し下さい。",module,Magento_Contact
 "Name is missing","名前がありません",module,Magento_Contact
 "Comment is missing","コメントがありません",module,Magento_Contact
@@ -4626,7 +4626,7 @@ new products will be created. Use this step to customize images and price for yo
 "Name: %name","名前: %name",module,Magento_Contact
 "Email: %email","Eメール: %email",module,Magento_Contact
 "Phone Number: %telephone","電話番号: %telephone",module,Magento_Contact
-"Comment: %comment","コメント: %comment",module,Magento_Contact
+"Comment: %comment","メールが送りました",module,Magento_Contact
 "Enter the Name and try again.","名前を入力して再度お試し下さい。",module,Magento_Contact
 "Enter the comment and try again.","コメントを入力して再度お試し下さい。",module,Magento_Contact
 "The email address is invalid. Verify the email address and try again.","メールアドレスが無効です。メールアドレスを確認して再度お試し下さい。",module,Magento_Contact
