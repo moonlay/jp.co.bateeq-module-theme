@@ -762,7 +762,7 @@ href=""https://dashboard.rjmetrics.com/v2/magento/signup/"">Magento BIEssentials
 "Close","閉じる",module,Magento_Backend
 "Go Today","今日へ",module,Magento_Backend
 "Previous","前",module,Magento_Backend
-"Next","続き",module,Magento_Backend
+"Next","確定",module,Magento_Backend
 "WK","WK",module,Magento_Backend
 "Time","時間",module,Magento_Backend
 "Hour","時",module,Magento_Backend
@@ -2305,7 +2305,7 @@ and the product descriptor can be up to 18, 14, or 9 characters respectively (wi
 "Compare","比較する",module,Magento_Catalog
 "Clear All","すべてクリア",module,Magento_Catalog
 "Prev","前へ",module,Magento_Catalog
-"Next","続き",module,Magento_Catalog
+"Next","確定",module,Magento_Catalog
 "We can't find products matching the selection.","選択にマッチする商品が見つかりません。",module,Magento_Catalog
 "Learn More","もっと詳しく",module,Magento_Catalog
 "Add to Compare","比較リストに入れる",module,Magento_Catalog
@@ -2693,7 +2693,7 @@ Time in seconds between the widget updates.,module,Magento_Catalog
 "Go To Sale","セール会場に移動する",module,Magento_CatalogEvent
 "View Sale","セールを表示",module,Magento_CatalogEvent
 "Previous","前",module,Magento_CatalogEvent
-"Next","続き",module,Magento_CatalogEvent
+"Next","確定",module,Magento_CatalogEvent
 "Catalog Events","カタログイベント",module,Magento_CatalogEvent
 "Enable Catalog Events Functionality","カタログイベント機能を有効にする",module,Magento_CatalogEvent
 "Enable Catalog Event Widget on Storefront","ストアでカタログイベントウィジェットを有効にする",module,Magento_CatalogEvent
@@ -3403,8 +3403,8 @@ Time in seconds between the widget updates.,module,Magento_CatalogWidget
 "Select Method","メソッドの選択",module,Magento_Checkout
 "Method Title","メソッドタイトル",module,Magento_Checkout
 "Carrier Title","キャリアタイトル",module,Magento_Checkout
-"Next","続き",module,Magento_Checkout
-"Sorry, no quotes are available for this order at this time","申し訳ございません、お届け先が指定されていないため送料のお見積りをお出しすることができません。",module,Magento_Checkout
+"Next","確定",module,Magento_Checkout
+"Sorry, no quotes are available for this order at this time"," ",module,Magento_Checkout
 "Item in Cart","カートの中の商品",module,Magento_Checkout
 "Items in Cart","点の商品",module,Magento_Checkout
 "Require Customer To Be Logged In To Checkout","チェックアウト時にログインを要求する",module,Magento_Checkout
@@ -7186,7 +7186,7 @@ Promo Section""",module,Magento_Cybersource
 "Add Invitee","送信先を追加",module,Magento_GiftRegistry
 "Gift Registry Type","ギフトレジストリ種別",module,Magento_GiftRegistry
 "Please select a gift registry type.","ギフトレジストリタイプを選択してください。",module,Magento_GiftRegistry
-"Next","続き",module,Magento_GiftRegistry
+"Next","確定",module,Magento_GiftRegistry
 "Last Name","名",module,Magento_GiftRegistry
 "Registrant Information","登録者情報",module,Magento_GiftRegistry
 "Maximum %1 registrants.","最大 %1 人の登録者。",module,Magento_GiftRegistry
@@ -11044,7 +11044,7 @@ target=""_blank"">DevDocs' Release Information</a>.,module,Magento_ReleaseNotifi
 "Previous","前",module,Magento_Review
 "Save and Previous","保存して戻る",module,Magento_Review
 "Save and Next","保存して次に",module,Magento_Review
-"Next","続き",module,Magento_Review
+"Next","確定",module,Magento_Review
 "Delete Review","レビュー削除",module,Magento_Review
 "Are you sure you want to do this?","実行してもよろしいですか？",module,Magento_Review
 "Edit Review '%1'","編集レビュー'%1'",module,Magento_Review
@@ -13378,7 +13378,7 @@ not be restricted to customers.","ストアフロントで共有カタログを�
 to use the shared catalogs in the storefront. Otherwise, the categories and products you're,module,Magento_SharedCatalog
 configuring in shared catalogs will not be restricted to customers.","ストアフロントで共有カタログを使用するには、Stores -> Configuration -> B2B Features で,module,Magento_SharedCatalog
 共有カタログ機能を有効にする必要があります。そうでなければ、共有カタログで設定している     カテゴリと商品は顧客に限定されません。",module,Magento_SharedCatalog
-"Next","続き",module,Magento_SharedCatalog
+"Next","確定",module,Magento_SharedCatalog
 "Edit Configurations","設定の編集",module,Magento_SharedCatalog
 "Products in Catalog","カタログの商品",module,Magento_SharedCatalog
 "Continue to configure the shared catalog structure and pricing.","引き続き共有カタログと価格を設定します。",module,Magento_SharedCatalog
@@ -14676,7 +14676,7 @@ than a customer might expect. ","警告 値引きに関する税設定は顧客�
 "Page","ページ",module,Magento_Theme
 "Previous","前",module,Magento_Theme
 "You're currently reading page","ページを読んでいます",module,Magento_Theme
-"Next","続き",module,Magento_Theme
+"Next","確定",module,Magento_Theme
 "Show","表示",module,Magento_Theme
 "per page","件",module,Magento_Theme
 "About the calendar","カレンダーについて",module,Magento_Theme
@@ -14808,7 +14808,7 @@ than a customer might expect. ","警告 値引きに関する税設定は顧客�
 "Invalid UI Component element name: ''","無効なUIコンポーネントの要素名：''",module,Magento_Ui
 "Cancel","キャンセル",module,Magento_Ui
 "Back","戻る",module,Magento_Ui
-"Next","続き",module,Magento_Ui
+"Next","確定",module,Magento_Ui
 "Changes have been made to this section that have not been saved.","保存されていないこのセクションに変更がおこなわれました。",module,Magento_Ui
 "This tab contains invalid data. Please resolve this before saving.","このタブは無効なデータが含まれています。保存前に解決してください。",module,Magento_Ui
 "Assign","割り当て",module,Magento_Ui
@@ -15692,7 +15692,7 @@ Priority Mail Small Flat Rate Box Hold For Pickup""",module,Magento_Usps
 "Page","ページ",module,Magento_VersionsCms
 "Previous","前",module,Magento_VersionsCms
 "You're currently reading page","ページを読んでいます",module,Magento_VersionsCms
-"Next","続き",module,Magento_VersionsCms
+"Next","確定",module,Magento_VersionsCms
 "Delete Revision and Version","リビジョンとバージョンを削除",module,Magento_VersionsCms
 "Publish Revision","リビジョンを公開",module,Magento_VersionsCms
 "Pages","ページ",module,Magento_VersionsCms
@@ -16114,7 +16114,7 @@ Priority Mail Small Flat Rate Box Hold For Pickup""",module,Magento_Usps
 "This Wish List has no Items","このほしい物リストにはアイテムはありません。",module,Magento_Wishlist
 "%1 has been added to your Wish List.","%1 があなたのほしい物リストに追加されました。",module,Magento_Wishlist
 "Click <a href=""%1"">here</a> to continue shopping."," <a href=""%1"">ここ</a>をクリックしてお買い物を続けて下さい",module,Magento_Wishlist
-"See Details","詳細をご覧ください",module,Magento_Wishlist
+"See Details"," ",module,Magento_Wishlist
 "Options Details","オプションの概要",module,Magento_Wishlist
 "RSS link to %1's wishlist","%1 のほしい物リストへのRSSリンク",module,Magento_Wishlist
 "RSS Feed","RSSフィード",module,Magento_Wishlist
@@ -16307,7 +16307,7 @@ Priority Mail Small Flat Rate Box Hold For Pickup""",module,Magento_Usps
 "Please specify Url.","URLを指定してください。",lib,web
 "Method %s does not exist on jQuery.decorate","メソッド %s は jQuery.decorate に存在しません",lib,web
 "Close","閉じる",lib,web
-"Next","続き",lib,web
+"Next","確定",lib,web
 "Previous","前",lib,web
 "Please wait...","しばらくお待ちください。。",lib,web
 "Loading...","読み込み中",lib,web
